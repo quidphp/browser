@@ -31,6 +31,6 @@
         "quidphp-node-temp": "5.31.*"
     },
     "devDependencies": {
-        "laravel-mix": "^6.0.43",
+        "laravel-mix": "^6.0.43"
     }
 }
