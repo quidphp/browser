@@ -6,6 +6,11 @@
   
 // dom
 // script with functions related to html and dom
+
+// import
+import { Arr, Doc, Ele, Scalar, Str } from '../index.js';
+
+// export
 export default {
     
     // selectorInput

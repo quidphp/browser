@@ -3484,14 +3484,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // simple import
       // type import
-      // shortcut
-
-
-      var d = console.log;
-
-      var assert = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].assertThrow.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-
-      var logError = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].logError.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]); // type build
+      // build
 
 
       var Arr = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
@@ -3509,7 +3502,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         ArrLoop: _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop
       };
       var _Test = {};
-      var _Component = {};
+      var _Component = {}; // shortcut
+
+      var d = console.log;
+
+      var assert = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].assertThrow.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+      var logError = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].logError.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
       var _Shortcut = {
         d: d,
         assert: assert,

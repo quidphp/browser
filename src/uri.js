@@ -6,6 +6,11 @@
  
 // uri
 // script with a set of helper functions related to uri management
+
+// import
+import { Request, Str } from '../index.js';
+
+// export
 export default {
     
     // isInternal

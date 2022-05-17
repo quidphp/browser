@@ -6,6 +6,11 @@
  
 // event
 // script containing event management functions
+
+// import
+import { Arr, Integer } from '../index.js';
+
+// export
 export default {
     
     // specialKeyCode

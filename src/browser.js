@@ -6,6 +6,11 @@
  
 // browser
 // script with a some functions related to browsers detection
+
+// import
+import { Str } from '../index.js';
+
+// export
 export default {
     
     // isOldIe

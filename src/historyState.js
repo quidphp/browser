@@ -6,6 +6,11 @@
  
 // historyState
 // script with functions related to the history states
+
+// import
+import { Datetime, Num, Pojo, Str, Uri } from '../index.js';
+
+// export
 export default {
     
     // is

@@ -6,6 +6,11 @@
 
 // eleTarget
 // script with many functions related to element nodes
+
+// import
+import { Arr, ArrLike, Browser, Dom, Func, Integer, Num, Scalar, Str, Uri } from '../index.js';
+
+// export
 export default {
 
     // is

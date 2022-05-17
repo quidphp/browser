@@ -4,6 +4,9 @@
  * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
 
+// index
+// entry file for the module
+
 // import quidphp-node
 import { Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, Test, TestSuite, Tool } from 'quidphp-node-temp';
 

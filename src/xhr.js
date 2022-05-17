@@ -6,6 +6,11 @@
 
 // xhr
 // script with some logic for ajax calls and xhr object
+
+// import
+import { Str } from '../index.js';
+
+// export
 export default new function()
 {
     // inst

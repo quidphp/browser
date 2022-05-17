@@ -6,6 +6,11 @@
  
 // request
 // script with functions related to the current request
+
+// import
+import { Uri } from '../index.js';
+
+// export
 export default {
     
     // relative

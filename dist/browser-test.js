@@ -2977,12 +2977,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// shortcut
-const d = console.log;
-const assert = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].assertThrow.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-const logError = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].logError.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-
-// type build
+// build
 const Arr = (0,_src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"],_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf,_src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase,_src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrWriteSelf,_src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
 const ArrLike = (0,_src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"],_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach,_src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap,_src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase,_src_arrLike_js__WEBPACK_IMPORTED_MODULE_11__["default"],_src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
 const Bool = (0,_src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"],_src_bool_js__WEBPACK_IMPORTED_MODULE_12__["default"]);
@@ -2996,6 +2991,11 @@ const Str = (0,_src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_typ
 const Tool = { Type: _src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], ArrLoop: _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop };
 const Test = { };
 const Component = { };
+
+// shortcut
+const d = console.log;
+const assert = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].assertThrow.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+const logError = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].logError.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
 const Shortcut = { d, assert, logError };
 
 // export
@@ -6314,15 +6314,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Obj": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj),
 /* harmony export */   "Pojo": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo),
 /* harmony export */   "Scalar": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar),
+/* harmony export */   "Shortcut": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Shortcut),
 /* harmony export */   "Str": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Str),
 /* harmony export */   "Test": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Test),
 /* harmony export */   "TestSuite": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.TestSuite),
 /* harmony export */   "Tool": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Tool),
 /* harmony export */   "Validate": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Validate),
-/* harmony export */   "Vari": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Vari),
-/* harmony export */   "assert": () => (/* binding */ assert),
-/* harmony export */   "d": () => (/* binding */ d),
-/* harmony export */   "logError": () => (/* binding */ logError)
+/* harmony export */   "Vari": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Vari)
 /* harmony export */ });
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./node_modules/quidphp-node-temp/index.js");
 /*

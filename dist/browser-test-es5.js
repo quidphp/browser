@@ -4043,14 +4043,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // simple import
       // type import
-      // shortcut
-
-
-      var d = console.log;
-
-      var assert = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].assertThrow.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-
-      var logError = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].logError.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]); // type build
+      // build
 
 
       var Arr = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
@@ -4068,7 +4061,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         ArrLoop: _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop
       };
       var _Test = {};
-      var _Component = {};
+      var _Component = {}; // shortcut
+
+      var d = console.log;
+
+      var assert = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].assertThrow.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+      var logError = _src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"].logError.bind(_src_debug_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
       var _Shortcut = {
         d: d,
         assert: assert,
@@ -7084,6 +7084,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         },
 
         /* harmony export */
+        "Shortcut": function Shortcut() {
+          return (
+            /* reexport safe */
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Shortcut
+          );
+        },
+
+        /* harmony export */
         "Str": function Str() {
           return (
             /* reexport safe */
@@ -7129,30 +7137,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             /* reexport safe */
             _index_js__WEBPACK_IMPORTED_MODULE_0__.Vari
           );
-        },
-
-        /* harmony export */
-        "assert": function assert() {
-          return (
-            /* binding */
-            _assert
-          );
-        },
-
-        /* harmony export */
-        "d": function d() {
-          return (
-            /* binding */
-            _d
-          );
-        },
-
-        /* harmony export */
-        "logError": function logError() {
-          return (
-            /* binding */
-            _logError
-          );
         }
         /* harmony export */
 
@@ -7172,9 +7156,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
       var _index_js__WEBPACK_IM = _index_js__WEBPACK_IMPORTED_MODULE_0__.Shortcut,
-          _d = _index_js__WEBPACK_IM.d,
-          _assert = _index_js__WEBPACK_IM.assert,
-          _logError = _index_js__WEBPACK_IM.logError; // node
+          d = _index_js__WEBPACK_IM.d,
+          assert = _index_js__WEBPACK_IM.assert,
+          logError = _index_js__WEBPACK_IM.logError; // node
       // script to test the node files
 
       _index_js__WEBPACK_IMPORTED_MODULE_0__.Test.Node = function () {
@@ -7192,222 +7176,133 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             var isEmpty = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty.bind(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str); // js
 
 
-            _assert(Object.getPrototypeOf(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj) === Object.getPrototypeOf(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str));
+            assert(Object.getPrototypeOf(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj) === Object.getPrototypeOf(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each === _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.each);
+            assert(!(false == null));
+            assert(!(0 == null));
+            assert(!('' == null));
+            assert(null == null);
+            assert(undefined == null);
+            assert(!([] == true)); // arr
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each === _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.each);
-
-            _assert(!(false == null));
-
-            _assert(!(0 == null));
-
-            _assert(!('' == null));
-
-            _assert(null == null);
-
-            _assert(undefined == null);
-
-            _assert(!([] == true)); // arr
-
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is([]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is({}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(_arguments));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](null, [null]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](null, null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](true, [false]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.keys([1, 2, 3]), [0, 1, 2]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.search(2, [1, 2, 3]) === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.slice(1, 3, [2, 4, 6, 8, 10]), [4, 6]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.slice(1, undefined, [2, 4, 6, 8, 10]), [4, 6, 8, 10]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.slice(null, null, [2, 4, 6, 8, 10]), [2, 4, 6, 8, 10]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.sliceStart(2, [2, 4, 6, 8, 10]), [6, 8, 10]));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is({}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(_arguments));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](null, [null]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](null, null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](true, [false]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.keys([1, 2, 3]), [0, 1, 2]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.search(2, [1, 2, 3]) === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.slice(1, 3, [2, 4, 6, 8, 10]), [4, 6]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.slice(1, undefined, [2, 4, 6, 8, 10]), [4, 6, 8, 10]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.slice(null, null, [2, 4, 6, 8, 10]), [2, 4, 6, 8, 10]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.sliceStart(2, [2, 4, 6, 8, 10]), [6, 8, 10]));
             var spliceArr = [12, 3, 40];
 
             _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.spliceValue(3, spliceArr);
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(spliceArr, [12, 40]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.spliceValue(40, spliceArr, 'ok'), [40]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(spliceArr, [12, 'ok']));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueStrip(3, [3, 2, 3, 1, 5]), [2, 1, 5]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty([]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty([null]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty([1, 2, 3]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty([]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(''));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.typecheck([]), []));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.typecheck([1], true), [1]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.typecheck(undefined, false) === undefined);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual([], []));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual({}, {}));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(spliceArr, [12, 40]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.spliceValue(40, spliceArr, 'ok'), [40]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(spliceArr, [12, 'ok']));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueStrip(3, [3, 2, 3, 1, 5]), [2, 1, 5]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty([]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty([null]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty([1, 2, 3]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(''));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.typecheck([]), []));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.typecheck([1], true), [1]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.typecheck(undefined, false) === undefined);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual([], []));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual({}, {}));
             var arr = [3, 2, 3, 1, 5];
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(arr) === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueLast(arr) === 5);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst([]) === undefined);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueStrip('8', arr) !== arr);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.keyFirst(arr) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.keyLast(arr) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueStrip('8', arr), arr));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(arr) === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueLast(arr) === 5);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst([]) === undefined);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueStrip('8', arr) !== arr);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.keyFirst(arr) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.keyLast(arr) === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueStrip('8', arr), arr));
             var arrKey;
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.copy([1, 2, 3]), [1, 2, 3]));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.copy([1, 2, 3]), [1, 2, 3]));
             var arrCopy = [1, 2, 3];
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.copy(arrCopy) !== arrCopy);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each([1, 2, 3], function (value, key) {
-              _assert(value !== this);
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.copy(arrCopy) !== arrCopy);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each([1, 2, 3], function (value, key) {
+              assert(value !== this);
               arrKey = key;
             }));
-
-            _assert(arrKey === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length([1, 2, 3]) === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.set(1, 'z', ['a', 'b', 'c']), ['a', 'z', 'c']));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(arrCopy, [1, 2, 3]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.setRef(2, 4, arrCopy) === arrCopy);
-
+            assert(arrKey === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length([1, 2, 3]) === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.set(1, 'z', ['a', 'b', 'c']), ['a', 'z', 'c']));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(arrCopy, [1, 2, 3]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.setRef(2, 4, arrCopy) === arrCopy);
             var mergeRef = [1, 2, 3];
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.mergeRef(mergeRef, 'what', [4, 5, 6], _arguments) === mergeRef);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([1, 2, 3], 'what', [4, 5, 6], _arguments), mergeRef));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge(mergeRef) !== mergeRef);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.mergeRef(mergeRef) === mergeRef);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(mergeRef) === 8);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(arrCopy, [1, 2, 4]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([1, 2, 3], [4, 5, 6], _arguments)) === 7);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some([1, '2', 3], function (value, index, arr) {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.mergeRef(mergeRef, 'what', [4, 5, 6], _arguments) === mergeRef);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([1, 2, 3], 'what', [4, 5, 6], _arguments), mergeRef));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge(mergeRef) !== mergeRef);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.mergeRef(mergeRef) === mergeRef);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(mergeRef) === 8);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(arrCopy, [1, 2, 4]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([1, 2, 3], [4, 5, 6], _arguments)) === 7);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some([1, '2', 3], function (value, index, arr) {
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value);
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some([1, '2', 3], function (value, index, arr) {
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some([1, '2', 3], function (value, index, arr) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(value);
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every([1, '2', 3], function (value, index, arr) {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
-
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every([1, '2', 3], function (value, index, arr) {
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value);
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every([1, 2, 3], function (value, index, arr) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every([1, 2, 3], function (value, index, arr) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value);
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.find([1, 2, 3], function (value, index, arr) {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value));
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(index));
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.find([1, 2, 3], function (value, index, arr) {
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value));
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(index));
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
               return value === 2;
             }) === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.map([1, 2, 3], function (value, index, arr) {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.map([1, 2, 3], function (value, index, arr) {
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
               return index;
             }), [0, 1, 2]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.filter([1, 2, 3], function (value, key, array) {
-              if (value === 1) _assert(key === 0);
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.filter([1, 2, 3], function (value, key, array) {
+              if (value === 1) assert(key === 0);
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
               return value === 2;
             }).length === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.reduce("", ['test', 'ok', 'what'], function (r, value, index, arr) {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.reduce("", ['test', 'ok', 'what'], function (r, value, index, arr) {
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(arr));
               return r += index + value;
             }) === '0test1ok2what');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.replace([1, 2, 2], [4, 5], [0]), [0, 5, 2]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.clean([null, undefined, 0, '0', [], {}, false, true, '', 1]), [0, '0', false, true, 1]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.timeouts([1, 2, 3], 20, 20, function (value) {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.replace([1, 2, 2], [4, 5], [0]), [0, 5, 2]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.clean([null, undefined, 0, '0', [], {}, false, true, '', 1]), [0, '0', false, true, 1]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.timeouts([1, 2, 3], 20, 20, function (value) {
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value));
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.oddEven([1, 2, 3], function (value) {
-              _assert(value !== 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.oddEven([1, 2, 3], function (value) {
+              assert(value !== 2);
             }, function (value) {
-              _assert(value === 2);
+              assert(value === 2);
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.findKey([3, 4, 5], function (value, index, arr) {
-              _assert(arr == null);
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.findKey([3, 4, 5], function (value, index, arr) {
+              assert(arr == null);
               return value === 4;
             }) === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate(0, [2, 3, 4], function (value, index, arr) {
-              _assert(arr == null);
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate(0, [2, 3, 4], function (value, index, arr) {
+              assert(arr == null);
               return value;
             }) === 9);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate('', ['eh', 'ok', 'what'], function (value, index) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate('', ['eh', 'ok', 'what'], function (value, index) {
               return value;
             }) === 'ehokwhat');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], ['eh', 'ok', 'what'], function (value, index) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], ['eh', 'ok', 'what'], function (value, index) {
               return index + value;
             }), ["0eh", "1ok", "2what"]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.column('test', [{
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.column('test', [{
               test: 'OK'
             }, {
               test2: 'WELL',
@@ -7416,127 +7311,79 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               test2: 'NOP'
             }]), ['OK', 'OK2'])); // arrLike
 
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is({}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(function () {}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(_arguments));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(2));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is('str'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.isEmpty(_arguments));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.isNotEmpty(_arguments));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.typecheck(_arguments) === _arguments);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.typecheck(undefined, false) === undefined);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.length(_arguments) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(arrCopy) === arrCopy); // bool
 
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is('true'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(function () {}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(false) === false);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toggle(false) === true);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.isEmpty(false));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.isEmpty(0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.isNotEmpty(true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(true) === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(false) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(null, false) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(false) === false);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(true, false) === true); // datetime
 
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is({}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(function () {}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(_arguments));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(2));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is('str'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.isEmpty(_arguments));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.isNotEmpty(_arguments));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.typecheck(_arguments) === _arguments);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.typecheck(undefined, false) === undefined);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.length(_arguments) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(arrCopy) === arrCopy); // bool
-
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is('true'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(function () {}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(false) === false);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toggle(false) === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.isEmpty(false));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.isEmpty(0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.isNotEmpty(true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(true) === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(false) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(null, false) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(false) === false);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.typecheck(true, false) === true); // datetime
-
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.now()));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.year()));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.localeFormat('fr-CA')) >= 19);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.ymd(null, 2010, 2, 3) === "2010-02-03");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.ymd(1519241542) === "2018-02-21");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.his(1519241542) === "14:32:22"); // debug
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.now()));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.year()));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.localeFormat('fr-CA')) >= 19);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.ymd(null, 2010, 2, 3) === "2010-02-03");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.ymd(1519241542) === "2018-02-21");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.his(1519241542) === "14:32:22"); // debug
             // env
 
-
             if (typeof window === 'undefined') {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isNode());
-
-              _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isBrowser());
-
-              _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isWindow('test'));
-
-              _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget('test'));
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isNode());
+              assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isBrowser());
+              assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isWindow('test'));
+              assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget('test'));
             } else {
-              _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isNode());
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isBrowser());
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isWindow(window));
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget(window));
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget(document));
-
+              assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isNode());
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isBrowser());
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isWindow(window));
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget(window));
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget(document));
               var html = document.querySelector("html");
-
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget(html));
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isTarget(html));
             } // factory
             // func
 
 
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is('test'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(noop));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.length(noop) === 0);
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is('test'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(noop));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.length(noop) === 0);
 
             _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.typecheck(noop);
 
             _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.typecheck(null, false);
 
             _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.timeout(null, function () {
-              _assert(true);
+              assert(true);
             });
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.debounce(2, function () {})));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.throttle(2, function () {})));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.debounce(2, function () {})));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.throttle(2, function () {})));
 
             var debounceFunc = _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.debounce(100, function (arg) {
-              _assert(arg === 99);
+              assert(arg === 99);
             });
 
             for (i = 0; i < 100; i++) {
@@ -7544,7 +7391,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             }
 
             var throttleFunc = _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.throttle(50, function (arg) {
-              _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(arg));
+              assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(arg));
             });
 
             var _loop = function _loop() {
@@ -7560,89 +7407,63 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             } // html
 
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.isSelfClosing('br'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.isSelfClosing('div'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.escape("L'arti\"cle") === "L&#39;arti&quot;cle");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.escape("<test>ok</test>") === "&lt;test&gt;ok&lt;/test&gt;");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('div', 'james') === '<div>james');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('img', null, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.isSelfClosing('br'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.isSelfClosing('div'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.escape("L'arti\"cle") === "L&#39;arti&quot;cle");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.escape("<test>ok</test>") === "&lt;test&gt;ok&lt;/test&gt;");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('div', 'james') === '<div>james');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('img', null, {
               src: "james.jpg"
             }) === "<img src='james.jpg'/>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('img', 'bleh.jpg', {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('img', 'bleh.jpg', {
               src: "james.jpg"
             }) === "<img src='bleh.jpg'/>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('div', 'james', {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('div', 'james', {
               "class": "ok",
               dataTest: "ok2"
             }) === "<div class='ok' data-test='ok2'>james");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.end('div') === '</div>');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.end('input') === '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.value(2) === '2');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.attr({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.end('div') === '</div>');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.end('input') === '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.value(2) === '2');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.attr({
               src: "james.jpg"
             }) === "src='james.jpg'");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.attr({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.attr({
               src: "james.jpg"
             }, 'input', 'what') === "src='james.jpg' value='what'");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tag('span', 'ok', {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tag('span', 'ok', {
               id: "test"
             }) === "<span id='test'>ok</span>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tag('input', 'ok', {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tag('input', 'ok', {
               value: "test",
               name: "NOé"
             }) === "<input value='ok' name='NOé'/>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', false, 'ok') === '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', '', 'ok') == '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', null, 'ok') == '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', 0, 'ok') === "<ul class='ok'>0</ul>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', '0', 'ok') === "<ul class='ok'>0</ul>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', true, 'ok') === "<ul class='ok'>&nbsp;</ul>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('well', {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', false, 'ok') === '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', '', 'ok') == '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', null, 'ok') == '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', 0, 'ok') === "<ul class='ok'>0</ul>");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', '0', 'ok') === "<ul class='ok'>0</ul>");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.tagCond('ul', true, 'ok') === "<ul class='ok'>&nbsp;</ul>");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('well', {
               myattr: "L'article",
               myattr2: 'L"article'
             }) === "<div myattr='L&#39;article' myattr2='L&quot;article'>well</div>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span({
               tag: "2",
               well: "OK"
             }) === '<span>2, OK</span>');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.ul('meh') === '<ul>meh</ul>');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.li(null, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.ul('meh') === '<ul>meh</ul>');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.li(null, {
               "class": ['test', 'test2']
             }) === "<li class='test test2'></li>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span(null, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span(null, {
               a: '',
               b: true,
               c: false,
               d: null,
               e: ['1', '2']
             }) === "<span a='' b='1' c='0' e='[&quot;1&quot;,&quot;2&quot;]'></span>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span(false, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span(false, {
               test: 3,
               data: {
                 test: 2,
@@ -7653,357 +7474,199 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 }
               }
             }) === "<span test='3' data-test='2' data-ok='WHAT' data-james='[1,2]' data-james2='{&quot;ok&quot;:&quot;Mé&quot;}'></span>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button(true) === "<button type='button'>&nbsp;</button>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button(true) === "<button type='button'>&nbsp;</button>");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button({
               test: "OKÉÉÉ",
               ble: 'MEH'
             }) === "<button type='button'>OKÉÉÉ, MEH</button>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button([1, 2, 3]) === "<button type='button'>1, 2, 3</button>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(true, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button([1, 2, 3]) === "<button type='button'>1, 2, 3</button>");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(true, {
               type: 'email'
             }) === "<input type='email' value='1'/>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(false, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(false, {
               type: 'text'
             }) === "<input type='text' value='0'/>");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
               type: 'text'
             }) === "<input type='text' value=''/>");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('ok', 'whatEscape') === "<div class='whatEscape'>ok</div>");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button("ok", "james") === "<button type='button' class='james'>ok</button>"); // integer
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('ok', 'whatEscape') === "<div class='whatEscape'>ok</div>");
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is('2'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(2));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(2.2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast(true) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('2.3') === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('2.6') === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('25px') === 25);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast(4) === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast(2.3) === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('') === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toBool(1) === true);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toBool(0) === false);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toggle(1) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toggle(2) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique()));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique() !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique());
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.str(40) === '40');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isEmpty(0));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isEmpty('0'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNotEmpty('1'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNotEmpty(1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNotEmpty(-1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(2));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(0, true));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive('2'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(-1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNegative(-1));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNegative(0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNegative(0, true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.typecheck(1) === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.typecheck(0) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.typecheck(null, false) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.range(0, 100, 1)) === 101);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.range(1, 100, 1)) === 100);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.range(2, 18, 3)) === 6); // json
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Html.button("ok", "james") === "<button type='button' class='james'>ok</button>"); // integer
-
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is('2'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(2));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(2.2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast(true) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('2.3') === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('2.6') === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('25px') === 25);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast(4) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast(2.3) === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.cast('') === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toBool(1) === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toBool(0) === false);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toggle(1) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.toggle(2) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique()));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique() !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique());
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.str(40) === '40');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isEmpty(0));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isEmpty('0'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNotEmpty('1'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNotEmpty(1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNotEmpty(-1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(2));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(0, true));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive('2'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isPositive(-1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNegative(-1));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNegative(0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.isNegative(0, true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.typecheck(1) === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.typecheck(0) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.typecheck(null, false) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.range(0, 100, 1)) === 101);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.range(1, 100, 1)) === 100);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.range(2, 18, 3)) === 6); // json
-
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.encode({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.encode({
               ok: 2
             }) === '{"ok":2}');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.decode('{"ok":2}'), {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.decode('{"ok":2}'), {
               ok: 2
             }));
-
             var jObj = {
               ok: 2
             };
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.recode(jObj) !== jObj);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.recode(jObj), jObj)); // nav
-
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isFirst(0, 10));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isFirst(2, 10));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasPrev(0, 10, true));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasPrev(0, 10));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasPrev(2, 10));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(2, 10));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(8, 10));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(9, 10));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(9, 10, true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isLast(9, 10));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isLast(10, 10));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isIndex(2, 10));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isIndex(-2, 10));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getFirst(10) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getPrev(1, 10) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getNext(9, 10, true) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getLast(10) === 9);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getIndex(0, 10) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getIndex(20, 10) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('first', 2, 10) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('last', 2, 10) === 9);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('prev', 2, 10) === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('next', 2, 10) === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('next', 9, 10) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('next', 9, 10, true) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('prev', 0, 10) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('prev', 0, 10, true) === 9);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index(2, 0, 10, true) === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index(0, 0, 10, true) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index(11, 0, 10, true) === null); // num
-
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('what'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('2 px'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('2'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('2.3'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(2.2));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNan(2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast('1.2') === 1.2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast('1,2') === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast(1) === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast(1.2) === 1.2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast(null) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast([]) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.str('2.3') === '2.3');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast("4.3px") === 4.3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.str(4) === '4');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.str(2.3) === '2.3');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEmpty('0'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEmpty(0));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEmpty(true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNotEmpty('1.1'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNotEmpty(1.1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isPositive('2.2'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isPositive('0'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isPositive('0', true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNegative('-2.2'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.typecheck('0') === '0');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.typecheck(2.1, true) === 2.1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isOdd(1));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEven(1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEven(2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isOdd(11));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isOdd(0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEven(0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2) === '2.00');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2.034) === '2.03');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2.034, 3) === '2.034');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2.034, 0) === '2');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round("4.2") === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(4.2) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(4) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil("4.2") === 5);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(4.2) === 5);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(4) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.floor("4.2") === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.floor(4.2) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.floor(4) === 4); // obj
-
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is({}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is([]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(_arguments));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(function () {}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is('test'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(undefined));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.recode(jObj) !== jObj);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Json.recode(jObj), jObj)); // nav
+
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isFirst(0, 10));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isFirst(2, 10));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasPrev(0, 10, true));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasPrev(0, 10));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasPrev(2, 10));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(2, 10));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(8, 10));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(9, 10));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.hasNext(9, 10, true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isLast(9, 10));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isLast(10, 10));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isIndex(2, 10));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.isIndex(-2, 10));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getFirst(10) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getPrev(1, 10) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getNext(9, 10, true) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getLast(10) === 9);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getIndex(0, 10) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.getIndex(20, 10) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('first', 2, 10) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('last', 2, 10) === 9);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('prev', 2, 10) === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('next', 2, 10) === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('next', 9, 10) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('next', 9, 10, true) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('prev', 0, 10) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index('prev', 0, 10, true) === 9);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index(2, 0, 10, true) === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index(0, 0, 10, true) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nav.index(11, 0, 10, true) === null); // num
+
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('what'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('2 px'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('2'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is('2.3'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(2.2));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNan(2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast('1.2') === 1.2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast('1,2') === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast(1) === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast(1.2) === 1.2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast(null) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast([]) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.str('2.3') === '2.3');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.cast("4.3px") === 4.3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.str(4) === '4');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.str(2.3) === '2.3');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEmpty('0'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEmpty(0));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEmpty(true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNotEmpty('1.1'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNotEmpty(1.1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isPositive('2.2'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isPositive('0'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isPositive('0', true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNegative('-2.2'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.typecheck('0') === '0');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.typecheck(2.1, true) === 2.1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isOdd(1));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEven(1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEven(2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isOdd(11));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isOdd(0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isEven(0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2) === '2.00');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2.034) === '2.03');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2.034, 3) === '2.034');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.decimal(2.034, 0) === '2');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round("4.2") === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(4.2) === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(4) === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil("4.2") === 5);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(4.2) === 5);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(4) === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.floor("4.2") === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.floor(4.2) === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.floor(4) === 4); // obj
+
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is({}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is([]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(_arguments));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(function () {}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is('test'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(undefined));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({
               test: 2,
               ok: 3
             }) === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({}) === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length([1, 2, 3]) === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({}) === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length([1, 2, 3]) === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({
               test: 2
             }) === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual([], []));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({}, []));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({}, {}, []));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({}, {}, {}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual([2], [2], [2]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual([2], [2], [1]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual([], []));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({}, []));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({}, {}, []));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({}, {}, {}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual([2], [2], [2]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual([2], [2], [1]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({
               test: 2
             }, {
               test: 2
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual({
               test: 2
             }, {
               test: 3
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual('test', 'test'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual('test', 'testz'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(3, 3));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(3, 4));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(null, null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(null, undefined));
-
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual('test', 'test'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual('test', 'testz'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(3, 3));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(3, 4));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(null, null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(null, undefined));
             var objGetSet = {
               test: 3
             };
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.get('test', objGetSet) === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.set('test', 4, objGetSet) !== objGetSet);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.get('test', objGetSet) === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.unset('test', objGetSet) !== objGetSet);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.get('test', objGetSet) === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.set('test', 4, objGetSet) !== objGetSet);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.get('test', objGetSet) === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.unset('test', objGetSet) !== objGetSet);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
               str: 2,
               what: 'ok',
               loop: [1, 2],
@@ -8011,8 +7674,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 what: 2
               }
             }) === 'str=2 what=ok loop=[1,2] meh={"what":2}');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
               str: 2,
               what: 'ok',
               loop: [1, 2],
@@ -8020,8 +7682,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 what: 2
               }
             }, '!') === 'str!2 what!ok loop![1,2] meh!{"what":2}');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
               str: 2,
               what: 'ok',
               loop: [1, 2],
@@ -8029,8 +7690,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 what: 2
               }
             }, '=', ' ', true) === "str='2' what='ok' loop='[1,2]' meh='{&quot;what&quot;:2}'");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str({
               str: 2,
               what: 'ok',
               loop: [1, 2],
@@ -8038,74 +7698,50 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 what: 2
               }
             }, '=', true, true) === "str='2' what='ok' loop='[1,2]' meh='{&quot;what&quot;:2}'");
-
             var objCopy = {
               test: 3
             };
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.copy(objCopy) !== objCopy);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj["new"](), {}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.replace(objCopy, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.copy(objCopy) !== objCopy);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj["new"](), {}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.replace(objCopy, {
               test2: 4
             })) === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty({}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty([]));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(function () {}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty({}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty([]));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(function () {}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty({
               ok: 2
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty([2]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(false));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(undefined));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(function () {
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty([2]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(false));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(undefined));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEmpty(function () {
               return 2;
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty({
               ok: 2
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty([2]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty(2));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty(null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty([2]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty(2));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty(null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length({
               test: 2,
               ok: 3
             }) === 2);
-
             var objKey;
             var objVal;
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each({
               test: 'ok',
               what: 3
             }, function (value, key) {
-              _assert(value !== this);
-
+              assert(value !== this);
               objKey = key;
               objVal = value;
             }));
-
-            _assert(objKey === 'what');
-
-            _assert(objVal === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each({
+            assert(objKey === 'what');
+            assert(objVal === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each({
               test: 'ok',
               what: 3
             }, function (value, key) {
@@ -8113,37 +7749,24 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               objVal = value;
               return false;
             }) === false);
-
-            _assert(objKey === 'test');
-
-            _assert(objVal === 'ok');
-
+            assert(objKey === 'test');
+            assert(objVal === 'ok');
             var variVal;
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.each({
               ok: 2
             }, function (value) {
               variVal = value;
             }));
-
-            _assert(variVal === 2);
-
+            assert(variVal === 2);
             var length = 0; // pojo
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is({}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is([]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(_arguments));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(function () {}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is('test'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(undefined));
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is({}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(_arguments));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(function () {}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is('test'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(undefined));
             var replace = {
               test: 2,
               ok: {
@@ -8151,8 +7774,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               }
             };
             var pojoGetSet = {};
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replaceRecursive({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replaceRecursive({
               test: 2,
               ok: {
                 what: true
@@ -8168,8 +7790,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 james: false
               }
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replaceRecursive({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replaceRecursive({
               test: 2
             }, {
               test: {
@@ -8190,26 +7811,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 ok2: [1, 2, 3]
               }
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.climb(['test', 'what'], {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.climb(['test', 'what'], {
               test: {
                 what: 'LOL'
               }
             }) === 'LOL');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.climb(['test', 'whatz'], {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.climb(['test', 'whatz'], {
               test: {
                 what: 'LOL'
               }
             }) === undefined);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.climb('test/what', {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.climb('test/what', {
               test: {
                 what: 'LOL'
               }
             }) === 'LOL');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replace(replace, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replace(replace, {
               ok: {
                 james: false
               }
@@ -8219,25 +7836,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 james: false
               }
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(replace, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(replace, {
               test: 2,
               ok: {
                 what: true
               }
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.set('meh', 2, pojoGetSet) !== pojoGetSet);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.set('meh', 2, pojoGetSet), {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.set('meh', 2, pojoGetSet) !== pojoGetSet);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.set('meh', 2, pojoGetSet), {
               meh: 2
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef('meh', 2, pojoGetSet) === pojoGetSet);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get('meh', pojoGetSet) === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.gets(['meh', 'ok', 'what'], {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef('meh', 2, pojoGetSet) === pojoGetSet);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get('meh', pojoGetSet) === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.gets(['meh', 'ok', 'what'], {
               ok: 3,
               meh: 4,
               whatz: 'LOL'
@@ -8246,67 +7857,43 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               ok: 3,
               what: undefined
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsets(['meh'], pojoGetSet)));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unset('meh', pojoGetSet) !== pojoGetSet);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unset('meh', pojoGetSet), {}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef('meh', pojoGetSet) === pojoGetSet);
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsets(['meh'], pojoGetSet)));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unset('meh', pojoGetSet) !== pojoGetSet);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unset('meh', pojoGetSet), {}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef('meh', pojoGetSet) === pojoGetSet);
             pojoGetSet.meh = 2;
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetsRef(['meh', 'test'], pojoGetSet) === pojoGetSet);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty(pojoGetSet));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get('meh', pojoGetSet) === undefined);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.copy(replace), replace));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.copy(replace) !== replace);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty({}));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty([]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isNotEmpty({}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isNotEmpty({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetsRef(['meh', 'test'], pojoGetSet) === pojoGetSet);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty(pojoGetSet));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get('meh', pojoGetSet) === undefined);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.copy(replace), replace));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.copy(replace) !== replace);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty({}));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEmpty([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isNotEmpty({}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isNotEmpty({
               test: 2
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual([], []));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual({
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual([], []));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual({
               ok: 2
             }, {
               ok: 2
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual({
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual({
               ok: 2
             }, {
               ok: 3
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isKey(2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.keyExists('test', {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isKey(2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.keyExists('test', {
               test: 2
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.keyExists('test', {
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.keyExists('test', {
               testz: 2
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.valueFirst(replace) === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.valueLast(replace) === replace.ok);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get('what', pojoGetSet) === undefined);
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.valueFirst(replace) === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.valueLast(replace) === replace.ok);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get('what', pojoGetSet) === undefined);
             var pojoMapFilter = {
               test: 3,
               ok: 'what',
@@ -8316,33 +7903,26 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               "final": null,
               undef: undefined
             };
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.filter(pojoMapFilter, function (value) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.filter(pojoMapFilter, function (value) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(value) ? false : true;
             })) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(pojoMapFilter) === 5);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.map(pojoMapFilter, function (value) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(pojoMapFilter) === 5);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.map(pojoMapFilter, function (value) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(value) ? false : true;
             })['final'] === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.find(pojoMapFilter, function (value, key) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.find(pojoMapFilter, function (value, key) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(value);
             }), {
               lol: true
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.toArray(pojoMapFilter)) === 5);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.findKey({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.toArray(pojoMapFilter)) === 5);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.findKey({
               james: 3,
               test: '4'
             }, function (value, index) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value);
             }) === 'test');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.accumulate({}, {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.accumulate({}, {
               james: 3,
               test: '4'
             }, function (value, index) {
@@ -8351,414 +7931,233 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               james: 'james',
               test: 'test'
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.some({
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.some({
               james: 3,
               james2: 'ok'
             }, function (value) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(value);
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.some({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.some({
               james: 3,
               james2: 'ok'
             }, function (value) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value);
             }));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.every({
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.every({
               james: 3,
               james2: 'ok'
             }, function (value) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value);
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.every({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.every({
               james: 3,
               james2: 4
             }, function (value, key) {
               return _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(key);
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.reduce("", {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.reduce("", {
               james: 'test',
               ok: 'OK'
             }, function (r, value, key) {
               return r += value + key;
             }) === 'testjamesOKok'); // scalar
 
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is('test'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(false));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotBool(1));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotBool(false));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isEmpty(1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isEmpty(false));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotEmpty(1));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotEmpty(false));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck('') === '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck(true, true) === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck(false) === false);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck(null, false) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('2.4', 'int') === 2);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('1', 'bool') === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('2.4', 'num') === 2.4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('5d', 'int') === 5);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('5d', 'bool') === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool(1) === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool('true') === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool(0) === false);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool(false) === false); // str
-
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is('WHAT'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(''));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is([]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.are(['test', 'ok']));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typechecks(['test', 'ok', null], false)) === 3);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('a', 'as'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart(3, '3s'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('s', 'as'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('a', 'as'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual('test', 'test'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual('2', 2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual(true, 'true'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual(undefined, ''));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual(undefined, null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('a', 'as') === true);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('é', 'aÉè') === false);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('E', 'e'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('e', 'e'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('éÈ', 'Éè'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('2', 2));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(2) === '2');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(false) === 'false');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(true) === 'true');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(null) === '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(undefined) === '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos('a', 'as') === 0);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos('é', 'aéè') === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos('é', 'aÉè') === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lower('AE') === 'ae');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lowerFirst('as') === 'as');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lowerFirst('As') === 'as');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lowerFirst('És') === 'és');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.upper('ae') === 'AE');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.upperFirst('as') === 'As');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.upperFirst('As') === 'As');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.trim(' As ') === 'As');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.quote('what', true) === '"what"');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.quote('what') === "'what'");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.quote("L'article\"de", false, true) === "'L&#39;article&quot;de'");
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.sub(2, true, 'what') === 'at');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.sub(2, true, 'éèà') === 'à');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.excerpt(3, 'okkkkk', '...') === 'okk...');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.excerpt(12, 'okkkkk', '...') === 'okkkkk');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explode('-', 'la-vie-ok'), ['la', 'vie', 'ok']));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explodeIndex(2, '-', 'la-vie-ok') === 'ok');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explodeIndex('2', '-', 'la-vie-ok') === undefined);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explodeIndex(3, '-', 'la-vie-ok') === undefined);
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty('WHAT'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty(''));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty('as'));
-
-            _assert(isEmpty(''));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(''));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty('as'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck('ok') === 'ok');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck('') === '');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(null, false) === null);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(undefined, false) === undefined);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck('', false) === '');
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is('test'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(false));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotBool(1));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotBool(false));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isEmpty(1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isEmpty(false));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotEmpty(1));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.isNotEmpty(false));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck('') === '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck(true, true) === true);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck(false) === false);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.typecheck(null, false) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('2.4', 'int') === 2);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('1', 'bool') === true);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('2.4', 'num') === 2.4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('5d', 'int') === 5);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast('5d', 'bool') === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool(1) === true);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool('true') === true);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool(0) === false);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.toBool(false) === false); // str
+
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is('WHAT'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(''));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.are(['test', 'ok']));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typechecks(['test', 'ok', null], false)) === 3);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('a', 'as'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart(3, '3s'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('s', 'as'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('a', 'as'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual('test', 'test'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual('2', 2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual(true, 'true'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual(undefined, ''));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEqual(undefined, null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('a', 'as') === true);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('é', 'aÉè') === false);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('E', 'e'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('e', 'e'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('éÈ', 'Éè'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare('2', 2));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(2) === '2');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(false) === 'false');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(true) === 'true');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(null) === '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(undefined) === '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos('a', 'as') === 0);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos('é', 'aéè') === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos('é', 'aÉè') === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lower('AE') === 'ae');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lowerFirst('as') === 'as');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lowerFirst('As') === 'as');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.lowerFirst('És') === 'és');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.upper('ae') === 'AE');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.upperFirst('as') === 'As');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.upperFirst('As') === 'As');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.trim(' As ') === 'As');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.quote('what', true) === '"what"');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.quote('what') === "'what'");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.quote("L'article\"de", false, true) === "'L&#39;article&quot;de'");
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.sub(2, true, 'what') === 'at');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.sub(2, true, 'éèà') === 'à');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.excerpt(3, 'okkkkk', '...') === 'okk...');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.excerpt(12, 'okkkkk', '...') === 'okkkkk');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explode('-', 'la-vie-ok'), ['la', 'vie', 'ok']));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explodeIndex(2, '-', 'la-vie-ok') === 'ok');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explodeIndex('2', '-', 'la-vie-ok') === undefined);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.explodeIndex(3, '-', 'la-vie-ok') === undefined);
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty('WHAT'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty(''));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty('as'));
+            assert(isEmpty(''));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(''));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty('as'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck('ok') === 'ok');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck('') === '');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(null, false) === null);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(undefined, false) === undefined);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck('', false) === '');
             var val = null;
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.each('abcde', function (value) {
-              _assert(value !== this);
-
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.each('abcde', function (value) {
+              assert(value !== this);
               val = value;
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.keys('whaé'), ['0', '1', '2', '3']));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.values('whaé'), ['w', 'h', 'a', 'é']));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length('whaé') === 4);
-
-            _assert(val === 'e');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.each('abcde', function (value) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.keys('whaé'), ['0', '1', '2', '3']));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.values('whaé'), ['w', 'h', 'a', 'é']));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length('whaé') === 4);
+            assert(val === 'e');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.each('abcde', function (value) {
               val = value;
               return value === 'c' ? false : true;
             }) === false);
-
-            _assert(val === 'c');
-
+            assert(val === 'c');
             var strVal = 'wéè';
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.get(1, strVal) === 'é');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.valueFirst('éèè') === 'é');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.find('john', function (ele) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.get(1, strVal) === 'é');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.valueFirst('éèè') === 'é');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.find('john', function (ele) {
               return ele != 'j';
             }) === 'o');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toArray('what')) === 4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.removeAllWhitespace(' ads das sda ') === 'adsdassda');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.fromCamelCase('-', 'data') === 'data');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.fromCamelCase('-', 'marginTopRight') === 'margin-top-right');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.fromCamelCase('|', 'marginTopRight') === 'margin|top|right');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('-', 'margin-top-right') === 'marginTopRight');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase(' ', ' margin top right ') === 'marginTopRight');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('_', ' margin top right ') === 'margintopright');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('-', '-margin--top--right-') === 'marginTopRight');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.every("aaaa", function (value, key) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toArray('what')) === 4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.removeAllWhitespace(' ads das sda ') === 'adsdassda');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.fromCamelCase('-', 'data') === 'data');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.fromCamelCase('-', 'marginTopRight') === 'margin-top-right');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.fromCamelCase('|', 'marginTopRight') === 'margin|top|right');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('-', 'margin-top-right') === 'marginTopRight');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase(' ', ' margin top right ') === 'marginTopRight');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('_', ' margin top right ') === 'margintopright');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('-', '-margin--top--right-') === 'marginTopRight');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.every("aaaa", function (value, key) {
               return value === 'a' && _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(key);
             }));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.reduce("", "aaaa", function (r, value, key) {
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.reduce("", "aaaa", function (r, value, key) {
               return r += value + key;
             }) === 'a0a1a2a3');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toNum("30MB") === 30);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toNum("1,4") === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toNum("1.4") === 1.4);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toInt("1,4") === 1);
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.slug("OK LA VIE EST BONNE") === 'ok-la-vie-est-bonne');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.slug("OK-LAé À@#?& VIE EST BONNE") === 'ok-la-vie-est-bonne');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.keepNumber("(515) 509-1502 #poste 12345") === '515509150212345');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.replace({
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toNum("30MB") === 30);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toNum("1,4") === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toNum("1.4") === 1.4);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toInt("1,4") === 1);
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.slug("OK LA VIE EST BONNE") === 'ok-la-vie-est-bonne');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.slug("OK-LAé À@#?& VIE EST BONNE") === 'ok-la-vie-est-bonne');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.keepNumber("(515) 509-1502 #poste 12345") === '515509150212345');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.replace({
               '[test]': 'OK',
               what: 'well'
             }, "tout va [test] what WHAT!") === "tout va OK well WHAT!"); // validate
 
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isNumericDash("213-123"));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isNumericDash("213123"));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isNumericDash("213_123"));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail("test@test.com"));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail("testtest.com"));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail('bla@bla.zzzzzzz'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isRegexStr("bla"));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isRegexStr(new RegExp("/asd/")));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.regex("212", "^[0-9\-]+$"));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('test', true, "^[0-9\-]+$"));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('abc-de', true, "^[0-9\-]+$"));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('', 1, "^[0-9\-]+$"));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('', false, "^[0-9\-]+$"));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('test', true));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('', true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('test', 1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('test', 0));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('', 1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('', 0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.pattern('', "^[0-9\-]+$"));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.pattern('01-2', "^[0-9\-]+$"));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.pattern('abc', "^[0-9\-]+$")); // vari
 
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isNumericDash("213-123"));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isNumericDash("213123"));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isNumericDash("213_123"));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail("test@test.com"));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail("testtest.com"));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail('bla@bla.zzzzzzz'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isRegexStr("bla"));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isRegexStr(new RegExp("/asd/")));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.regex("212", "^[0-9\-]+$"));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('test', true, "^[0-9\-]+$"));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('abc-de', true, "^[0-9\-]+$"));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('', 1, "^[0-9\-]+$"));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.trigger('', false, "^[0-9\-]+$"));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('test', true));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('', true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('test', 1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('test', 0));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('', 1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.required('', 0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.pattern('', "^[0-9\-]+$"));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.pattern('01-2', "^[0-9\-]+$"));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.pattern('abc', "^[0-9\-]+$")); // vari
-
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.is(null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.is(undefined));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty({}));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(false));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(true));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(''));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty([]));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty('0'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(0));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(1));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(undefined));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNotEmpty(2));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNotEmpty(null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isReallyEmpty(0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNotReallyEmpty(0));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNull(null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNull(undefined));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isUndefined(null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isUndefined(undefined));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual('test', 'test'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual('test', 'testz'));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(3, 3));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(3, 4));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(null, null));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(null, undefined));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqualStrict(null, null));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqualStrict('test', 'test'));
-
-            _assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqualStrict([], []));
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type('test') === 'string');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type({}) === 'object');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type([]) === 'object');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(function () {}) === 'object');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(2) === 'number');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(2.3) === 'number');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(null) === 'null');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(true) === 'boolean');
-
-            _assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(undefined) === 'undefined');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.is(null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.is(undefined));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty({}));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(false));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(true));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(''));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty([]));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty('0'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(0));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(1));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(undefined));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNotEmpty(2));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNotEmpty(null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isReallyEmpty(0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNotReallyEmpty(0));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNull(null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isNull(undefined));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isUndefined(null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isUndefined(undefined));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual('test', 'test'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual('test', 'testz'));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(3, 3));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(3, 4));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(null, null));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqual(null, undefined));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqualStrict(null, null));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqualStrict('test', 'test'));
+            assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEqualStrict([], []));
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type('test') === 'string');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type({}) === 'object');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type([]) === 'object');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(function () {}) === 'object');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(2) === 'number');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(2.3) === 'number');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(null) === 'null');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(true) === 'boolean');
+            assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.type(undefined) === 'undefined');
           })();
         } catch (e) {
           r = false;
-
-          _logError(e);
+          logError(e);
         }
 
         return r;

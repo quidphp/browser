@@ -6,6 +6,12 @@
  
 // nod
 // object for element, text and document nodes
+
+// import
+import { Arr, Ele } from '../index.js';
+
+// nodTarget
+// méthodes pour un grand ensemble de nodes
 const NodTarget = {
     
     // is

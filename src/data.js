@@ -6,6 +6,11 @@
 
 // dataTarget
 // script for storing datas within targets
+
+// import
+import { Arr, Pojo, Str } from '../index.js';
+
+// export 
 export default {    
     
     // hasData

@@ -6,6 +6,11 @@
  
 // handler
 // script for handler management (functions stored in targets)
+
+// import
+import { Arr } from '../index.js';
+
+// export
 export default {    
 
     // isTriggerHandlerEqual

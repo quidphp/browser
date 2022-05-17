@@ -4,6 +4,9 @@
  * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
 
+// browser
+// script to test the browser files
+
 // import
 import { 
     Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, TestSuite, Tool,
@@ -13,7 +16,6 @@ import { Test } from 'quidphp-node-temp/test/node.js';
 const { d, assert, logError } = Shortcut;
 
 // browser
-// script to test the browser files
 Test.Browser = function()
 {   
     let r = true;

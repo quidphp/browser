@@ -6,6 +6,11 @@
  
 // selector
 // script with methods related to selecting and matching nodes
+
+// import
+import { Doc, Nod } from '../index.js';
+
+// export
 export default {
     
     // scopedQuery

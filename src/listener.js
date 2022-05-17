@@ -6,6 +6,11 @@
  
 // listener
 // script containing event listeners functions for target elements
+
+// import
+import { Arr, Evt, Str } from '../index.js';
+
+// export
 export default new function()
 {   
     // addListener

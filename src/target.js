@@ -7,8 +7,10 @@
 // target
 // script with basic functions related to event targets elements
 
-// targetRoot
-// object for elements, documents and window
+// import
+import { Arr, Nod, Win } from '../index.js';
+
+// export
 export default {
     
     // is
