@@ -269,6 +269,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
  * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
+// index
+// entry file for the module
 // import quidphp-node
  // simple import
 
@@ -342,6 +344,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -349,16 +352,19 @@ __webpack_require__.r(__webpack_exports__);
  */
 // browser
 // script with a some functions related to browsers detection
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // isOldIe
   // retourne vrai si le navigateur est une vieille version de IE (IE 10 ou moins)
   isOldIe: function isOldIe() {
-    return Str["in"]('MSIE ', window.navigator.userAgent);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('MSIE ', window.navigator.userAgent);
   },
   // isIe11
   // retourne vrai si le navigateur est ie11
   isIe11: function isIe11() {
-    return Str["in"]('Trident/', window.navigator.userAgent);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('Trident/', window.navigator.userAgent);
   },
   // isIe
   // retourne vrai si le navigateur est internet explorer
@@ -391,6 +397,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -398,6 +405,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 // dataTarget
 // script for storing datas within targets
+// import
+ // export 
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // hasData
   // retourne vrai si la node a les données
@@ -416,7 +426,7 @@ __webpack_require__.r(__webpack_exports__);
     var r = undefined;
     this.typecheck(node);
     var dataKey = this.getDataKey();
-    var isPojo = Pojo.is(node[dataKey]);
+    var isPojo = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(node[dataKey]);
 
     if (!isPojo && create === true) {
       isPojo = true;
@@ -430,9 +440,9 @@ __webpack_require__.r(__webpack_exports__);
   // permet de retourner une data d'une node
   // envoie une exception si plus d'une node
   getData: function getData(node, key) {
-    Str.typecheck(key);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key);
     var data = this.allData(node);
-    return data != null ? Pojo.get(key, data) : undefined;
+    return data != null ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(key, data) : undefined;
   },
   // flashData
   // retourne la data et efface l'entrée de la node
@@ -447,11 +457,11 @@ __webpack_require__.r(__webpack_exports__);
   // si undefined efface la data
   setData: function setData(nodes, key, value) {
     nodes = this.toArray(nodes);
-    Str.typecheck(key, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key, true);
     var $inst = this;
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       var data = $inst.allData(ele, true);
-      if (value === undefined) Pojo.unsetRef(key, data);else Pojo.setRef(key, value, data);
+      if (value === undefined) _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef(key, data);else _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef(key, value, data);
     });
   },
   // removeData
@@ -488,6 +498,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -495,6 +506,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 // doc
 // object for document and document fragment targets
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // is
   // retourne vrai si la valeur est un document, un fragment de document ou un template
@@ -521,12 +535,12 @@ __webpack_require__.r(__webpack_exports__);
     };
 
     if (this.isCurrent(value)) {
-      r.width = Num.round(document.documentElement.scrollWidth);
-      r.height = Num.round(document.documentElement.scrollHeight);
+      r.width = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollWidth);
+      r.height = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollHeight);
     } else {
       var children = this.children(value);
-      Arr.each(children, function (ele) {
-        var dimension = Ele.getDimension(ele);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(children, function (ele) {
+        var dimension = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(ele);
         r.width += dimension.width;
         r.height += dimension.height;
       });
@@ -549,6 +563,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -556,6 +571,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 // dom
 // script with functions related to html and dom
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // selectorInput
   // retourne un selector commun à utiliser pour les inputs
@@ -568,7 +586,7 @@ __webpack_require__.r(__webpack_exports__);
   // prend un maximum d'input et retourne une string html
   htmlStr: function htmlStr(value) {
     var r = '';
-    if (Str.is(value)) r = value;else if (Scalar.is(value)) r = Str.cast(value);else if (Doc.is(value)) r = Doc.getHtml(value);else if (Ele.is(value)) r = Ele.getOuterHtml(value);else if (Ele.are(value)) r = Ele.getOuterHtml(value);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value)) r = value;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(value);
     return r;
   },
   // htmlNodes
@@ -576,20 +594,20 @@ __webpack_require__.r(__webpack_exports__);
   // possible de cloner
   htmlNodes: function htmlNodes(value, clone) {
     var r = [];
-    if (Str.is(value)) r = this.parse(value);else if (Doc.is(value)) {
-      value = Doc.realNode(value);
-      r.push(clone === true ? Doc.clone(value) : value);
-    } else if (Ele.are(value)) r = clone === true ? Ele.clones(value) : value;else if (Ele.is(value)) r.push(clone === true ? Ele.clone(value) : value);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value)) r = this.parse(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(value)) {
+      value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(value);
+      r.push(clone === true ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.clone(value) : value);
+    } else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(value)) r = clone === true ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.clones(value) : value;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value)) r.push(clone === true ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.clone(value) : value);
     return r;
   },
   // safeHtml
   // fait quelques modifications à une string html pour éviter des injections
   safeHtml: function safeHtml(html) {
-    Str.typecheck(html);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(html);
     html = html.replace(/<\!DOCTYPE[^>]*>/i, '');
     html = html.replace(/<(html|head|body)([\s\>])/gi, '<div data-tag="$1"$2');
     html = html.replace(/<\/(html|head|body)\>/gi, '</div>');
-    html = Str.trim(html);
+    html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.trim(html);
     return html;
   },
   // parse
@@ -602,28 +620,28 @@ __webpack_require__.r(__webpack_exports__);
     var template = document.createElement('template');
     template.innerHTML = html;
     var fragment = template.content;
-    r = Doc.children(fragment, null, true);
+    r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(fragment, null, true);
     return r;
   },
   // parseOne
   // comme parse mais retourne seulement la première node du tableau
   parseOne: function parseOne(html) {
-    return Arr.valueFirst(this.parse(html));
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(this.parse(html));
   },
   // querySelector
   // comme parse one, mais cherche pour en enfant via query selector
   // retourne le html de cette node
   querySelector: function querySelector(value, html) {
     var r = undefined;
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     var nodes = this.parse(html);
 
-    if (Arr.isNotEmpty(nodes)) {
-      var finds = Ele.mergedQsa(nodes, value);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(nodes)) {
+      var finds = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.mergedQsa(nodes, value);
 
-      if (Arr.isNotEmpty(finds)) {
-        var find = Arr.valueFirst(finds);
-        r = Ele.getHtml(find);
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(finds)) {
+        var find = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(finds);
+        r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(find);
       }
     }
 
@@ -646,39 +664,39 @@ __webpack_require__.r(__webpack_exports__);
       body: null,
       bodyAttr: null
     };
-    Arr.accumulate(r.docEle, r.doc, function (ele) {
-      return Ele.is(ele) ? ele : null;
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate(r.docEle, r.doc, function (ele) {
+      return _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(ele) ? ele : null;
     });
-    r.html = Ele.find(r.docEle, "[data-tag='html']") || Arr.valueFirst(r.docEle);
+    r.html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.find(r.docEle, "[data-tag='html']") || _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(r.docEle);
 
     if (r.html != null) {
-      Ele.removeAttr(r.html, 'data-tag');
-      r.htmlAttr = Ele.attr(r.html);
-      r.head = Ele.scopedQuery(r.html, "[data-tag='head']");
-      r.body = Ele.scopedQuery(r.html, "[data-tag='body']");
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(r.html, 'data-tag');
+      r.htmlAttr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(r.html);
+      r.head = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(r.html, "[data-tag='head']");
+      r.body = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(r.html, "[data-tag='body']");
 
       if (r.head != null) {
-        var title = Ele.scopedQuery(r.head, "title");
+        var title = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(r.head, "title");
         var titleReplace = {
           '<': '&lt;',
           '>': '&gt;',
           ' & ': ' &amp; '
         };
-        Ele.removeAttr(r.head, 'data-tag');
-        r.headAttr = Ele.attr(r.head);
-        r.title = title != null ? Ele.getText(title) : '?';
-        r.titleHtml = Str.replace(titleReplace, r.title);
-        r.meta = Ele.scopedQueryAll(r.head, "meta");
+        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(r.head, 'data-tag');
+        r.headAttr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(r.head);
+        r.title = title != null ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getText(title) : '?';
+        r.titleHtml = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.replace(titleReplace, r.title);
+        r.meta = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(r.head, "meta");
       }
     }
 
     if (r.body != null) {
-      Ele.removeAttr(r.body, 'data-tag');
-      r.bodyAttr = Ele.attr(r.body);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(r.body, 'data-tag');
+      r.bodyAttr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(r.body);
     } else {
-      var _html = Ele.getOuterHtml(r.doc);
+      var _html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(r.doc);
 
-      var newBody = Html.div(_html, {
+      var newBody = _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div(_html, {
         dataTag: 'body'
       });
       r.body = this.parseOne(newBody);
@@ -701,6 +719,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -708,6 +727,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 // eleTarget
 // script with many functions related to element nodes
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // is
   // retourne vrai si la valeur est une node
@@ -744,7 +766,7 @@ __webpack_require__.r(__webpack_exports__);
       var tags = ['input', 'textarea', 'select', 'a', 'button'];
       var dimension = this.getDimension(node);
 
-      if (this.match(node, '[tabindex]') || Arr["in"](tag, tags)) {
+      if (this.match(node, '[tabindex]') || _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](tag, tags)) {
         if (dimension.width > 0 && dimension.height > 0) r = true;
       }
     }
@@ -762,7 +784,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (overflow !== 'visible') {
         var scroll = this.getScroll(node);
-        if (Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
       }
     }
 
@@ -771,19 +793,19 @@ __webpack_require__.r(__webpack_exports__);
   // hasAttr
   // retourne vrai si la node a l'attribut
   hasAttr: function hasAttr(node, value) {
-    return this.is(node) && Str.is(value) ? node.hasAttribute(value) : false;
+    return this.is(node) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value) ? node.hasAttribute(value) : false;
   },
   // hasClass
   // retourne vrai si la node a la classe
   hasClass: function hasClass(node, value) {
-    return this.is(node) && Str.is(value) ? node.classList.contains(value) : false;
+    return this.is(node) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value) ? node.classList.contains(value) : false;
   },
   // tag
   // retourne le nom de la tag en lowerCase
   tag: function tag(node) {
     var r = null;
     var tag = this.getProp(node, 'tagName');
-    if (Str.is(tag)) r = tag.toLowerCase();
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(tag)) r = tag.toLowerCase();
     return r;
   },
   // css
@@ -795,7 +817,7 @@ __webpack_require__.r(__webpack_exports__);
 
     for (var i = 0; i < style.length; i++) {
       var value = style.item(i);
-      if (start == null || Str.isStart(start, value)) r[value] = style.getPropertyValue(value);
+      if (start == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart(start, value)) r[value] = style.getPropertyValue(value);
     }
 
     return r;
@@ -805,17 +827,17 @@ __webpack_require__.r(__webpack_exports__);
   getCss: function getCss(node, key, cast, pseudo) {
     var r = undefined;
     this.typecheck(node);
-    Str.typecheck(key); // fix pour ie11 qui retourne mauvais computed style pour width/height (box-model)
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key); // fix pour ie11 qui retourne mauvais computed style pour width/height (box-model)
 
-    if (Browser.isIe11() && Arr["in"](key, ['width', 'height'])) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isIe11() && _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](key, ['width', 'height'])) {
       var dimension = this.getDimension(node);
-      r = Num.ceil(dimension[key]) + "px";
+      r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(dimension[key]) + "px";
     } else {
       var style = window.getComputedStyle(node, pseudo);
       r = style.getPropertyValue(key);
     }
 
-    r = Scalar.cast(r, cast);
+    r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast(r, cast);
     return r;
   },
   // attr
@@ -824,9 +846,9 @@ __webpack_require__.r(__webpack_exports__);
     var r = {};
     this.typecheck(node);
     var attr = node.attributes;
-    ArrLike.each(attr, function (value) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.each(attr, function (value) {
       var name = value.name;
-      if (start == null || Str.isStart(start, name)) r[name] = value.value;
+      if (start == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart(start, name)) r[name] = value.value;
     });
     return r;
   },
@@ -835,7 +857,7 @@ __webpack_require__.r(__webpack_exports__);
   attrStr: function attrStr(node, start) {
     var r = null;
     var attr = this.attr(node, start);
-    if (attr != null) r = Obj.str(attr, '=', ' ', true);
+    if (attr != null) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str(attr, '=', ' ', true);
     return r;
   },
   // getAttr
@@ -847,7 +869,7 @@ __webpack_require__.r(__webpack_exports__);
 
     if (this.hasAttr(node, key)) {
       r = node.getAttribute(key);
-      r = Scalar.cast(r, cast);
+      r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast(r, cast);
     }
 
     return r;
@@ -864,9 +886,9 @@ __webpack_require__.r(__webpack_exports__);
     var r = undefined;
     this.typecheck(node);
     r = node.value;
-    r = Str.cast(r);
-    if (trim === true) r = Str.trim(r);
-    if (cast != null) r = Scalar.cast(r, cast);
+    r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(r);
+    if (trim === true) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.trim(r);
+    if (cast != null) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast(r, cast);
     return r;
   },
   // getDimension
@@ -875,7 +897,7 @@ __webpack_require__.r(__webpack_exports__);
   getDimension: function getDimension(node, display) {
     this.typecheck(node);
     display = display === true ? 'block' : display;
-    var displayToggle = Str.isNotEmpty(display);
+    var displayToggle = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(display);
     var currentDisplay, currentWidth, currentHeight;
 
     if (displayToggle) {
@@ -896,8 +918,8 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     return {
-      width: Num.ceil(rect.width),
-      height: Num.ceil(rect.height)
+      width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.width),
+      height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.height)
     };
   },
   // getBoundingRect
@@ -914,15 +936,15 @@ __webpack_require__.r(__webpack_exports__);
     this.typecheck(node);
     var tag = this.tag(node); // scrollTop n'est pas sur la tag HTML dans IE
 
-    if (Arr["in"](tag, ['html', 'body'])) r = Win.getScroll();else {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](tag, ['html', 'body'])) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll();else {
       var rect = this.getBoundingRect(node);
       r = {
-        top: Num.ceil(node.scrollTop),
-        left: Num.ceil(node.scrollLeft),
-        width: Num.ceil(node.scrollWidth),
-        height: Num.ceil(node.scrollHeight),
-        innerWidth: Num.ceil(rect.width),
-        innerHeight: Num.ceil(rect.height),
+        top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollTop),
+        left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollLeft),
+        width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollWidth),
+        height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollHeight),
+        innerWidth: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.width),
+        innerHeight: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.height),
         scrollableX: false,
         scrollableY: false
       };
@@ -948,18 +970,18 @@ __webpack_require__.r(__webpack_exports__);
   getOffsetParent: function getOffsetParent(node) {
     this.typecheck(node);
     return {
-      top: Num.ceil(node.offsetTop),
-      left: Num.ceil(node.offsetLeft)
+      top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.offsetTop),
+      left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.offsetLeft)
     };
   },
   // getOffsetDoc
   // retourne un objet avec les données pour le offset de la node (par rapport au document)
   getOffsetDoc: function getOffsetDoc(node) {
     var rect = this.getBoundingRect(node);
-    var scroll = Win.getScroll();
+    var scroll = _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll();
     return {
-      top: Num.ceil(rect.top + scroll.top),
-      left: Num.ceil(rect.left + scroll.left)
+      top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.top + scroll.top),
+      left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.left + scroll.left)
     };
   },
   // getOffsetWin
@@ -967,8 +989,8 @@ __webpack_require__.r(__webpack_exports__);
   getOffsetWin: function getOffsetWin(node) {
     var rect = this.getBoundingRect(node);
     return {
-      top: Num.ceil(rect.top),
-      left: Num.ceil(rect.left)
+      top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.top),
+      left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.left)
     };
   },
   // setAttr
@@ -976,10 +998,10 @@ __webpack_require__.r(__webpack_exports__);
   // si undefined, efface l'attribut
   setAttr: function setAttr(nodes, key, value) {
     nodes = this.toArray(nodes);
-    Str.typecheck(key, true);
-    if (Obj.is(value)) value = Json.encode(value);
-    if (Bool.is(value)) value = Bool.toInt(value);
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key, true);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Json.encode(value);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       if (value === undefined) ele.removeAttribute(key);else ele.setAttribute(key, value);
     });
   },
@@ -993,10 +1015,10 @@ __webpack_require__.r(__webpack_exports__);
   // l'atttribut est toujours présent, si true ou inexistant valeur est 1, sinon valeur est 0
   toggleAttr: function toggleAttr(nodes, key, bool) {
     nodes = this.toArray(nodes);
-    Str.typecheck(key, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key, true);
     var $inst = this;
-    var defaultValue = Bool.is(bool) ? Bool.toInt(bool) : null;
-    Arr.each(nodes, function (ele) {
+    var defaultValue = _index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(bool) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(bool) : null;
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       var value = defaultValue;
 
       if (value == null) {
@@ -1012,10 +1034,10 @@ __webpack_require__.r(__webpack_exports__);
   // possible de retirer les attributs existants
   setsAttr: function setsAttr(nodes, value) {
     nodes = this.toArray(nodes);
-    Pojo.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(value);
     var $inst = this;
-    Arr.each(nodes, function (ele) {
-      Pojo.each(value, function (v, k) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(value, function (v, k) {
         $inst.setAttr(ele, k, v);
       });
     });
@@ -1025,8 +1047,8 @@ __webpack_require__.r(__webpack_exports__);
   emptyAttr: function emptyAttr(nodes) {
     nodes = this.toArray(nodes);
     var $inst = this;
-    Arr.each(nodes, function (ele) {
-      ArrLike.each(ele.attributes, function (value) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.each(ele.attributes, function (value) {
         if (value != null) $inst.removeAttr(ele, value.name);
       });
     });
@@ -1035,11 +1057,11 @@ __webpack_require__.r(__webpack_exports__);
   // ajoute un id aux éléments contenus dans l'objet qui n'en ont pas
   addId: function addId(nodes, value) {
     nodes = this.toArray(nodes);
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     var $inst = this;
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       if (!$inst.match(ele, "[id]")) {
-        var newId = value + Integer.unique();
+        var newId = value + _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique();
         $inst.setProp(ele, 'id', newId);
       }
     });
@@ -1048,8 +1070,8 @@ __webpack_require__.r(__webpack_exports__);
   // permet de changer une valeur inline du css
   setCss: function setCss(node, key, value) {
     this.typecheck(node);
-    Str.typecheck(key);
-    key = Str.toCamelCase('-', key);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key);
+    key = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('-', key);
     if (value == null) value = '';
     node.style[key] = value;
   },
@@ -1058,15 +1080,15 @@ __webpack_require__.r(__webpack_exports__);
   // si la valeur est un objet, encode en json
   setValue: function setValue(node, value) {
     this.typecheck(node);
-    value = Str.cast(value, true);
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(value, true);
     node.value = value;
   },
   // toggleClass
   // permet d'ajouter ou enlever une classe sur une ou plusieurs nodes
   toggleClass: function toggleClass(nodes, value, bool) {
     nodes = this.toArray(nodes);
-    Str.typecheck(value, true);
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       ele.classList.toggle(value, bool);
     });
   },
@@ -1075,17 +1097,17 @@ __webpack_require__.r(__webpack_exports__);
   setDimension: function setDimension(node, width, height) {
     this.typecheck(node);
 
-    if (Scalar.is(width)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(width)) {
       width = width === true ? this.getDimension(node, width).width : width;
       width = width === false ? undefined : width;
-      width = Num.is(width) ? width + "px" : width;
+      width = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(width) ? width + "px" : width;
       this.setCss(node, 'width', width);
     }
 
-    if (Scalar.is(height)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(height)) {
       height = height === true ? this.getDimension(node, height).height : height;
       height = height === false ? undefined : height;
-      height = Num.is(height) ? height + "px" : height;
+      height = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(height) ? height + "px" : height;
       this.setCss(node, 'height', height);
     }
   },
@@ -1093,8 +1115,8 @@ __webpack_require__.r(__webpack_exports__);
   // permet de changer les valeurs du scroll
   setScroll: function setScroll(node, top, left) {
     this.typecheck(node);
-    if (Num.is(top)) node.scrollTop = top > 0 ? top : 0;
-    if (Num.is(left)) node.scrollLeft = left > 0 ? left : 0;
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(top)) node.scrollTop = top > 0 ? top : 0;
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(left)) node.scrollLeft = left > 0 ? left : 0;
   },
   // focus
   // permet de mettre le focus sur une node
@@ -1103,10 +1125,10 @@ __webpack_require__.r(__webpack_exports__);
     this.typecheck(node);
 
     if (preventScroll === true) {
-      var scroll = Win.getScroll();
+      var scroll = _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll();
       node.focus();
-      Func.timeout(0, function () {
-        Win.setScroll(scroll.top, scroll.left);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.timeout(0, function () {
+        _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.setScroll(scroll.top, scroll.left);
       });
     } else node.focus();
   },
@@ -1124,11 +1146,11 @@ __webpack_require__.r(__webpack_exports__);
   serialize: function serialize(nodes, keyProp, valueProp) {
     var r = '';
     nodes = this.toArray(nodes);
-    var query = Uri.makeQuery();
-    keyProp = Str.is(keyProp) ? keyProp : 'name';
-    valueProp = Str.is(valueProp) ? valueProp : 'value';
+    var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery();
+    keyProp = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(keyProp) ? keyProp : 'name';
+    valueProp = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(valueProp) ? valueProp : 'value';
     var $inst = this;
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       var key = $inst.getProp(ele, keyProp);
       var value = $inst.getProp(ele, valueProp);
       query.append(key, value);
@@ -1140,22 +1162,22 @@ __webpack_require__.r(__webpack_exports__);
   // ajout une ou plusieurs nodes comme premiers enfant de la node
   prepend: function prepend(node, value) {
     this.typecheck(node);
-    value = Dom.htmlNodes(value);
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
     node.prepend.apply(node, value);
   },
   // append
   // ajoute du contenu html comme dernier enfant de la node
   append: function append(node, value) {
     this.typecheck(node);
-    value = Dom.htmlNodes(value);
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
     node.append.apply(node, value);
   },
   // insertBefore
   // permet d'insérer une ou plusieurs node avant une autre
   insertBefore: function insertBefore(node, value) {
     this.typecheck(node);
-    value = Dom.htmlNodes(value);
-    return Arr.accumulate([], value, function (ele) {
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], value, function (ele) {
       return node.insertAdjacentElement('beforebegin', ele);
     });
   },
@@ -1163,8 +1185,8 @@ __webpack_require__.r(__webpack_exports__);
   // permet d'insérer une ou plusieurs node après une autre
   insertAfter: function insertAfter(node, value) {
     this.typecheck(node);
-    value = Dom.htmlNodes(value);
-    return Arr.accumulate([], value, function (ele) {
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], value, function (ele) {
       return node.insertAdjacentElement('afterend', ele);
     });
   },
@@ -1173,11 +1195,11 @@ __webpack_require__.r(__webpack_exports__);
   wrapAll: function wrapAll(nodes, value) {
     var r = null;
     nodes = this.toArray(nodes, true);
-    value = Dom.htmlNodes(value);
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
 
-    if (Arr.isNotEmpty(value)) {
-      r = Arr.valueFirst(value);
-      var firstNode = Arr.valueFirst(nodes);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(value)) {
+      r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(value);
+      var firstNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(nodes);
       this.insertBefore(firstNode, value);
       this.append(r, nodes);
     }
@@ -1199,6 +1221,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1206,6 +1229,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 // event
 // script containing event management functions
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // specialKeyCode
   // code de clavier spécial
@@ -1250,7 +1276,7 @@ __webpack_require__.r(__webpack_exports__);
   isSpecialKeyCode: function isSpecialKeyCode(event) {
     var r = false;
     this.typecheck(event);
-    if (Integer.is(event.keyCode) && Arr["in"](event.keyCode, this.specialKeyCode)) r = true;
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(event.keyCode) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](event.keyCode, this.specialKeyCode)) r = true;
     return r;
   },
   // preventStop
@@ -1265,9 +1291,9 @@ __webpack_require__.r(__webpack_exports__);
   // retourne event ou custom event selon le type
   // un nom de type avec un . ou : est custom
   nameFromType: function nameFromType(type) {
-    Str.typecheck(type, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
     var r = 'event';
-    if (Str["in"]('.', type) || Str["in"](':', type)) r = 'customEvent';
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('.', type) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"](':', type)) r = 'customEvent';
     return r;
   },
   // createFromType
@@ -1306,6 +1332,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1313,15 +1340,18 @@ __webpack_require__.r(__webpack_exports__);
  */
 // handler
 // script for handler management (functions stored in targets)
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // isTriggerHandlerEqual
   // retourne vrai si la handler de chaque node retourne la valeur donné en argument
   isTriggerHandlerEqual: function isTriggerHandlerEqual(nodes, type, equal) {
     nodes = this.toArray(nodes);
-    var args = Arr.merge([type], ArrLike.sliceStart(3, arguments));
+    var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([type], _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(3, arguments));
     var $inst = this;
-    return Arr.every(nodes, function (ele) {
-      var funcArgs = Arr.merge([ele], args);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every(nodes, function (ele) {
+      var funcArgs = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([ele], args);
       var result = $inst.triggerHandler.apply($inst, funcArgs);
       return result === equal;
     });
@@ -1338,29 +1368,29 @@ __webpack_require__.r(__webpack_exports__);
   // méthode qui retourne un handler emmagasiné dans une node
   // envoie une erreur si plusieurs nodes
   getHandler: function getHandler(node, type) {
-    Str.typecheck(type);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type);
     var handlers = this.allHandler(node);
-    return handlers != null ? Pojo.get(type, handlers) : undefined;
+    return handlers != null ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(type, handlers) : undefined;
   },
   // setHandler
   // permet d'emmagasiné une handler dans chaque node fournit en argument
   setHandler: function setHandler(nodes, type, handler) {
-    Str.typecheck(type, true);
-    Func.typecheck(handler);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.typecheck(handler);
     nodes = this.toArray(nodes);
     var $inst = this;
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       var all = $inst.allHandler(ele, true);
-      Pojo.setRef(type, handler, all);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef(type, handler, all);
     });
   },
   // setsHandler
   // permet d'ajouter plusieurs handlers à partir d'un objet
   setsHandler: function setsHandler(nodes, typeStart, obj) {
-    Str.typecheck(typeStart, true);
-    Pojo.typecheck(obj);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(typeStart, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(obj);
     var $inst = this;
-    Pojo.each(obj, function (value, key) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(obj, function (value, key) {
       var type = typeStart + key;
       $inst.setHandler(nodes, type, value);
     });
@@ -1368,12 +1398,12 @@ __webpack_require__.r(__webpack_exports__);
   // removeHandler
   // permet de retirer un handler emmagasiné dans une ou plusiuers node
   removeHandler: function removeHandler(nodes, type) {
-    Str.typecheck(type, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
     nodes = this.toArray(nodes);
     var $inst = this;
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       var all = $inst.allHandler(ele, true);
-      Pojo.unsetRef(type, all);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef(type, all);
     });
   },
   // triggerHandler
@@ -1382,11 +1412,11 @@ __webpack_require__.r(__webpack_exports__);
   triggerHandler: function triggerHandler(node, type) {
     var r = undefined;
     this.typecheck(node);
-    Str.typecheck(type, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
     var handler = this.getHandler(node, type);
 
-    if (Func.is(handler)) {
-      var args = ArrLike.sliceStart(2, arguments);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(handler)) {
+      var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
       r = handler.apply(node, args);
     }
 
@@ -1398,9 +1428,9 @@ __webpack_require__.r(__webpack_exports__);
   triggersHandler: function triggersHandler(nodes, type) {
     nodes = this.toArray(nodes);
     var $inst = this;
-    var args = ArrLike.sliceStart(2, arguments);
-    return Arr.accumulate([], nodes, function (ele) {
-      return $inst.triggerHandler.apply($inst, Arr.merge([ele, type], args));
+    var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], nodes, function (ele) {
+      return $inst.triggerHandler.apply($inst, _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([ele, type], args));
     });
   }
 });
@@ -1418,6 +1448,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1425,12 +1456,15 @@ __webpack_require__.r(__webpack_exports__);
  */
 // historyState
 // script with functions related to the history states
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // is
   // retourne vrai si la valeur est un objet compatible pour un état d'historique
   is: function is(state) {
     var r = false;
-    if (Pojo.is(state) && Str.is(state.url) && Num.is(state.timestamp)) r = true;
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(state) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(state.url) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(state.timestamp)) r = true;
     return r;
   },
   // isChangeValid
@@ -1439,13 +1473,13 @@ __webpack_require__.r(__webpack_exports__);
     var r = false;
 
     if (this.is(state) && this.is(previous)) {
-      var isInternal = Uri.isInternal(state.url, previous.url);
-      var hasExtension = Uri.hasExtension(state.url);
-      var isHashChange = Uri.isHashChange(state.url, previous.url);
-      var isSameWithHash = Uri.isSameWithHash(state.url, previous.url);
+      var isInternal = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal(state.url, previous.url);
+      var hasExtension = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasExtension(state.url);
+      var isHashChange = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange(state.url, previous.url);
+      var isSameWithHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSameWithHash(state.url, previous.url);
 
       if (isInternal === true && hasExtension === false && isHashChange === false && isSameWithHash === false) {
-        if (!differentPathQuery || Uri.isSamePathQuery(state.url, previous.url) === false) r = true;
+        if (!differentPathQuery || _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQuery(state.url, previous.url) === false) r = true;
       }
     }
 
@@ -1454,15 +1488,15 @@ __webpack_require__.r(__webpack_exports__);
   // make
   // retourne un objet état d'historique (avec url absolute, title et timestamp)
   make: function make(value, title, noEmptyHash) {
-    Str.typecheck(value);
-    var uri = Uri.absolute(value, true);
-    var valueEndsHash = Str.isEnd('#', value);
-    var uriEndsHash = Str.isEnd('#', uri);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+    var uri = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute(value, true);
+    var valueEndsHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('#', value);
+    var uriEndsHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('#', uri);
     if (noEmptyHash === true && uriEndsHash === true) uri = uri.slice(0, -1);else if (noEmptyHash !== true && valueEndsHash === true && uriEndsHash === false) uri += "#";
     return {
       url: uri,
       title: title || null,
-      timestamp: Datetime.now()
+      timestamp: _index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.now()
     };
   }
 });
@@ -1480,6 +1514,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1487,26 +1522,29 @@ __webpack_require__.r(__webpack_exports__);
  */
 // listener
 // script containing event listeners functions for target elements
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new function () {
   // addListener
   // méthode qui permet d'ajouter un nouveau listener d'événement
   // retourne un tableau avec les paramètres pour retirer le listener
   this.addListener = function (nodes, type, func, register, delegate, option) {
     var r = null;
-    Str.typecheck(type, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
     nodes = this.toArray(nodes);
     var $inst = this;
 
-    if (Arr.isNotEmpty(nodes)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(nodes)) {
       option = Object.assign({
         capture: false,
         once: false
       }, option);
-      var thirdArg = Evt.support.once === true ? option : option.capture;
+      var thirdArg = _index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.support.once === true ? option : option.capture;
       var handler = addListenerHandler.call(this, type, func, delegate, thirdArg, option);
-      Arr.each(nodes, function (ele) {
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
         ele.addEventListener(type, handler, thirdArg);
-        if (Str.isNotEmpty(register) || register === true) $inst.registerListener(ele, register, type, handler, thirdArg);
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(register) || register === true) $inst.registerListener(ele, register, type, handler, thirdArg);
       });
       r = [type, handler, thirdArg];
     }
@@ -1518,12 +1556,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.registerListener = function (node, register, type, handler, option) {
-    Str.typecheck(type, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
     register = register === true ? type : register;
-    Str.typecheck(register, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(register, true);
     var data = this.getOrSetData(node, 'rel', {});
     var entry = [type, handler, option];
-    Pojo.setRef(register, entry, data);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef(register, entry, data);
   }; // addListenerOnce
   // comme ael, mais le listener ne peut être déclenché qu'une seule fois
 
@@ -1554,30 +1592,30 @@ __webpack_require__.r(__webpack_exports__);
   this.removeListener = function (nodes, args) {
     nodes = this.toArray(nodes);
     var $inst = this;
-    Arr.each(nodes, function (ele) {
-      if (Str.isNotEmpty(args)) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(args)) {
         var key = args;
         var data = $inst.getData(ele, 'rel');
 
-        if (Pojo.is(data)) {
-          args = Pojo.get(key, data);
-          Pojo.unsetRef(key, data);
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(data)) {
+          args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(key, data);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef(key, data);
         }
       }
 
-      if (Arr.is(args)) ele.removeEventListener.apply(ele, args);
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(args)) ele.removeEventListener.apply(ele, args);
     });
   }; // trigger
   // utilisé par triggerBubble et triggerNoBubble pour envoyer des événements
 
 
   this.trigger = function (nodes, type, option) {
-    Str.typecheck(type, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
     nodes = this.toArray(nodes);
 
-    if (Arr.isNotEmpty(nodes)) {
-      var event = Evt.createFromType(type, option);
-      Arr.each(nodes, function (ele) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(nodes)) {
+      var event = _index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.createFromType(type, option);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
         ele.dispatchEvent(event);
       });
     }
@@ -1587,7 +1625,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.triggerBubble = function (nodes, type) {
-    var data = ArrLike.sliceStart(2, arguments);
+    var data = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
     var option = {
       bubbles: true,
       cancelable: true,
@@ -1600,7 +1638,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.triggerNoBubble = function (nodes, type) {
-    var data = ArrLike.sliceStart(2, arguments);
+    var data = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
     var option = {
       bubbles: false,
       cancelable: true,
@@ -1614,10 +1652,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.triggerSetup = function (nodes) {
-    var sliced = ArrLike.sliceStart(1, arguments);
-    var args = Arr.merge([nodes, 'component:setup'], sliced);
+    var sliced = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(1, arguments);
+    var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([nodes, 'component:setup'], sliced);
     this.triggerNoBubble.apply(this, args);
-    args = Arr.merge([nodes, 'component:ready'], sliced);
+    args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([nodes, 'component:ready'], sliced);
     this.triggerNoBubble.apply(this, args);
   }; // triggerTeardown
   // fonction utilisé pour lancer le démontange d'un component
@@ -1625,7 +1663,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.triggerTeardown = function (nodes) {
-    var args = Arr.merge([nodes, 'component:teardown'], ArrLike.sliceStart(1, arguments));
+    var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([nodes, 'component:teardown'], _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(1, arguments));
     return this.triggerNoBubble.apply(this, args);
   }; // addListenerHandler
   // retourne le handler utilisé par addListener
@@ -1638,9 +1676,9 @@ __webpack_require__.r(__webpack_exports__);
     var handler = function handler(event) {
       var go = delegate == null;
       var context = this;
-      if (option.once === true && Evt.support.once === false) $inst.removeListener(event.target, [type, handler, thirdArg]);
+      if (option.once === true && _index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.support.once === false) $inst.removeListener(event.target, [type, handler, thirdArg]);
 
-      if (Str.isNotEmpty(delegate) && event.target != null) {
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(delegate) && event.target != null) {
         go = prepareDelegate.call(this, event, delegate);
         context = event.triggerTarget;
       }
@@ -1648,7 +1686,7 @@ __webpack_require__.r(__webpack_exports__);
       if (go === true) {
         var args = [event];
         var detail = event.detail;
-        args = Arr.merge(args, detail);
+        args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge(args, detail);
         func.apply(context, args);
       }
     };
@@ -1662,13 +1700,13 @@ __webpack_require__.r(__webpack_exports__);
   var prepareDelegate = function prepareDelegate(event, delegate) {
     var r = false;
     var context = event.target;
-    var nodes = Nod.scopedQueryAll(this, delegate);
+    var nodes = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.scopedQueryAll(this, delegate);
     var delegateTarget = this;
     var triggerTarget = context;
-    if (Arr["in"](context, nodes)) r = true;else {
-      r = Arr.some(nodes, function (node) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](context, nodes)) r = true;else {
+      r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some(nodes, function (node) {
         if (node.contains(context)) {
-          triggerTarget = Nod.closest(context, delegate);
+          triggerTarget = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.closest(context, delegate);
           return true;
         }
       });
@@ -1694,6 +1732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "EleWinTarget": () => (/* binding */ EleWinTarget),
 /* harmony export */   "NodTarget": () => (/* binding */ NodTarget)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1701,11 +1740,15 @@ __webpack_require__.r(__webpack_exports__);
  */
 // nod
 // object for element, text and document nodes
+// import
+ // nodTarget
+// méthodes pour un grand ensemble de nodes
+
 var NodTarget = {
   // is
   // retourne vrai si la valeur est un element, un textNode ou un document
   is: function is(value) {
-    return Ele.is(value) || Doc.is(value) || this.isText(value) || this.isDoctype(value);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(value) || this.isText(value) || this.isDoctype(value);
   },
   // isText
   // retourne vrai si c'est une texte node
@@ -1741,7 +1784,7 @@ var NodTarget = {
   // permet de changer contenu texte d'une balise
   setText: function setText(node, value) {
     this.typecheck(node);
-    Str.typecheck(value, false);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value, false);
 
     if (node.textContent != null) {
       value = value == null ? '' : value;
@@ -1759,7 +1802,7 @@ var NodTarget = {
   clones: function clones(value) {
     var $inst = this;
     var nodes = this.toArray(value);
-    return Arr.accumulate([], value, function (ele) {
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], value, function (ele) {
       return $inst.clone(ele);
     });
   },
@@ -1768,7 +1811,7 @@ var NodTarget = {
   // utilise arguments
   remove: function remove(value) {
     var nodes = this.toArray(value);
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       ele.remove();
     });
   }
@@ -1779,19 +1822,19 @@ var EleDocTarget = {
   // isEmpty
   // retourne vrai si la valeur est une node et qu'elle est vide
   isEmpty: function isEmpty(value) {
-    return this.is(value) ? Str.isEmpty(this.getHtml(value)) : false;
+    return this.is(value) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty(this.getHtml(value)) : false;
   },
   // isNotEmpty
   // retourne vrai si la valeur est une node et qu'elle n'est pas vide
   isNotEmpty: function isNotEmpty(value) {
-    return this.is(value) ? Str.isNotEmpty(this.getHtml(value)) : false;
+    return this.is(value) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(this.getHtml(value)) : false;
   },
   // getHtml
   // retourne le html dans la node ou le document
   getHtml: function getHtml(value) {
     var r = '';
-    var children = Nod.children(value, null, true);
-    r = Ele.getOuterHtml(children);
+    var children = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.children(value, null, true);
+    r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(children);
     return r;
   },
   // setHtml
@@ -1800,11 +1843,11 @@ var EleDocTarget = {
   setHtml: function setHtml(node, value, clone) {
     this.typecheck(node);
     node = this.realNode(node);
-    var children = Nod.children(node, null, true);
-    if (Pojo.is(value)) value = Json.encode(value);
-    value = Dom.htmlNodes(value, clone);
-    Nod.remove(children);
-    Arr.each(value, function (ele) {
+    var children = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.children(node, null, true);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Json.encode(value);
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value, clone);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.remove(children);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(value, function (ele) {
       node.appendChild(ele);
     });
   },
@@ -1815,7 +1858,7 @@ var EleDocTarget = {
   // retourne vrai si le html a été changé
   replaceHtml: function replaceHtml(node, value) {
     var r = false;
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     var current = this.getHtml(node);
     var newElement = document.createElement('div');
     this.setHtml(newElement, value);
@@ -1831,8 +1874,8 @@ var EleDocTarget = {
   // getOuterHtml
   // retourne le outerHtml d'une ou plusieurs nodes
   getOuterHtml: function getOuterHtml(nodes) {
-    nodes = Nod.toArray(nodes);
-    return Arr.accumulate('', nodes, function (ele) {
+    nodes = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.toArray(nodes);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate('', nodes, function (ele) {
       var content = '';
       if (ele.outerHTML != null) content = ele.outerHTML;else if (ele.textContent != null) content = ele.textContent;
       return content;
@@ -1865,6 +1908,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1872,13 +1916,16 @@ __webpack_require__.r(__webpack_exports__);
  */
 // request
 // script with functions related to the current request
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // relative
   // retourne l'uri relative courante
   // possible d'inclure le hash
   relative: function relative(hash) {
     var r = window.location.pathname + window.location.search;
-    if (hash === true && window.location.hash) r += Uri.makeHash(window.location.hash, true);
+    if (hash === true && window.location.hash) r += _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(window.location.hash, true);
     return r;
   },
   // absolute
@@ -1891,7 +1938,7 @@ __webpack_require__.r(__webpack_exports__);
   // possible de retourne avec ou sans le :
   scheme: function scheme(twoDot) {
     var r = location.protocol;
-    if (twoDot !== true) r = r.substring(0, Str.pos(':', r));
+    if (twoDot !== true) r = r.substring(0, _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos(':', r));
     return r;
   },
   // host
@@ -1907,7 +1954,7 @@ __webpack_require__.r(__webpack_exports__);
   // fragment
   // retourne le fragment de l'uri sans le hash
   fragment: function fragment() {
-    return Uri.makeHash(window.location.hash);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(window.location.hash);
   },
   // parse
   // retourne un objet avec les différentes parties de l'uri courante séparés
@@ -1929,6 +1976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1936,6 +1984,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 // selector
 // script with methods related to selecting and matching nodes
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // scopedQuery
   // méthode utilisé pour faire une recherche et retourner le premier enfant d'une target qui match le selector
@@ -1943,14 +1994,14 @@ __webpack_require__.r(__webpack_exports__);
   scopedQuery: function scopedQuery(node, selector, typecheck) {
     var r = null;
     node = this.realNode(node);
-    Nod.typecheck(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
 
     if (node != null) {
-      selector = Doc.is(node) ? selector : ":scope " + selector;
+      selector = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(node) ? selector : ":scope " + selector;
       r = node.querySelector(selector);
     }
 
-    if (typecheck === true) Ele.typecheck(r);
+    if (typecheck === true) _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typecheck(r);
     return r;
   },
   // scopedQueryAll
@@ -1960,15 +2011,15 @@ __webpack_require__.r(__webpack_exports__);
   scopedQueryAll: function scopedQueryAll(node, selector, typecheck) {
     var r = null;
     node = this.realNode(node);
-    Nod.typecheck(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
 
     if (node != null) {
-      selector = Doc.is(node) ? selector : ":scope " + selector;
+      selector = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(node) ? selector : ":scope " + selector;
       r = node.querySelectorAll(selector);
-      if (r instanceof NodeList) r = ArrLike.toArray(r);
+      if (r instanceof NodeList) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(r);
     }
 
-    if (typecheck === true) Ele.typechecks(r, true);
+    if (typecheck === true) _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typechecks(r, true);
     return r;
   },
   // mergedQsa
@@ -1981,12 +2032,12 @@ __webpack_require__.r(__webpack_exports__);
 
     if (nodes != null) {
       r = [];
-      Arr.each(nodes, function (ele) {
-        Arr.mergeRef(r, $inst.scopedQueryAll(ele, selector));
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+        _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.mergeRef(r, $inst.scopedQueryAll(ele, selector));
       });
     }
 
-    if (typecheck === true) Ele.typechecks(r, true);
+    if (typecheck === true) _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typechecks(r, true);
     return r;
   },
   // closest
@@ -1994,7 +2045,7 @@ __webpack_require__.r(__webpack_exports__);
   closest: function closest(node, value) {
     node = this.realNode(node);
     this.typecheck(node);
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     return node.closest(value);
   },
   // closestParent
@@ -2007,47 +2058,47 @@ __webpack_require__.r(__webpack_exports__);
   // retourne vrai si la node match le pattern
   match: function match(node, value) {
     node = this.realNode(node);
-    Nod.typecheck(node);
-    Str.typecheck(value);
-    return Doc.is(node) ? false : node.matches(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(node) ? false : node.matches(value);
   },
   // some
   // retourne vrai si au moins une node retourne vrai au pattern
   some: function some(nodes, value) {
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     nodes = this.toArray(nodes);
     var $inst = this;
-    return Arr.some(nodes, function (ele) {
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some(nodes, function (ele) {
       return $inst.match(ele, value);
     });
   },
   // every
   // retourne vrai si toutes les nodes retournent vrai au pattern
   every: function every(nodes, value) {
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     nodes = this.toArray(nodes);
     var $inst = this;
-    return Arr.every(nodes, function (ele) {
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every(nodes, function (ele) {
       return $inst.match(ele, value);
     });
   },
   // filter
   // permet de filtrer les nodes d'un tableau qui match le pattern
   filter: function filter(nodes, value) {
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     nodes = this.toArray(nodes);
     var $inst = this;
-    return Arr.filter(nodes, function (ele) {
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.filter(nodes, function (ele) {
       return $inst.match(ele, value);
     });
   },
   // find
   // retourne la première valeur d'un tableau qui match le pattern
   find: function find(nodes, value) {
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
     nodes = this.toArray(nodes);
     var $inst = this;
-    return Arr.find(nodes, function (ele) {
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.find(nodes, function (ele) {
       return $inst.match(ele, value);
     });
   },
@@ -2056,11 +2107,11 @@ __webpack_require__.r(__webpack_exports__);
   parent: function parent(node, value) {
     var r = null;
     node = this.realNode(node);
-    Nod.typecheck(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
     var parent = node.parentNode;
 
-    if (Nod.is(parent)) {
-      if (value == null || Nod.match(parent, value)) r = parent;
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(parent)) {
+      if (value == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.match(parent, value)) r = parent;
     }
 
     return r;
@@ -2071,11 +2122,11 @@ __webpack_require__.r(__webpack_exports__);
   parents: function parents(node, value, until) {
     var r = [];
     node = this.realNode(node);
-    Nod.typecheck(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
 
-    while (node = Nod.parent(node)) {
-      if (until != null && Nod.match(node, until)) break;
-      if (value == null || Nod.match(node, value)) r.push(node);
+    while (node = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.parent(node)) {
+      if (until != null && _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.match(node, until)) break;
+      if (value == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.match(node, value)) r.push(node);
     }
 
     return r;
@@ -2145,17 +2196,17 @@ __webpack_require__.r(__webpack_exports__);
   children: function children(node, value, withTextNodes) {
     var r = null;
     node = this.realNode(node);
-    Nod.typecheck(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
     var hasChildren = node.children != null;
     var childs;
-    if (withTextNodes === true) childs = ArrLike.toArray(node.childNodes);else {
-      if (hasChildren === true) childs = ArrLike.toArray(node.children);else {
-        childs = ArrLike.accumulate([], node.childNodes, function (value) {
-          return Ele.is(value) ? value : null;
+    if (withTextNodes === true) childs = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(node.childNodes);else {
+      if (hasChildren === true) childs = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(node.children);else {
+        childs = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.accumulate([], node.childNodes, function (value) {
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value) ? value : null;
         });
       }
     }
-    if (value == null) r = childs;else r = Nod.filter(childs, value);
+    if (value == null) r = childs;else r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.filter(childs, value);
     return r;
   },
   // realNode
@@ -2179,6 +2230,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2186,20 +2238,21 @@ __webpack_require__.r(__webpack_exports__);
  */
 // target
 // script with basic functions related to event targets elements
-// targetRoot
-// object for elements, documents and window
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // is
   // retourne vrai si la valeur est une node, un document, un fragment de document ou window
   is: function is(value) {
-    return Nod.is(value) || Win.is(value);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(value) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.is(value);
   },
   // are
   // retourne vrai si la valeur est une collection de node non vide
   are: function are(value) {
     var $inst = this;
-    value = ArrLike.toArray(value);
-    return Arr.is(value) ? Arr.every(value, function (v) {
+    value = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(value);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(value) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every(value, function (v) {
       return $inst.is(v);
     }) : false;
   },
@@ -2217,7 +2270,7 @@ __webpack_require__.r(__webpack_exports__);
   typechecks: function typechecks(value, type) {
     var error = false;
     var are = this.are(value);
-    if (!are || are === true && type === true && Arr.isEmpty(value)) error = true;
+    if (!are || are === true && type === true && _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(value)) error = true;
     if (error === true) throw new Error(value);
     return value;
   },
@@ -2225,15 +2278,15 @@ __webpack_require__.r(__webpack_exports__);
   // retourne une propriété d'une node
   getProp: function getProp(node, key) {
     this.typecheck(node);
-    return Obj.get(key, node);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.get(key, node);
   },
   // setProp
   // permet de changer la propriété sur une node ou plusieurs node
   setProp: function setProp(nodes, key, value) {
-    Str.typecheck(key);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key);
     nodes = this.toArray(nodes);
-    Arr.each(nodes, function (ele) {
-      Obj.setRef(key, value, ele);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.setRef(key, value, ele);
     });
   },
   // propStr
@@ -2241,10 +2294,10 @@ __webpack_require__.r(__webpack_exports__);
   // un séparateur peut être fourni, sinon utilise -
   propStr: function propStr(nodes, prop, separator) {
     nodes = this.toArray(nodes);
-    Str.typecheck(prop, true);
-    separator = Str.isNotEmpty(separator) ? separator : '-';
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(prop, true);
+    separator = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(separator) ? separator : '-';
     var $inst = this;
-    return Arr.reduce('', nodes, function (r, ele) {
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.reduce('', nodes, function (r, ele) {
       r += r.length ? separator : "";
       return r += $inst.getProp(ele, prop);
     });
@@ -2256,9 +2309,9 @@ __webpack_require__.r(__webpack_exports__);
     var r = {};
     nodes = this.toArray(nodes);
     var $inst = this;
-    Str.typecheck(propKey, true);
-    Str.typecheck(propValue, true);
-    Arr.each(nodes, function (ele) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(propKey, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(propValue, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
       var key = $inst.getProp(ele, propKey);
       var value = $inst.getProp(ele, propValue);
       r[key] = value;
@@ -2272,7 +2325,7 @@ __webpack_require__.r(__webpack_exports__);
   // envoie automatiquement dans le typecheck
   // les array vide passent le typecheck
   toArray: function toArray(value) {
-    if (this.is(value)) value = [value];else if (ArrLike.is(value)) value = ArrLike.toArray(value);else if (value == null) value = [];
+    if (this.is(value)) value = [value];else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(value);else if (value == null) value = [];
     return this.typechecks.call(this, value);
   }
 });
@@ -2290,6 +2343,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2297,14 +2351,17 @@ __webpack_require__.r(__webpack_exports__);
  */
 // uri
 // script with a set of helper functions related to uri management
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // isInternal
   // retourne vrai si l'uri et la comparaison ont le même scheme et host
   isInternal: function isInternal(uri, compare) {
     var r = false;
 
-    if (Str.is(uri)) {
-      compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+      compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
       var parse = this.parse(uri);
       if (parse.protocol === compare.protocol && parse.host === compare.host) r = true;
     }
@@ -2326,9 +2383,9 @@ __webpack_require__.r(__webpack_exports__);
   hasFragment: function hasFragment(uri) {
     var r = false;
 
-    if (Str.is(uri)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
       var parse = this.parse(uri);
-      if (Str.isNotEmpty(parse.hash)) r = true;
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(parse.hash)) r = true;
     }
 
     return r;
@@ -2336,7 +2393,7 @@ __webpack_require__.r(__webpack_exports__);
   // isOnlyHash
   // retourne vrai si l'uri est seulement un hash
   isOnlyHash: function isOnlyHash(value) {
-    return Str.length(value) > 1 && Str.isStart('#', value);
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length(value) > 1 && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('#', value);
   },
   // isSamePathQuery
   // retourne vrai si l'uri est la même que la comparaison
@@ -2344,8 +2401,8 @@ __webpack_require__.r(__webpack_exports__);
   isSamePathQuery: function isSamePathQuery(uri, compare) {
     var r = false;
 
-    if (Str.is(uri)) {
-      compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+      compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
       var parse = this.parse(uri);
       if (parse.pathname === compare.pathname && parse.search === compare.search) r = true;
     }
@@ -2358,8 +2415,8 @@ __webpack_require__.r(__webpack_exports__);
   isSamePathQueryHash: function isSamePathQueryHash(uri, compare) {
     var r = false;
 
-    if (Str.is(uri)) {
-      compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+      compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
       var parse = this.parse(uri);
       if (parse.pathname === compare.pathname && parse.search === compare.search && parse.hash === compare.hash) r = true;
     }
@@ -2371,12 +2428,12 @@ __webpack_require__.r(__webpack_exports__);
   isHashChange: function isHashChange(uri, compare) {
     var r = false;
 
-    if (Str.is(uri)) {
-      compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+      compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
       var parse = this.parse(uri);
 
       if (parse.protocol === compare.protocol && parse.host === compare.host && parse.pathname === compare.pathname && parse.search === compare.search) {
-        if ((Str.isNotEmpty(parse.hash) || Str.isNotEmpty(compare.hash)) && parse.hash !== compare.hash) r = true;
+        if ((_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(parse.hash) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(compare.hash)) && parse.hash !== compare.hash) r = true;
       }
     }
 
@@ -2417,7 +2474,7 @@ __webpack_require__.r(__webpack_exports__);
   basename: function basename(uri) {
     var r = null;
     var path = this.path(uri);
-    if (Str.is(path)) r = path.substr(path.lastIndexOf("/") + 1);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(path)) r = path.substr(path.lastIndexOf("/") + 1);
     return r;
   },
   // filename
@@ -2425,7 +2482,7 @@ __webpack_require__.r(__webpack_exports__);
   filename: function filename(uri) {
     var r = null;
     var basename = this.basename(uri);
-    if (Str.is(basename)) r = basename.replace(/\.[^.$]+$/, '');
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(basename)) r = basename.replace(/\.[^.$]+$/, '');
     return r;
   },
   // extension
@@ -2435,16 +2492,16 @@ __webpack_require__.r(__webpack_exports__);
     var parse = this.parse(uri);
     var regex = /(?:\.([^.]+))?$/;
     var result = regex.exec(parse.pathname);
-    if (Arr.is(result) && result.length === 2) r = result[1];
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(result) && result.length === 2) r = result[1];
     return r;
   },
   // parse
   // retourne un objet avec les différentes parties d'une uri séparés
   // ne marche pas bien sur ie11
   parse: function parse(uri) {
-    Str.typecheck(uri);
-    var schemeHost = Request.schemeHost();
-    if (Str.isStart("#", uri)) uri = Request.relative() + uri;
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(uri);
+    var schemeHost = _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.schemeHost();
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart("#", uri)) uri = _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative() + uri;
     return new URL(uri, schemeHost);
   },
   // build
@@ -2453,12 +2510,12 @@ __webpack_require__.r(__webpack_exports__);
   // possible d'inclure ou non le hash
   build: function build(parse, absolute, hash) {
     var r = '';
-    Obj.typecheck(parse);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.typecheck(parse);
 
     if (absolute === true) {
-      r += Str.is(parse.protocol) ? parse.protocol : Request.scheme(true);
+      r += _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(parse.protocol) ? parse.protocol : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme(true);
       r += "//";
-      r += Str.is(parse.host) ? parse.host : Request.host();
+      r += _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(parse.host) ? parse.host : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.host();
     }
 
     r += parse.pathname;
@@ -2466,7 +2523,7 @@ __webpack_require__.r(__webpack_exports__);
     if (parse.search) {
       var searchParams = parse.search instanceof URLSearchParams ? parse.search : this.makeQuery(parse.search);
       var query = searchParams.toString();
-      if (Str.isNotEmpty(query)) r += "?" + query;
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(query)) r += "?" + query;
     }
 
     if (parse.hash && hash === true) r += this.makeHash(parse.hash, true);
@@ -2475,10 +2532,10 @@ __webpack_require__.r(__webpack_exports__);
   // makeQuery
   // permet de retourner un objet urlSearchParams à partir d'une string ou un object
   makeQuery: function makeQuery(value) {
-    var r = Str.is(value) ? new URLSearchParams(value) : new URLSearchParams();
+    var r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value) ? new URLSearchParams(value) : new URLSearchParams();
 
-    if (Pojo.is(value)) {
-      Pojo.each(value, function (value, key) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(value)) {
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(value, function (value, key) {
         value = value == null ? '' : value;
         r.append(key, value);
       });
@@ -2491,10 +2548,10 @@ __webpack_require__.r(__webpack_exports__);
   makeHash: function makeHash(value, symbol) {
     var r = '';
 
-    if (Str.isNotEmpty(value)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(value)) {
       r = value;
-      var hasHash = Str.isStart('#', r);
-      if (symbol === true) r = !hasHash ? "#" + r : r;else if (hasHash) r = Str.sub(1, true, r);
+      var hasHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('#', r);
+      if (symbol === true) r = !hasHash ? "#" + r : r;else if (hasHash) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.sub(1, true, r);
     } else if (symbol === true) r = '#';
 
     return r;
@@ -2503,11 +2560,11 @@ __webpack_require__.r(__webpack_exports__);
   // permet d'obtenir un email à partir d'un mailto (comme dans un href)
   getMailto: function getMailto(value) {
     var r = null;
-    Str.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
 
-    if (Str.isNotEmpty(value)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(value)) {
       var email = value.replace(/mailto:/, '');
-      if (Validate.isEmail(email)) r = email;
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail(email)) r = email;
     }
 
     return r;
@@ -2527,6 +2584,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2534,6 +2592,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 // win
 // object for window target
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   // is
   // retourne vrai si la valeur est une window ou une window proxy
@@ -2548,7 +2609,7 @@ __webpack_require__.r(__webpack_exports__);
   // isProxy
   // retourne vrai si la valeur est une window proxy
   isProxy: function isProxy(value) {
-    return Obj.is(value) && !(value instanceof Window) && value.window === value;
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(value) && !(value instanceof Window) && value.window === value;
   },
   // hasHistoryApi
   // retourne vrai si le navigateur courant supporte history API
@@ -2566,20 +2627,20 @@ __webpack_require__.r(__webpack_exports__);
   isScrollable: function isScrollable(axis) {
     var r = false;
     var scroll = this.getScroll();
-    if (Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
     return r;
   },
   // getScroll
   // retourne le scroll de la window
   // retourne aussi les dimensions externes et internes, ainsi qu'un bool indiquant si une direction est scrollable
   getScroll: function getScroll() {
-    var r = Pojo.replace({
-      top: Num.round(window.pageYOffset),
-      left: Num.round(window.pageXOffset),
-      width: Num.round(document.documentElement.scrollWidth),
-      height: Num.round(document.documentElement.scrollHeight),
-      innerWidth: Num.round(window.innerWidth),
-      innerHeight: Num.round(window.innerHeight),
+    var r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replace({
+      top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.pageYOffset),
+      left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.pageXOffset),
+      width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollWidth),
+      height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollHeight),
+      innerWidth: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerWidth),
+      innerHeight: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerHeight),
       scrollableX: false,
       scrollableY: false
     });
@@ -2609,8 +2670,8 @@ __webpack_require__.r(__webpack_exports__);
   // retourne la dimension interne de la fênetre
   getDimension: function getDimension() {
     return {
-      width: Num.round(window.innerWidth),
-      height: Num.round(window.innerHeight)
+      width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerWidth),
+      height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerHeight)
     };
   }
 });
@@ -2628,6 +2689,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./index.js");
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2635,13 +2697,16 @@ __webpack_require__.r(__webpack_exports__);
  */
 // xhr
 // script with some logic for ajax calls and xhr object
+// import
+ // export
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new function () {
   // inst
   var $inst = this; // isStatusSuccess
   // retourne vrai si le statut est un succès
 
   this.isStatusSuccess = function (value) {
-    return Integer.is(value) && value >= 200 && value < 400;
+    return _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value) && value >= 200 && value < 400;
   }; // isResponseJson
   // retourne vrai si la réponse du xhr a un content type de json
 
@@ -2651,7 +2716,7 @@ __webpack_require__.r(__webpack_exports__);
 
     if (xhr instanceof XMLHttpRequest) {
       var contentType = xhr.getResponseHeader('Content-Type');
-      if (Str["in"]('/json', contentType)) r = true;
+      if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('/json', contentType)) r = true;
     }
 
     return r;
@@ -2662,7 +2727,7 @@ __webpack_require__.r(__webpack_exports__);
 
   this.trigger = function (config, extraEvents) {
     config = prepareConfig.call(this, config);
-    Str.typecheck(config.url, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(config.url, true);
     var xhr = new XMLHttpRequest();
     xhr.open(config.method, config.url, true);
     xhr.timeout = config.timeout;
@@ -2682,7 +2747,7 @@ __webpack_require__.r(__webpack_exports__);
 
     if (xhr.upload != null) {
       xhr.upload.addEventListener("progress", function (event) {
-        if (Func.is(config.progress) && event.lengthComputable === true) {
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(config.progress) && event.lengthComputable === true) {
           var percent = parseInt(event.loaded / event.total * 100);
           callEvent('progress', xhr, config, extraEvents, percent, event);
         }
@@ -2698,7 +2763,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.configFromString = function (value) {
-    Str.typecheck(value, true);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value, true);
     return {
       url: value
     };
@@ -2708,12 +2773,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
   var callEvent = function callEvent(type, xhr, config, extraEvents) {
-    var configCallback = Pojo.get(type, config);
-    var extraCallback = Pojo.is(extraEvents) ? Pojo.get(type, extraEvents) : null;
-    var args = ArrLike.sliceStart(4, arguments);
+    var configCallback = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(type, config);
+    var extraCallback = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(extraEvents) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(type, extraEvents) : null;
+    var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(4, arguments);
     args.push(xhr);
-    if (Func.is(configCallback)) configCallback.apply(xhr, args);
-    if (Func.is(extraCallback)) extraCallback.apply(xhr, args);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(configCallback)) configCallback.apply(xhr, args);
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(extraCallback)) extraCallback.apply(xhr, args);
   }; // defaultConfig
   // retourne la configuration par défaut pour une requête ajax
 
@@ -2730,15 +2795,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
   var prepareConfig = function prepareConfig(config) {
-    if (Pojo.is(config) && Str.is(config.uri)) config.url = config.uri;
-    config = Pojo.replace(defaultConfig(), config);
-    if (!Str.is(config.method)) config.method = 'get';
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(config) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(config.uri)) config.url = config.uri;
+    config = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replace(defaultConfig(), config);
+    if (!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(config.method)) config.method = 'get';
     config.method = config.method.toUpperCase();
 
-    if (Pojo.is(config.data)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(config.data)) {
       if (config.method === 'POST') config.data = this.pojoToFormData(config.data);else {
-        var parse = Uri.parse(config.url);
-        var query = Uri.makeQuery(config.data).toString();
+        var parse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse(config.url);
+        var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery(config.data).toString();
         parse.search = query;
         config.url = parse.toString();
       }
@@ -2752,9 +2817,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.configFromNode = function (node, config, events) {
-    Ele.typecheck(node);
-    var r = Pojo.is(config) ? config : {};
-    var tagName = Ele.tag(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typecheck(node);
+    var r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(config) ? config : {};
+    var tagName = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(node);
     if (r.method == null) r = configNodeMethod(r, node, tagName);
     r = configNodeUrl(r, node, tagName);
     if (r.data == null) r = configNodeData(r, node, tagName);
@@ -2766,29 +2831,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.configNodeEvents = function (node, config) {
-    Ele.typecheck(node);
-    Pojo.typecheck(config);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typecheck(node);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(config);
 
     config.before = function (xhr) {
-      Target.triggerHandler(node, 'ajax:before', xhr);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:before', xhr);
     };
 
     config.progress = function (percent, event, xhr) {
-      Target.triggerHandler(node, 'ajax:progress', percent, event, xhr);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:progress', percent, event, xhr);
     };
 
     config.success = function (xhr) {
-      var responseText = Str.isNotEmpty(xhr.responseText) && Xhr.isResponseJson(xhr) ? Json.decode(xhr.responseText) : xhr.responseText;
-      Target.triggerHandler(node, 'ajax:success', responseText, xhr);
+      var responseText = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(xhr.responseText) && Xhr.isResponseJson(xhr) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Json.decode(xhr.responseText) : xhr.responseText;
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:success', responseText, xhr);
     };
 
     config.error = function (xhr) {
       var parsedError = $inst.parseError(xhr.responseText);
-      Target.triggerHandler(node, 'ajax:error', parsedError, xhr);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:error', parsedError, xhr);
     };
 
     config.complete = function (xhr) {
-      Target.triggerHandler(node, 'ajax:complete', xhr);
+      _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:complete', xhr);
     };
 
     return config;
@@ -2797,9 +2862,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
   this.pojoToFormData = function (value) {
-    Pojo.typecheck(value);
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(value);
     var r = new FormData();
-    Pojo.each(value, function (val, key) {
+    _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(value, function (val, key) {
       r.append(key, val);
     });
     return r;
@@ -2810,21 +2875,21 @@ __webpack_require__.r(__webpack_exports__);
   this.parseError = function (responseText) {
     var r = '';
 
-    if (Str.isNotEmpty(responseText)) {
+    if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(responseText)) {
       r = responseText;
       var html;
-      var parse = Dom.parseOne(responseText);
+      var parse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.parseOne(responseText);
 
       if (parse != null) {
-        var ajaxParse = Nod.scopedQuery(parse, ".ajax-parse-error");
-        if (ajaxParse != null) html = Ele.getOuterHtml(ajaxParse);
+        var ajaxParse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.scopedQuery(parse, ".ajax-parse-error");
+        if (ajaxParse != null) html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(ajaxParse);
 
-        if (Vari.isEmpty(html)) {
-          var body = Nod.scopedQuery(parse, "body,[data-tag='body']");
-          if (body != null) html = Ele.getHtml(body);
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(html)) {
+          var body = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.scopedQuery(parse, "body,[data-tag='body']");
+          if (body != null) html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(body);
         }
 
-        if (Str.isNotEmpty(html)) r = html;
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(html)) r = html;
       }
     }
 
@@ -2835,16 +2900,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
   var configNodeUrl = function configNodeUrl(r, node, tagName) {
-    if (r.url == null) r.url = Target.triggerHandler(node, 'ajax:getUrl');
-    if (r.url == null) r.url = Ele.getUri(node);
+    if (r.url == null) r.url = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:getUrl');
+    if (r.url == null) r.url = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getUri(node);
 
-    if (r.url != null && tagName === 'form' && Str.icompare(r.method, 'get')) {
-      var query = Ele.triggerHandler(node, 'form:serialize');
-      var parse = Uri.parse(r.url);
+    if (r.url != null && tagName === 'form' && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare(r.method, 'get')) {
+      var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(node, 'form:serialize');
+      var parse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse(r.url);
 
       if (query != null && parse != null) {
         parse.search = query;
-        r.url = Uri.build(parse);
+        r.url = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(parse);
       }
     }
 
@@ -2854,10 +2919,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
   var configNodeMethod = function configNodeMethod(r, node, tagName) {
-    r.method = Target.triggerHandler(node, 'ajax:getMethod');
+    r.method = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:getMethod');
 
     if (r.method == null) {
-      if (tagName === 'form') r.method = Ele.getAttr(node, "method") || 'get';else r.method = Ele.getAttr(node, 'data-method') || 'get';
+      if (tagName === 'form') r.method = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(node, "method") || 'get';else r.method = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(node, 'data-method') || 'get';
     }
 
     return r;
@@ -2867,17 +2932,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
   var configNodeData = function configNodeData(r, node, tagName) {
-    r.data = Target.triggerHandler(node, 'ajax:getData');
+    r.data = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:getData');
 
-    if (r.data == null && tagName === 'form' && Str.icompare(r.method, 'post')) {
+    if (r.data == null && tagName === 'form' && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare(r.method, 'post')) {
       var formData = new FormData(node);
-      var clicked = Target.triggerHandler(node, 'form:getClickedSubmit');
+      var clicked = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'form:getClickedSubmit');
 
       if (clicked != null) {
-        var clickedName = Ele.getAttr(clicked, 'name');
+        var clickedName = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(clicked, 'name');
 
-        if (Str.isNotEmpty(clickedName)) {
-          var clickedVal = Ele.getValue(clicked);
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(clickedName)) {
+          var clickedVal = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getValue(clicked);
           formData.append(clickedName, clickedVal);
         }
       }
@@ -7199,13 +7264,14 @@ __webpack_require__.r(__webpack_exports__);
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
  * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
+// browser
+// script to test the browser files
 // import
 
 
 var d = _index_js__WEBPACK_IMPORTED_MODULE_0__.Shortcut.d,
     assert = _index_js__WEBPACK_IMPORTED_MODULE_0__.Shortcut.assert,
     logError = _index_js__WEBPACK_IMPORTED_MODULE_0__.Shortcut.logError; // browser
-// script to test the browser files
 
 quidphp_node_temp_test_node_js__WEBPACK_IMPORTED_MODULE_1__.Test.Browser = function () {
   var r = true;

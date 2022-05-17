@@ -8,7 +8,7 @@
 // script with some logic for ajax calls and xhr object
 
 // import
-import { Str } from '../index.js';
+import { ArrLike, Dom, Ele, Func, Integer, Json, Nod, Pojo, Request, Str, Target, Uri, Vari } from '../index.js';
 
 // export
 export default new function()

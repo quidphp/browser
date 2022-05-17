@@ -8,7 +8,7 @@
 // script with functions related to the current request
 
 // import
-import { Uri } from '../index.js';
+import { Str, Uri } from '../index.js';
 
 // export
 export default {

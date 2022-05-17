@@ -8,7 +8,7 @@
 // object for window target
 
 // import
-import { Obj } from '../index.js';
+import { Arr, Num, Obj, Pojo } from '../index.js';
 
 // export
 export default {

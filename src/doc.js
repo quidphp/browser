@@ -8,7 +8,7 @@
 // object for document and document fragment targets
 
 // import
-import { Arr, Num } from '../index.js';
+import { Arr, Ele, Num } from '../index.js';
 
 // export
 export default {

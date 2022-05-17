@@ -8,7 +8,7 @@
 // script containing event listeners functions for target elements
 
 // import
-import { Arr, Evt, Str } from '../index.js';
+import { Arr, ArrLike, Evt, Func, Nod, Pojo, Str } from '../index.js';
 
 // export
 export default new function()

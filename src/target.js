@@ -8,7 +8,7 @@
 // script with basic functions related to event targets elements
 
 // import
-import { Arr, Nod, Win } from '../index.js';
+import { Arr, ArrLike, Nod, Obj, Str, Win } from '../index.js';
 
 // export
 export default {

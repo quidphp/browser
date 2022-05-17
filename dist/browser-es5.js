@@ -227,6 +227,513 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
     },
 
     /***/
+    "./index.js":
+    /*!******************!*\
+      !*** ./index.js ***!
+      \******************/
+
+    /***/
+    function indexJs(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export */
+
+
+      __webpack_require__.d(__webpack_exports__, {
+        /* harmony export */
+        "Arr": function Arr() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Arr
+          );
+        },
+
+        /* harmony export */
+        "ArrLike": function ArrLike() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.ArrLike
+          );
+        },
+
+        /* harmony export */
+        "Bool": function Bool() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Bool
+          );
+        },
+
+        /* harmony export */
+        "Browser": function Browser() {
+          return (
+            /* reexport safe */
+            _src_browser_js__WEBPACK_IMPORTED_MODULE_1__["default"]
+          );
+        },
+
+        /* harmony export */
+        "Component": function Component() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Component
+          );
+        },
+
+        /* harmony export */
+        "Datetime": function Datetime() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Datetime
+          );
+        },
+
+        /* harmony export */
+        "Debug": function Debug() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Debug
+          );
+        },
+
+        /* harmony export */
+        "Doc": function Doc() {
+          return (
+            /* binding */
+            _Doc
+          );
+        },
+
+        /* harmony export */
+        "Dom": function Dom() {
+          return (
+            /* reexport safe */
+            _src_dom_js__WEBPACK_IMPORTED_MODULE_2__["default"]
+          );
+        },
+
+        /* harmony export */
+        "Ele": function Ele() {
+          return (
+            /* binding */
+            _Ele
+          );
+        },
+
+        /* harmony export */
+        "Env": function Env() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Env
+          );
+        },
+
+        /* harmony export */
+        "Evt": function Evt() {
+          return (
+            /* binding */
+            _Evt
+          );
+        },
+
+        /* harmony export */
+        "Factory": function Factory() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory
+          );
+        },
+
+        /* harmony export */
+        "Func": function Func() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Func
+          );
+        },
+
+        /* harmony export */
+        "HistoryState": function HistoryState() {
+          return (
+            /* reexport safe */
+            _src_historyState_js__WEBPACK_IMPORTED_MODULE_3__["default"]
+          );
+        },
+
+        /* harmony export */
+        "Html": function Html() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Html
+          );
+        },
+
+        /* harmony export */
+        "Integer": function Integer() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Integer
+          );
+        },
+
+        /* harmony export */
+        "Json": function Json() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Json
+          );
+        },
+
+        /* harmony export */
+        "Nav": function Nav() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Nav
+          );
+        },
+
+        /* harmony export */
+        "Nod": function Nod() {
+          return (
+            /* binding */
+            _Nod
+          );
+        },
+
+        /* harmony export */
+        "Num": function Num() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Num
+          );
+        },
+
+        /* harmony export */
+        "Obj": function Obj() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Obj
+          );
+        },
+
+        /* harmony export */
+        "Pojo": function Pojo() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Pojo
+          );
+        },
+
+        /* harmony export */
+        "Request": function Request() {
+          return (
+            /* reexport safe */
+            _src_request_js__WEBPACK_IMPORTED_MODULE_4__["default"]
+          );
+        },
+
+        /* harmony export */
+        "Scalar": function Scalar() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Scalar
+          );
+        },
+
+        /* harmony export */
+        "Shortcut": function Shortcut() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut
+          );
+        },
+
+        /* harmony export */
+        "Str": function Str() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Str
+          );
+        },
+
+        /* harmony export */
+        "Target": function Target() {
+          return (
+            /* binding */
+            _Target
+          );
+        },
+
+        /* harmony export */
+        "Test": function Test() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Test
+          );
+        },
+
+        /* harmony export */
+        "TestSuite": function TestSuite() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.TestSuite
+          );
+        },
+
+        /* harmony export */
+        "Tool": function Tool() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Tool
+          );
+        },
+
+        /* harmony export */
+        "Uri": function Uri() {
+          return (
+            /* reexport safe */
+            _src_uri_js__WEBPACK_IMPORTED_MODULE_5__["default"]
+          );
+        },
+
+        /* harmony export */
+        "Validate": function Validate() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Validate
+          );
+        },
+
+        /* harmony export */
+        "Vari": function Vari() {
+          return (
+            /* reexport safe */
+            quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Vari
+          );
+        },
+
+        /* harmony export */
+        "Win": function Win() {
+          return (
+            /* binding */
+            _Win
+          );
+        },
+
+        /* harmony export */
+        "Xhr": function Xhr() {
+          return (
+            /* reexport safe */
+            _src_xhr_js__WEBPACK_IMPORTED_MODULE_6__["default"]
+          );
+        }
+        /* harmony export */
+
+      });
+      /* harmony import */
+
+
+      var quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! quidphp-node-temp */
+      "./node_modules/quidphp-node-temp/index.js");
+      /* harmony import */
+
+
+      var _src_browser_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! ./src/browser.js */
+      "./src/browser.js");
+      /* harmony import */
+
+
+      var _src_dom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./src/dom.js */
+      "./src/dom.js");
+      /* harmony import */
+
+
+      var _src_historyState_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./src/historyState.js */
+      "./src/historyState.js");
+      /* harmony import */
+
+
+      var _src_request_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ./src/request.js */
+      "./src/request.js");
+      /* harmony import */
+
+
+      var _src_uri_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ./src/uri.js */
+      "./src/uri.js");
+      /* harmony import */
+
+
+      var _src_xhr_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      /*! ./src/xhr.js */
+      "./src/xhr.js");
+      /* harmony import */
+
+
+      var _src_data_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      /*! ./src/data.js */
+      "./src/data.js");
+      /* harmony import */
+
+
+      var _src_doc_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      /*! ./src/doc.js */
+      "./src/doc.js");
+      /* harmony import */
+
+
+      var _src_ele_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      /*! ./src/ele.js */
+      "./src/ele.js");
+      /* harmony import */
+
+
+      var _src_evt_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      /*! ./src/evt.js */
+      "./src/evt.js");
+      /* harmony import */
+
+
+      var _src_handler_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+      /*! ./src/handler.js */
+      "./src/handler.js");
+      /* harmony import */
+
+
+      var _src_listener_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+      /*! ./src/listener.js */
+      "./src/listener.js");
+      /* harmony import */
+
+
+      var _src_nod_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+      /*! ./src/nod.js */
+      "./src/nod.js");
+      /* harmony import */
+
+
+      var _src_selector_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+      /*! ./src/selector.js */
+      "./src/selector.js");
+      /* harmony import */
+
+
+      var _src_target_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+      /*! ./src/target.js */
+      "./src/target.js");
+      /* harmony import */
+
+
+      var _src_win_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+      /*! ./src/win.js */
+      "./src/win.js");
+
+      function ownKeys(object, enumerableOnly) {
+        var keys = Object.keys(object);
+
+        if (Object.getOwnPropertySymbols) {
+          var symbols = Object.getOwnPropertySymbols(object);
+          enumerableOnly && (symbols = symbols.filter(function (sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+          })), keys.push.apply(keys, symbols);
+        }
+
+        return keys;
+      }
+
+      function _objectSpread(target) {
+        for (var i = 1; i < arguments.length; i++) {
+          var source = null != arguments[i] ? arguments[i] : {};
+          i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+            _defineProperty(target, key, source[key]);
+          }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+          });
+        }
+
+        return target;
+      }
+
+      function _defineProperty(obj, key, value) {
+        if (key in obj) {
+          Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          });
+        } else {
+          obj[key] = value;
+        }
+
+        return obj;
+      }
+      /*
+       * This file is part of the QuidPHP package <https://quidphp.com>
+       * Author: Pierre-Philippe Emond <emondpph@gmail.com>
+       * License: https://github.com/quidphp/browser/blob/master/LICENSE
+       */
+      // index
+      // entry file for the module
+      // import quidphp-node
+      // simple import
+      // type import
+      // build
+
+
+      var _Evt = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Tool.Type, _src_evt_js__WEBPACK_IMPORTED_MODULE_10__["default"]);
+
+      var _Win = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleWinTarget, _src_win_js__WEBPACK_IMPORTED_MODULE_16__["default"]);
+
+      var _Doc = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_selector_js__WEBPACK_IMPORTED_MODULE_14__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.NodTarget, _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleDocTarget, _src_doc_js__WEBPACK_IMPORTED_MODULE_8__["default"]);
+
+      var _Ele = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_selector_js__WEBPACK_IMPORTED_MODULE_14__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.NodTarget, _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleWinTarget, _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleDocTarget, _src_ele_js__WEBPACK_IMPORTED_MODULE_9__["default"], quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Tool.ArrLoop);
+
+      var _Nod = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_selector_js__WEBPACK_IMPORTED_MODULE_14__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.NodTarget);
+
+      var _Target = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"]); // shortcut
+
+
+      var NewShortcut = {};
+      NewShortcut.getAttr = _Ele.getAttr.bind(_Ele);
+      NewShortcut.setAttr = _Ele.setAttr.bind(_Ele);
+      NewShortcut.toggleAttr = _Ele.toggleAttr.bind(_Ele);
+      NewShortcut.setCss = _Ele.setCss.bind(_Ele);
+      NewShortcut.toggleClass = _Ele.toggleClass.bind(_Ele);
+      NewShortcut.getHtml = _Ele.getHtml.bind(_Ele);
+      NewShortcut.setHtml = _Ele.setHtml.bind(_Ele);
+      NewShortcut.qs = _Nod.scopedQuery.bind(_Nod);
+      NewShortcut.qsa = _Nod.scopedQueryAll.bind(_Nod);
+      NewShortcut.getProp = _Target.getProp.bind(_Target);
+      NewShortcut.setProp = _Target.setProp.bind(_Target);
+      NewShortcut.getData = _Target.getData.bind(_Target);
+      NewShortcut.setData = _Target.setData.bind(_Target);
+      NewShortcut.setHdlr = _Target.setHandler.bind(_Target);
+      NewShortcut.setHdlrs = _Target.setsHandler.bind(_Target);
+      NewShortcut.allHdlr = _Target.allHandler.bind(_Target);
+      NewShortcut.trigHdlr = _Target.triggerHandler.bind(_Target);
+      NewShortcut.trigHdlrs = _Target.triggersHandler.bind(_Target);
+      NewShortcut.ael = _Target.addListener.bind(_Target);
+      NewShortcut.aelDelegate = _Target.addDelegatedListener.bind(_Target);
+      NewShortcut.aelPassive = _Target.addPassiveListener.bind(_Target);
+      NewShortcut.aelOnce = _Target.addListenerOnce.bind(_Target);
+      NewShortcut.rel = _Target.removeListener.bind(_Target);
+      NewShortcut.trigEvt = _Target.triggerNoBubble.bind(_Target);
+      NewShortcut.trigBubble = _Target.triggerBubble.bind(_Target);
+      NewShortcut.trigSetup = _Target.triggerSetup.bind(_Target);
+      NewShortcut.trigTeardown = _Target.triggerTeardown.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut = _objectSpread(_objectSpread({}, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut), NewShortcut); // export
+
+      /***/
+    },
+
+    /***/
     "./src/browser.js":
     /*!************************!*\
       !*** ./src/browser.js ***!
@@ -248,6 +755,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -255,6 +768,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // browser
       // script with a some functions related to browsers detection
+      // import
+      // export
 
       /* harmony default export */
 
@@ -263,12 +778,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // isOldIe
         // retourne vrai si le navigateur est une vieille version de IE (IE 10 ou moins)
         isOldIe: function isOldIe() {
-          return Str["in"]('MSIE ', window.navigator.userAgent);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('MSIE ', window.navigator.userAgent);
         },
         // isIe11
         // retourne vrai si le navigateur est ie11
         isIe11: function isIe11() {
-          return Str["in"]('Trident/', window.navigator.userAgent);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('Trident/', window.navigator.userAgent);
         },
         // isIe
         // retourne vrai si le navigateur est internet explorer
@@ -312,6 +827,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -319,6 +840,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // dataTarget
       // script for storing datas within targets
+      // import
+      // export 
 
       /* harmony default export */
 
@@ -341,7 +864,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var r = undefined;
           this.typecheck(node);
           var dataKey = this.getDataKey();
-          var isPojo = Pojo.is(node[dataKey]);
+
+          var isPojo = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(node[dataKey]);
 
           if (!isPojo && create === true) {
             isPojo = true;
@@ -355,9 +879,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // permet de retourner une data d'une node
         // envoie une exception si plus d'une node
         getData: function getData(node, key) {
-          Str.typecheck(key);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key);
+
           var data = this.allData(node);
-          return data != null ? Pojo.get(key, data) : undefined;
+          return data != null ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(key, data) : undefined;
         },
         // flashData
         // retourne la data et efface l'entrée de la node
@@ -372,11 +897,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // si undefined efface la data
         setData: function setData(nodes, key, value) {
           nodes = this.toArray(nodes);
-          Str.typecheck(key, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key, true);
+
           var $inst = this;
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             var data = $inst.allData(ele, true);
-            if (value === undefined) Pojo.unsetRef(key, data);else Pojo.setRef(key, value, data);
+            if (value === undefined) _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef(key, data);else _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef(key, value, data);
           });
         },
         // removeData
@@ -424,6 +952,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -431,6 +965,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // doc
       // object for document and document fragment targets
+      // import
+      // export
 
       /* harmony default export */
 
@@ -461,12 +997,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           };
 
           if (this.isCurrent(value)) {
-            r.width = Num.round(document.documentElement.scrollWidth);
-            r.height = Num.round(document.documentElement.scrollHeight);
+            r.width = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollWidth);
+            r.height = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollHeight);
           } else {
             var children = this.children(value);
-            Arr.each(children, function (ele) {
-              var dimension = Ele.getDimension(ele);
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(children, function (ele) {
+              var dimension = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(ele);
+
               r.width += dimension.width;
               r.height += dimension.height;
             });
@@ -500,6 +1038,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -507,6 +1051,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // dom
       // script with functions related to html and dom
+      // import
+      // export
 
       /* harmony default export */
 
@@ -523,7 +1069,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // prend un maximum d'input et retourne une string html
         htmlStr: function htmlStr(value) {
           var r = '';
-          if (Str.is(value)) r = value;else if (Scalar.is(value)) r = Str.cast(value);else if (Doc.is(value)) r = Doc.getHtml(value);else if (Ele.is(value)) r = Ele.getOuterHtml(value);else if (Ele.are(value)) r = Ele.getOuterHtml(value);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value)) r = value;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(value)) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(value);
           return r;
         },
         // htmlNodes
@@ -531,20 +1077,21 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // possible de cloner
         htmlNodes: function htmlNodes(value, clone) {
           var r = [];
-          if (Str.is(value)) r = this.parse(value);else if (Doc.is(value)) {
-            value = Doc.realNode(value);
-            r.push(clone === true ? Doc.clone(value) : value);
-          } else if (Ele.are(value)) r = clone === true ? Ele.clones(value) : value;else if (Ele.is(value)) r.push(clone === true ? Ele.clone(value) : value);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value)) r = this.parse(value);else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(value)) {
+            value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(value);
+            r.push(clone === true ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.clone(value) : value);
+          } else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(value)) r = clone === true ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.clones(value) : value;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value)) r.push(clone === true ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.clone(value) : value);
           return r;
         },
         // safeHtml
         // fait quelques modifications à une string html pour éviter des injections
         safeHtml: function safeHtml(html) {
-          Str.typecheck(html);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(html);
+
           html = html.replace(/<\!DOCTYPE[^>]*>/i, '');
           html = html.replace(/<(html|head|body)([\s\>])/gi, '<div data-tag="$1"$2');
           html = html.replace(/<\/(html|head|body)\>/gi, '</div>');
-          html = Str.trim(html);
+          html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.trim(html);
           return html;
         },
         // parse
@@ -557,28 +1104,31 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var template = document.createElement('template');
           template.innerHTML = html;
           var fragment = template.content;
-          r = Doc.children(fragment, null, true);
+          r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(fragment, null, true);
           return r;
         },
         // parseOne
         // comme parse mais retourne seulement la première node du tableau
         parseOne: function parseOne(html) {
-          return Arr.valueFirst(this.parse(html));
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(this.parse(html));
         },
         // querySelector
         // comme parse one, mais cherche pour en enfant via query selector
         // retourne le html de cette node
         querySelector: function querySelector(value, html) {
           var r = undefined;
-          Str.typecheck(value);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           var nodes = this.parse(html);
 
-          if (Arr.isNotEmpty(nodes)) {
-            var finds = Ele.mergedQsa(nodes, value);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(nodes)) {
+            var finds = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.mergedQsa(nodes, value);
 
-            if (Arr.isNotEmpty(finds)) {
-              var find = Arr.valueFirst(finds);
-              r = Ele.getHtml(find);
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(finds)) {
+              var find = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(finds);
+
+              r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(find);
             }
           }
 
@@ -601,41 +1151,49 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             body: null,
             bodyAttr: null
           };
-          Arr.accumulate(r.docEle, r.doc, function (ele) {
-            return Ele.is(ele) ? ele : null;
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate(r.docEle, r.doc, function (ele) {
+            return _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(ele) ? ele : null;
           });
-          r.html = Ele.find(r.docEle, "[data-tag='html']") || Arr.valueFirst(r.docEle);
+
+          r.html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.find(r.docEle, "[data-tag='html']") || _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(r.docEle);
 
           if (r.html != null) {
-            Ele.removeAttr(r.html, 'data-tag');
-            r.htmlAttr = Ele.attr(r.html);
-            r.head = Ele.scopedQuery(r.html, "[data-tag='head']");
-            r.body = Ele.scopedQuery(r.html, "[data-tag='body']");
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(r.html, 'data-tag');
+
+            r.htmlAttr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(r.html);
+            r.head = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(r.html, "[data-tag='head']");
+            r.body = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(r.html, "[data-tag='body']");
 
             if (r.head != null) {
-              var title = Ele.scopedQuery(r.head, "title");
+              var title = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(r.head, "title");
+
               var titleReplace = {
                 '<': '&lt;',
                 '>': '&gt;',
                 ' & ': ' &amp; '
               };
-              Ele.removeAttr(r.head, 'data-tag');
-              r.headAttr = Ele.attr(r.head);
-              r.title = title != null ? Ele.getText(title) : '?';
-              r.titleHtml = Str.replace(titleReplace, r.title);
-              r.meta = Ele.scopedQueryAll(r.head, "meta");
+
+              _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(r.head, 'data-tag');
+
+              r.headAttr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(r.head);
+              r.title = title != null ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getText(title) : '?';
+              r.titleHtml = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.replace(titleReplace, r.title);
+              r.meta = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(r.head, "meta");
             }
           }
 
           if (r.body != null) {
-            Ele.removeAttr(r.body, 'data-tag');
-            r.bodyAttr = Ele.attr(r.body);
-          } else {
-            var _html = Ele.getOuterHtml(r.doc);
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(r.body, 'data-tag');
 
-            var newBody = Html.div(_html, {
+            r.bodyAttr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(r.body);
+          } else {
+            var _html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(r.doc);
+
+            var newBody = _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div(_html, {
               dataTag: 'body'
             });
+
             r.body = this.parseOne(newBody);
           }
 
@@ -667,6 +1225,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -674,6 +1238,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // eleTarget
       // script with many functions related to element nodes
+      // import
+      // export
 
       /* harmony default export */
 
@@ -714,7 +1280,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             var tags = ['input', 'textarea', 'select', 'a', 'button'];
             var dimension = this.getDimension(node);
 
-            if (this.match(node, '[tabindex]') || Arr["in"](tag, tags)) {
+            if (this.match(node, '[tabindex]') || _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](tag, tags)) {
               if (dimension.width > 0 && dimension.height > 0) r = true;
             }
           }
@@ -732,7 +1298,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
             if (overflow !== 'visible') {
               var scroll = this.getScroll(node);
-              if (Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
+              if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
             }
           }
 
@@ -741,19 +1307,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // hasAttr
         // retourne vrai si la node a l'attribut
         hasAttr: function hasAttr(node, value) {
-          return this.is(node) && Str.is(value) ? node.hasAttribute(value) : false;
+          return this.is(node) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value) ? node.hasAttribute(value) : false;
         },
         // hasClass
         // retourne vrai si la node a la classe
         hasClass: function hasClass(node, value) {
-          return this.is(node) && Str.is(value) ? node.classList.contains(value) : false;
+          return this.is(node) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value) ? node.classList.contains(value) : false;
         },
         // tag
         // retourne le nom de la tag en lowerCase
         tag: function tag(node) {
           var r = null;
           var tag = this.getProp(node, 'tagName');
-          if (Str.is(tag)) r = tag.toLowerCase();
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(tag)) r = tag.toLowerCase();
           return r;
         },
         // css
@@ -765,7 +1331,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
           for (var i = 0; i < style.length; i++) {
             var value = style.item(i);
-            if (start == null || Str.isStart(start, value)) r[value] = style.getPropertyValue(value);
+            if (start == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart(start, value)) r[value] = style.getPropertyValue(value);
           }
 
           return r;
@@ -775,17 +1341,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         getCss: function getCss(node, key, cast, pseudo) {
           var r = undefined;
           this.typecheck(node);
-          Str.typecheck(key); // fix pour ie11 qui retourne mauvais computed style pour width/height (box-model)
 
-          if (Browser.isIe11() && Arr["in"](key, ['width', 'height'])) {
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key); // fix pour ie11 qui retourne mauvais computed style pour width/height (box-model)
+
+
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isIe11() && _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](key, ['width', 'height'])) {
             var dimension = this.getDimension(node);
-            r = Num.ceil(dimension[key]) + "px";
+            r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(dimension[key]) + "px";
           } else {
             var style = window.getComputedStyle(node, pseudo);
             r = style.getPropertyValue(key);
           }
 
-          r = Scalar.cast(r, cast);
+          r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast(r, cast);
           return r;
         },
         // attr
@@ -794,10 +1362,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var r = {};
           this.typecheck(node);
           var attr = node.attributes;
-          ArrLike.each(attr, function (value) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.each(attr, function (value) {
             var name = value.name;
-            if (start == null || Str.isStart(start, name)) r[name] = value.value;
+            if (start == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart(start, name)) r[name] = value.value;
           });
+
           return r;
         },
         // attrStr
@@ -805,7 +1375,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         attrStr: function attrStr(node, start) {
           var r = null;
           var attr = this.attr(node, start);
-          if (attr != null) r = Obj.str(attr, '=', ' ', true);
+          if (attr != null) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.str(attr, '=', ' ', true);
           return r;
         },
         // getAttr
@@ -817,7 +1387,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
           if (this.hasAttr(node, key)) {
             r = node.getAttribute(key);
-            r = Scalar.cast(r, cast);
+            r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast(r, cast);
           }
 
           return r;
@@ -834,9 +1404,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var r = undefined;
           this.typecheck(node);
           r = node.value;
-          r = Str.cast(r);
-          if (trim === true) r = Str.trim(r);
-          if (cast != null) r = Scalar.cast(r, cast);
+          r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(r);
+          if (trim === true) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.trim(r);
+          if (cast != null) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.cast(r, cast);
           return r;
         },
         // getDimension
@@ -845,7 +1415,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         getDimension: function getDimension(node, display) {
           this.typecheck(node);
           display = display === true ? 'block' : display;
-          var displayToggle = Str.isNotEmpty(display);
+
+          var displayToggle = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(display);
+
           var currentDisplay, currentWidth, currentHeight;
 
           if (displayToggle) {
@@ -866,8 +1438,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           }
 
           return {
-            width: Num.ceil(rect.width),
-            height: Num.ceil(rect.height)
+            width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.width),
+            height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.height)
           };
         },
         // getBoundingRect
@@ -884,15 +1456,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           this.typecheck(node);
           var tag = this.tag(node); // scrollTop n'est pas sur la tag HTML dans IE
 
-          if (Arr["in"](tag, ['html', 'body'])) r = Win.getScroll();else {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](tag, ['html', 'body'])) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll();else {
             var rect = this.getBoundingRect(node);
             r = {
-              top: Num.ceil(node.scrollTop),
-              left: Num.ceil(node.scrollLeft),
-              width: Num.ceil(node.scrollWidth),
-              height: Num.ceil(node.scrollHeight),
-              innerWidth: Num.ceil(rect.width),
-              innerHeight: Num.ceil(rect.height),
+              top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollTop),
+              left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollLeft),
+              width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollWidth),
+              height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.scrollHeight),
+              innerWidth: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.width),
+              innerHeight: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.height),
               scrollableX: false,
               scrollableY: false
             };
@@ -918,18 +1490,20 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         getOffsetParent: function getOffsetParent(node) {
           this.typecheck(node);
           return {
-            top: Num.ceil(node.offsetTop),
-            left: Num.ceil(node.offsetLeft)
+            top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.offsetTop),
+            left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(node.offsetLeft)
           };
         },
         // getOffsetDoc
         // retourne un objet avec les données pour le offset de la node (par rapport au document)
         getOffsetDoc: function getOffsetDoc(node) {
           var rect = this.getBoundingRect(node);
-          var scroll = Win.getScroll();
+
+          var scroll = _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll();
+
           return {
-            top: Num.ceil(rect.top + scroll.top),
-            left: Num.ceil(rect.left + scroll.left)
+            top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.top + scroll.top),
+            left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.left + scroll.left)
           };
         },
         // getOffsetWin
@@ -937,8 +1511,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         getOffsetWin: function getOffsetWin(node) {
           var rect = this.getBoundingRect(node);
           return {
-            top: Num.ceil(rect.top),
-            left: Num.ceil(rect.left)
+            top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.top),
+            left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.ceil(rect.left)
           };
         },
         // setAttr
@@ -946,10 +1520,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // si undefined, efface l'attribut
         setAttr: function setAttr(nodes, key, value) {
           nodes = this.toArray(nodes);
-          Str.typecheck(key, true);
-          if (Obj.is(value)) value = Json.encode(value);
-          if (Bool.is(value)) value = Bool.toInt(value);
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key, true);
+
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Json.encode(value);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(value);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             if (value === undefined) ele.removeAttribute(key);else ele.setAttribute(key, value);
           });
         },
@@ -963,10 +1540,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // l'atttribut est toujours présent, si true ou inexistant valeur est 1, sinon valeur est 0
         toggleAttr: function toggleAttr(nodes, key, bool) {
           nodes = this.toArray(nodes);
-          Str.typecheck(key, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key, true);
+
           var $inst = this;
-          var defaultValue = Bool.is(bool) ? Bool.toInt(bool) : null;
-          Arr.each(nodes, function (ele) {
+          var defaultValue = _index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(bool) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.toInt(bool) : null;
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             var value = defaultValue;
 
             if (value == null) {
@@ -982,10 +1562,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // possible de retirer les attributs existants
         setsAttr: function setsAttr(nodes, value) {
           nodes = this.toArray(nodes);
-          Pojo.typecheck(value);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(value);
+
           var $inst = this;
-          Arr.each(nodes, function (ele) {
-            Pojo.each(value, function (v, k) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(value, function (v, k) {
               $inst.setAttr(ele, k, v);
             });
           });
@@ -995,8 +1578,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         emptyAttr: function emptyAttr(nodes) {
           nodes = this.toArray(nodes);
           var $inst = this;
-          Arr.each(nodes, function (ele) {
-            ArrLike.each(ele.attributes, function (value) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.each(ele.attributes, function (value) {
               if (value != null) $inst.removeAttr(ele, value.name);
             });
           });
@@ -1005,11 +1589,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // ajoute un id aux éléments contenus dans l'objet qui n'en ont pas
         addId: function addId(nodes, value) {
           nodes = this.toArray(nodes);
-          Str.typecheck(value);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           var $inst = this;
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             if (!$inst.match(ele, "[id]")) {
-              var newId = value + Integer.unique();
+              var newId = value + _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.unique();
+
               $inst.setProp(ele, 'id', newId);
             }
           });
@@ -1018,8 +1606,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // permet de changer une valeur inline du css
         setCss: function setCss(node, key, value) {
           this.typecheck(node);
-          Str.typecheck(key);
-          key = Str.toCamelCase('-', key);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key);
+
+          key = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.toCamelCase('-', key);
           if (value == null) value = '';
           node.style[key] = value;
         },
@@ -1028,15 +1618,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // si la valeur est un objet, encode en json
         setValue: function setValue(node, value) {
           this.typecheck(node);
-          value = Str.cast(value, true);
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.cast(value, true);
           node.value = value;
         },
         // toggleClass
         // permet d'ajouter ou enlever une classe sur une ou plusieurs nodes
         toggleClass: function toggleClass(nodes, value, bool) {
           nodes = this.toArray(nodes);
-          Str.typecheck(value, true);
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             ele.classList.toggle(value, bool);
           });
         },
@@ -1045,17 +1637,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         setDimension: function setDimension(node, width, height) {
           this.typecheck(node);
 
-          if (Scalar.is(width)) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(width)) {
             width = width === true ? this.getDimension(node, width).width : width;
             width = width === false ? undefined : width;
-            width = Num.is(width) ? width + "px" : width;
+            width = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(width) ? width + "px" : width;
             this.setCss(node, 'width', width);
           }
 
-          if (Scalar.is(height)) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Scalar.is(height)) {
             height = height === true ? this.getDimension(node, height).height : height;
             height = height === false ? undefined : height;
-            height = Num.is(height) ? height + "px" : height;
+            height = _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(height) ? height + "px" : height;
             this.setCss(node, 'height', height);
           }
         },
@@ -1063,8 +1655,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // permet de changer les valeurs du scroll
         setScroll: function setScroll(node, top, left) {
           this.typecheck(node);
-          if (Num.is(top)) node.scrollTop = top > 0 ? top : 0;
-          if (Num.is(left)) node.scrollLeft = left > 0 ? left : 0;
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(top)) node.scrollTop = top > 0 ? top : 0;
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(left)) node.scrollLeft = left > 0 ? left : 0;
         },
         // focus
         // permet de mettre le focus sur une node
@@ -1073,10 +1665,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           this.typecheck(node);
 
           if (preventScroll === true) {
-            var scroll = Win.getScroll();
+            var scroll = _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll();
+
             node.focus();
-            Func.timeout(0, function () {
-              Win.setScroll(scroll.top, scroll.left);
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.timeout(0, function () {
+              _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.setScroll(scroll.top, scroll.left);
             });
           } else node.focus();
         },
@@ -1094,15 +1688,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         serialize: function serialize(nodes, keyProp, valueProp) {
           var r = '';
           nodes = this.toArray(nodes);
-          var query = Uri.makeQuery();
-          keyProp = Str.is(keyProp) ? keyProp : 'name';
-          valueProp = Str.is(valueProp) ? valueProp : 'value';
+
+          var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery();
+
+          keyProp = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(keyProp) ? keyProp : 'name';
+          valueProp = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(valueProp) ? valueProp : 'value';
           var $inst = this;
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             var key = $inst.getProp(ele, keyProp);
             var value = $inst.getProp(ele, valueProp);
             query.append(key, value);
           });
+
           r = query.toString();
           return r;
         },
@@ -1110,22 +1708,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // ajout une ou plusieurs nodes comme premiers enfant de la node
         prepend: function prepend(node, value) {
           this.typecheck(node);
-          value = Dom.htmlNodes(value);
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
           node.prepend.apply(node, value);
         },
         // append
         // ajoute du contenu html comme dernier enfant de la node
         append: function append(node, value) {
           this.typecheck(node);
-          value = Dom.htmlNodes(value);
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
           node.append.apply(node, value);
         },
         // insertBefore
         // permet d'insérer une ou plusieurs node avant une autre
         insertBefore: function insertBefore(node, value) {
           this.typecheck(node);
-          value = Dom.htmlNodes(value);
-          return Arr.accumulate([], value, function (ele) {
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], value, function (ele) {
             return node.insertAdjacentElement('beforebegin', ele);
           });
         },
@@ -1133,8 +1731,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // permet d'insérer une ou plusieurs node après une autre
         insertAfter: function insertAfter(node, value) {
           this.typecheck(node);
-          value = Dom.htmlNodes(value);
-          return Arr.accumulate([], value, function (ele) {
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], value, function (ele) {
             return node.insertAdjacentElement('afterend', ele);
           });
         },
@@ -1143,11 +1741,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         wrapAll: function wrapAll(nodes, value) {
           var r = null;
           nodes = this.toArray(nodes, true);
-          value = Dom.htmlNodes(value);
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value);
 
-          if (Arr.isNotEmpty(value)) {
-            r = Arr.valueFirst(value);
-            var firstNode = Arr.valueFirst(nodes);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(value)) {
+            r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(value);
+
+            var firstNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.valueFirst(nodes);
+
             this.insertBefore(firstNode, value);
             this.append(r, nodes);
           }
@@ -1180,6 +1780,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1187,6 +1793,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // event
       // script containing event management functions
+      // import
+      // export
 
       /* harmony default export */
 
@@ -1235,7 +1843,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         isSpecialKeyCode: function isSpecialKeyCode(event) {
           var r = false;
           this.typecheck(event);
-          if (Integer.is(event.keyCode) && Arr["in"](event.keyCode, this.specialKeyCode)) r = true;
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(event.keyCode) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](event.keyCode, this.specialKeyCode)) r = true;
           return r;
         },
         // preventStop
@@ -1250,9 +1858,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne event ou custom event selon le type
         // un nom de type avec un . ou : est custom
         nameFromType: function nameFromType(type) {
-          Str.typecheck(type, true);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+
           var r = 'event';
-          if (Str["in"]('.', type) || Str["in"](':', type)) r = 'customEvent';
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('.', type) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"](':', type)) r = 'customEvent';
           return r;
         },
         // createFromType
@@ -1302,6 +1911,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1309,6 +1924,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // handler
       // script for handler management (functions stored in targets)
+      // import
+      // export
 
       /* harmony default export */
 
@@ -1318,10 +1935,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne vrai si la handler de chaque node retourne la valeur donné en argument
         isTriggerHandlerEqual: function isTriggerHandlerEqual(nodes, type, equal) {
           nodes = this.toArray(nodes);
-          var args = Arr.merge([type], ArrLike.sliceStart(3, arguments));
+
+          var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([type], _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(3, arguments));
+
           var $inst = this;
-          return Arr.every(nodes, function (ele) {
-            var funcArgs = Arr.merge([ele], args);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every(nodes, function (ele) {
+            var funcArgs = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([ele], args);
+
             var result = $inst.triggerHandler.apply($inst, funcArgs);
             return result === equal;
           });
@@ -1338,29 +1958,37 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // méthode qui retourne un handler emmagasiné dans une node
         // envoie une erreur si plusieurs nodes
         getHandler: function getHandler(node, type) {
-          Str.typecheck(type);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type);
+
           var handlers = this.allHandler(node);
-          return handlers != null ? Pojo.get(type, handlers) : undefined;
+          return handlers != null ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(type, handlers) : undefined;
         },
         // setHandler
         // permet d'emmagasiné une handler dans chaque node fournit en argument
         setHandler: function setHandler(nodes, type, handler) {
-          Str.typecheck(type, true);
-          Func.typecheck(handler);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Func.typecheck(handler);
+
           nodes = this.toArray(nodes);
           var $inst = this;
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             var all = $inst.allHandler(ele, true);
-            Pojo.setRef(type, handler, all);
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef(type, handler, all);
           });
         },
         // setsHandler
         // permet d'ajouter plusieurs handlers à partir d'un objet
         setsHandler: function setsHandler(nodes, typeStart, obj) {
-          Str.typecheck(typeStart, true);
-          Pojo.typecheck(obj);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(typeStart, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(obj);
+
           var $inst = this;
-          Pojo.each(obj, function (value, key) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(obj, function (value, key) {
             var type = typeStart + key;
             $inst.setHandler(nodes, type, value);
           });
@@ -1368,12 +1996,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // removeHandler
         // permet de retirer un handler emmagasiné dans une ou plusiuers node
         removeHandler: function removeHandler(nodes, type) {
-          Str.typecheck(type, true);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+
           nodes = this.toArray(nodes);
           var $inst = this;
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             var all = $inst.allHandler(ele, true);
-            Pojo.unsetRef(type, all);
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef(type, all);
           });
         },
         // triggerHandler
@@ -1382,11 +2013,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         triggerHandler: function triggerHandler(node, type) {
           var r = undefined;
           this.typecheck(node);
-          Str.typecheck(type, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+
           var handler = this.getHandler(node, type);
 
-          if (Func.is(handler)) {
-            var args = ArrLike.sliceStart(2, arguments);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(handler)) {
+            var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
+
             r = handler.apply(node, args);
           }
 
@@ -1398,9 +2032,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         triggersHandler: function triggersHandler(nodes, type) {
           nodes = this.toArray(nodes);
           var $inst = this;
-          var args = ArrLike.sliceStart(2, arguments);
-          return Arr.accumulate([], nodes, function (ele) {
-            return $inst.triggerHandler.apply($inst, Arr.merge([ele, type], args));
+
+          var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
+
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], nodes, function (ele) {
+            return $inst.triggerHandler.apply($inst, _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([ele, type], args));
           });
         }
       };
@@ -1429,6 +2065,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1436,6 +2078,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // historyState
       // script with functions related to the history states
+      // import
+      // export
 
       /* harmony default export */
 
@@ -1445,7 +2089,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne vrai si la valeur est un objet compatible pour un état d'historique
         is: function is(state) {
           var r = false;
-          if (Pojo.is(state) && Str.is(state.url) && Num.is(state.timestamp)) r = true;
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(state) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(state.url) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(state.timestamp)) r = true;
           return r;
         },
         // isChangeValid
@@ -1454,13 +2098,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var r = false;
 
           if (this.is(state) && this.is(previous)) {
-            var isInternal = Uri.isInternal(state.url, previous.url);
-            var hasExtension = Uri.hasExtension(state.url);
-            var isHashChange = Uri.isHashChange(state.url, previous.url);
-            var isSameWithHash = Uri.isSameWithHash(state.url, previous.url);
+            var isInternal = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal(state.url, previous.url);
+
+            var hasExtension = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasExtension(state.url);
+
+            var isHashChange = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange(state.url, previous.url);
+
+            var isSameWithHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSameWithHash(state.url, previous.url);
 
             if (isInternal === true && hasExtension === false && isHashChange === false && isSameWithHash === false) {
-              if (!differentPathQuery || Uri.isSamePathQuery(state.url, previous.url) === false) r = true;
+              if (!differentPathQuery || _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQuery(state.url, previous.url) === false) r = true;
             }
           }
 
@@ -1469,15 +2116,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // make
         // retourne un objet état d'historique (avec url absolute, title et timestamp)
         make: function make(value, title, noEmptyHash) {
-          Str.typecheck(value);
-          var uri = Uri.absolute(value, true);
-          var valueEndsHash = Str.isEnd('#', value);
-          var uriEndsHash = Str.isEnd('#', uri);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
+          var uri = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute(value, true);
+
+          var valueEndsHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('#', value);
+
+          var uriEndsHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('#', uri);
+
           if (noEmptyHash === true && uriEndsHash === true) uri = uri.slice(0, -1);else if (noEmptyHash !== true && valueEndsHash === true && uriEndsHash === false) uri += "#";
           return {
             url: uri,
             title: title || null,
-            timestamp: Datetime.now()
+            timestamp: _index_js__WEBPACK_IMPORTED_MODULE_0__.Datetime.now()
           };
         }
       };
@@ -1506,6 +2157,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1513,6 +2170,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // listener
       // script containing event listeners functions for target elements
+      // import
+      // export
 
       /* harmony default export */
 
@@ -1523,21 +2182,25 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne un tableau avec les paramètres pour retirer le listener
         this.addListener = function (nodes, type, func, register, delegate, option) {
           var r = null;
-          Str.typecheck(type, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+
           nodes = this.toArray(nodes);
           var $inst = this;
 
-          if (Arr.isNotEmpty(nodes)) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(nodes)) {
             option = Object.assign({
               capture: false,
               once: false
             }, option);
-            var thirdArg = Evt.support.once === true ? option : option.capture;
+            var thirdArg = _index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.support.once === true ? option : option.capture;
             var handler = addListenerHandler.call(this, type, func, delegate, thirdArg, option);
-            Arr.each(nodes, function (ele) {
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
               ele.addEventListener(type, handler, thirdArg);
-              if (Str.isNotEmpty(register) || register === true) $inst.registerListener(ele, register, type, handler, thirdArg);
+              if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(register) || register === true) $inst.registerListener(ele, register, type, handler, thirdArg);
             });
+
             r = [type, handler, thirdArg];
           }
 
@@ -1548,12 +2211,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.registerListener = function (node, register, type, handler, option) {
-          Str.typecheck(type, true);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+
           register = register === true ? type : register;
-          Str.typecheck(register, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(register, true);
+
           var data = this.getOrSetData(node, 'rel', {});
           var entry = [type, handler, option];
-          Pojo.setRef(register, entry, data);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.setRef(register, entry, data);
         }; // addListenerOnce
         // comme ael, mais le listener ne peut être déclenché qu'une seule fois
 
@@ -1584,30 +2251,34 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         this.removeListener = function (nodes, args) {
           nodes = this.toArray(nodes);
           var $inst = this;
-          Arr.each(nodes, function (ele) {
-            if (Str.isNotEmpty(args)) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(args)) {
               var key = args;
               var data = $inst.getData(ele, 'rel');
 
-              if (Pojo.is(data)) {
-                args = Pojo.get(key, data);
-                Pojo.unsetRef(key, data);
+              if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(data)) {
+                args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(key, data);
+
+                _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.unsetRef(key, data);
               }
             }
 
-            if (Arr.is(args)) ele.removeEventListener.apply(ele, args);
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(args)) ele.removeEventListener.apply(ele, args);
           });
         }; // trigger
         // utilisé par triggerBubble et triggerNoBubble pour envoyer des événements
 
 
         this.trigger = function (nodes, type, option) {
-          Str.typecheck(type, true);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(type, true);
+
           nodes = this.toArray(nodes);
 
-          if (Arr.isNotEmpty(nodes)) {
-            var event = Evt.createFromType(type, option);
-            Arr.each(nodes, function (ele) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(nodes)) {
+            var event = _index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.createFromType(type, option);
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
               ele.dispatchEvent(event);
             });
           }
@@ -1617,7 +2288,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.triggerBubble = function (nodes, type) {
-          var data = ArrLike.sliceStart(2, arguments);
+          var data = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
+
           var option = {
             bubbles: true,
             cancelable: true,
@@ -1630,7 +2302,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.triggerNoBubble = function (nodes, type) {
-          var data = ArrLike.sliceStart(2, arguments);
+          var data = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(2, arguments);
+
           var option = {
             bubbles: false,
             cancelable: true,
@@ -1644,10 +2317,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.triggerSetup = function (nodes) {
-          var sliced = ArrLike.sliceStart(1, arguments);
-          var args = Arr.merge([nodes, 'component:setup'], sliced);
+          var sliced = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(1, arguments);
+
+          var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([nodes, 'component:setup'], sliced);
+
           this.triggerNoBubble.apply(this, args);
-          args = Arr.merge([nodes, 'component:ready'], sliced);
+          args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([nodes, 'component:ready'], sliced);
           this.triggerNoBubble.apply(this, args);
         }; // triggerTeardown
         // fonction utilisé pour lancer le démontange d'un component
@@ -1655,7 +2330,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.triggerTeardown = function (nodes) {
-          var args = Arr.merge([nodes, 'component:teardown'], ArrLike.sliceStart(1, arguments));
+          var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge([nodes, 'component:teardown'], _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(1, arguments));
+
           return this.triggerNoBubble.apply(this, args);
         }; // addListenerHandler
         // retourne le handler utilisé par addListener
@@ -1668,9 +2344,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var handler = function handler(event) {
             var go = delegate == null;
             var context = this;
-            if (option.once === true && Evt.support.once === false) $inst.removeListener(event.target, [type, handler, thirdArg]);
+            if (option.once === true && _index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.support.once === false) $inst.removeListener(event.target, [type, handler, thirdArg]);
 
-            if (Str.isNotEmpty(delegate) && event.target != null) {
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(delegate) && event.target != null) {
               go = prepareDelegate.call(this, event, delegate);
               context = event.triggerTarget;
             }
@@ -1678,7 +2354,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             if (go === true) {
               var args = [event];
               var detail = event.detail;
-              args = Arr.merge(args, detail);
+              args = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.merge(args, detail);
               func.apply(context, args);
             }
           };
@@ -1692,13 +2368,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         var prepareDelegate = function prepareDelegate(event, delegate) {
           var r = false;
           var context = event.target;
-          var nodes = Nod.scopedQueryAll(this, delegate);
+
+          var nodes = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.scopedQueryAll(this, delegate);
+
           var delegateTarget = this;
           var triggerTarget = context;
-          if (Arr["in"](context, nodes)) r = true;else {
-            r = Arr.some(nodes, function (node) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](context, nodes)) r = true;else {
+            r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some(nodes, function (node) {
               if (node.contains(context)) {
-                triggerTarget = Nod.closest(context, delegate);
+                triggerTarget = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.closest(context, delegate);
                 return true;
               }
             });
@@ -1753,6 +2431,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1760,13 +2444,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // nod
       // object for element, text and document nodes
+      // import
+      // nodTarget
+      // méthodes pour un grand ensemble de nodes
 
 
       var _NodTarget = {
         // is
         // retourne vrai si la valeur est un element, un textNode ou un document
         is: function is(value) {
-          return Ele.is(value) || Doc.is(value) || this.isText(value) || this.isDoctype(value);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(value) || this.isText(value) || this.isDoctype(value);
         },
         // isText
         // retourne vrai si c'est une texte node
@@ -1802,7 +2489,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // permet de changer contenu texte d'une balise
         setText: function setText(node, value) {
           this.typecheck(node);
-          Str.typecheck(value, false);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value, false);
 
           if (node.textContent != null) {
             value = value == null ? '' : value;
@@ -1820,7 +2508,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         clones: function clones(value) {
           var $inst = this;
           var nodes = this.toArray(value);
-          return Arr.accumulate([], value, function (ele) {
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate([], value, function (ele) {
             return $inst.clone(ele);
           });
         },
@@ -1829,7 +2517,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // utilise arguments
         remove: function remove(value) {
           var nodes = this.toArray(value);
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             ele.remove();
           });
         }
@@ -1840,19 +2529,21 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // isEmpty
         // retourne vrai si la valeur est une node et qu'elle est vide
         isEmpty: function isEmpty(value) {
-          return this.is(value) ? Str.isEmpty(this.getHtml(value)) : false;
+          return this.is(value) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty(this.getHtml(value)) : false;
         },
         // isNotEmpty
         // retourne vrai si la valeur est une node et qu'elle n'est pas vide
         isNotEmpty: function isNotEmpty(value) {
-          return this.is(value) ? Str.isNotEmpty(this.getHtml(value)) : false;
+          return this.is(value) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(this.getHtml(value)) : false;
         },
         // getHtml
         // retourne le html dans la node ou le document
         getHtml: function getHtml(value) {
           var r = '';
-          var children = Nod.children(value, null, true);
-          r = Ele.getOuterHtml(children);
+
+          var children = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.children(value, null, true);
+
+          r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(children);
           return r;
         },
         // setHtml
@@ -1861,11 +2552,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         setHtml: function setHtml(node, value, clone) {
           this.typecheck(node);
           node = this.realNode(node);
-          var children = Nod.children(node, null, true);
-          if (Pojo.is(value)) value = Json.encode(value);
-          value = Dom.htmlNodes(value, clone);
-          Nod.remove(children);
-          Arr.each(value, function (ele) {
+
+          var children = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.children(node, null, true);
+
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Json.encode(value);
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlNodes(value, clone);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.remove(children);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(value, function (ele) {
             node.appendChild(ele);
           });
         },
@@ -1876,7 +2571,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne vrai si le html a été changé
         replaceHtml: function replaceHtml(node, value) {
           var r = false;
-          Str.typecheck(value);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           var current = this.getHtml(node);
           var newElement = document.createElement('div');
           this.setHtml(newElement, value);
@@ -1892,8 +2589,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // getOuterHtml
         // retourne le outerHtml d'une ou plusieurs nodes
         getOuterHtml: function getOuterHtml(nodes) {
-          nodes = Nod.toArray(nodes);
-          return Arr.accumulate('', nodes, function (ele) {
+          nodes = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.toArray(nodes);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.accumulate('', nodes, function (ele) {
             var content = '';
             if (ele.outerHTML != null) content = ele.outerHTML;else if (ele.textContent != null) content = ele.textContent;
             return content;
@@ -1936,6 +2633,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -1943,6 +2646,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // request
       // script with functions related to the current request
+      // import
+      // export
 
       /* harmony default export */
 
@@ -1953,7 +2658,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // possible d'inclure le hash
         relative: function relative(hash) {
           var r = window.location.pathname + window.location.search;
-          if (hash === true && window.location.hash) r += Uri.makeHash(window.location.hash, true);
+          if (hash === true && window.location.hash) r += _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(window.location.hash, true);
           return r;
         },
         // absolute
@@ -1966,7 +2671,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // possible de retourne avec ou sans le :
         scheme: function scheme(twoDot) {
           var r = location.protocol;
-          if (twoDot !== true) r = r.substring(0, Str.pos(':', r));
+          if (twoDot !== true) r = r.substring(0, _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.pos(':', r));
           return r;
         },
         // host
@@ -1982,7 +2687,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // fragment
         // retourne le fragment de l'uri sans le hash
         fragment: function fragment() {
-          return Uri.makeHash(window.location.hash);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(window.location.hash);
         },
         // parse
         // retourne un objet avec les différentes parties de l'uri courante séparés
@@ -2015,6 +2720,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2022,6 +2733,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // selector
       // script with methods related to selecting and matching nodes
+      // import
+      // export
 
       /* harmony default export */
 
@@ -2033,14 +2746,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         scopedQuery: function scopedQuery(node, selector, typecheck) {
           var r = null;
           node = this.realNode(node);
-          Nod.typecheck(node);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
 
           if (node != null) {
-            selector = Doc.is(node) ? selector : ":scope " + selector;
+            selector = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(node) ? selector : ":scope " + selector;
             r = node.querySelector(selector);
           }
 
-          if (typecheck === true) Ele.typecheck(r);
+          if (typecheck === true) _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typecheck(r);
           return r;
         },
         // scopedQueryAll
@@ -2050,15 +2764,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         scopedQueryAll: function scopedQueryAll(node, selector, typecheck) {
           var r = null;
           node = this.realNode(node);
-          Nod.typecheck(node);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
 
           if (node != null) {
-            selector = Doc.is(node) ? selector : ":scope " + selector;
+            selector = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(node) ? selector : ":scope " + selector;
             r = node.querySelectorAll(selector);
-            if (r instanceof NodeList) r = ArrLike.toArray(r);
+            if (r instanceof NodeList) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(r);
           }
 
-          if (typecheck === true) Ele.typechecks(r, true);
+          if (typecheck === true) _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typechecks(r, true);
           return r;
         },
         // mergedQsa
@@ -2071,12 +2786,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
           if (nodes != null) {
             r = [];
-            Arr.each(nodes, function (ele) {
-              Arr.mergeRef(r, $inst.scopedQueryAll(ele, selector));
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+              _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.mergeRef(r, $inst.scopedQueryAll(ele, selector));
             });
           }
 
-          if (typecheck === true) Ele.typechecks(r, true);
+          if (typecheck === true) _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typechecks(r, true);
           return r;
         },
         // closest
@@ -2084,7 +2800,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         closest: function closest(node, value) {
           node = this.realNode(node);
           this.typecheck(node);
-          Str.typecheck(value);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           return node.closest(value);
         },
         // closestParent
@@ -2097,47 +2815,54 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne vrai si la node match le pattern
         match: function match(node, value) {
           node = this.realNode(node);
-          Nod.typecheck(node);
-          Str.typecheck(value);
-          return Doc.is(node) ? false : node.matches(value);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(node) ? false : node.matches(value);
         },
         // some
         // retourne vrai si au moins une node retourne vrai au pattern
         some: function some(nodes, value) {
-          Str.typecheck(value);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           nodes = this.toArray(nodes);
           var $inst = this;
-          return Arr.some(nodes, function (ele) {
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.some(nodes, function (ele) {
             return $inst.match(ele, value);
           });
         },
         // every
         // retourne vrai si toutes les nodes retournent vrai au pattern
         every: function every(nodes, value) {
-          Str.typecheck(value);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           nodes = this.toArray(nodes);
           var $inst = this;
-          return Arr.every(nodes, function (ele) {
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every(nodes, function (ele) {
             return $inst.match(ele, value);
           });
         },
         // filter
         // permet de filtrer les nodes d'un tableau qui match le pattern
         filter: function filter(nodes, value) {
-          Str.typecheck(value);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           nodes = this.toArray(nodes);
           var $inst = this;
-          return Arr.filter(nodes, function (ele) {
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.filter(nodes, function (ele) {
             return $inst.match(ele, value);
           });
         },
         // find
         // retourne la première valeur d'un tableau qui match le pattern
         find: function find(nodes, value) {
-          Str.typecheck(value);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
           nodes = this.toArray(nodes);
           var $inst = this;
-          return Arr.find(nodes, function (ele) {
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.find(nodes, function (ele) {
             return $inst.match(ele, value);
           });
         },
@@ -2146,11 +2871,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         parent: function parent(node, value) {
           var r = null;
           node = this.realNode(node);
-          Nod.typecheck(node);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
+
           var parent = node.parentNode;
 
-          if (Nod.is(parent)) {
-            if (value == null || Nod.match(parent, value)) r = parent;
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(parent)) {
+            if (value == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.match(parent, value)) r = parent;
           }
 
           return r;
@@ -2161,11 +2888,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         parents: function parents(node, value, until) {
           var r = [];
           node = this.realNode(node);
-          Nod.typecheck(node);
 
-          while (node = Nod.parent(node)) {
-            if (until != null && Nod.match(node, until)) break;
-            if (value == null || Nod.match(node, value)) r.push(node);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
+
+          while (node = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.parent(node)) {
+            if (until != null && _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.match(node, until)) break;
+            if (value == null || _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.match(node, value)) r.push(node);
           }
 
           return r;
@@ -2235,17 +2963,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         children: function children(node, value, withTextNodes) {
           var r = null;
           node = this.realNode(node);
-          Nod.typecheck(node);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.typecheck(node);
+
           var hasChildren = node.children != null;
           var childs;
-          if (withTextNodes === true) childs = ArrLike.toArray(node.childNodes);else {
-            if (hasChildren === true) childs = ArrLike.toArray(node.children);else {
-              childs = ArrLike.accumulate([], node.childNodes, function (value) {
-                return Ele.is(value) ? value : null;
+          if (withTextNodes === true) childs = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(node.childNodes);else {
+            if (hasChildren === true) childs = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(node.children);else {
+              childs = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.accumulate([], node.childNodes, function (value) {
+                return _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(value) ? value : null;
               });
             }
           }
-          if (value == null) r = childs;else r = Nod.filter(childs, value);
+          if (value == null) r = childs;else r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.filter(childs, value);
           return r;
         },
         // realNode
@@ -2280,6 +3010,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2287,8 +3023,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // target
       // script with basic functions related to event targets elements
-      // targetRoot
-      // object for elements, documents and window
+      // import
+      // export
 
       /* harmony default export */
 
@@ -2297,14 +3033,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // is
         // retourne vrai si la valeur est une node, un document, un fragment de document ou window
         is: function is(value) {
-          return Nod.is(value) || Win.is(value);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(value) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Win.is(value);
         },
         // are
         // retourne vrai si la valeur est une collection de node non vide
         are: function are(value) {
           var $inst = this;
-          value = ArrLike.toArray(value);
-          return Arr.is(value) ? Arr.every(value, function (v) {
+          value = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(value);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(value) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.every(value, function (v) {
             return $inst.is(v);
           }) : false;
         },
@@ -2322,7 +3058,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         typechecks: function typechecks(value, type) {
           var error = false;
           var are = this.are(value);
-          if (!are || are === true && type === true && Arr.isEmpty(value)) error = true;
+          if (!are || are === true && type === true && _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(value)) error = true;
           if (error === true) throw new Error(value);
           return value;
         },
@@ -2330,15 +3066,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne une propriété d'une node
         getProp: function getProp(node, key) {
           this.typecheck(node);
-          return Obj.get(key, node);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.get(key, node);
         },
         // setProp
         // permet de changer la propriété sur une node ou plusieurs node
         setProp: function setProp(nodes, key, value) {
-          Str.typecheck(key);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(key);
+
           nodes = this.toArray(nodes);
-          Arr.each(nodes, function (ele) {
-            Obj.setRef(key, value, ele);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.setRef(key, value, ele);
           });
         },
         // propStr
@@ -2346,10 +3084,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // un séparateur peut être fourni, sinon utilise -
         propStr: function propStr(nodes, prop, separator) {
           nodes = this.toArray(nodes);
-          Str.typecheck(prop, true);
-          separator = Str.isNotEmpty(separator) ? separator : '-';
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(prop, true);
+
+          separator = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(separator) ? separator : '-';
           var $inst = this;
-          return Arr.reduce('', nodes, function (r, ele) {
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.reduce('', nodes, function (r, ele) {
             r += r.length ? separator : "";
             return r += $inst.getProp(ele, prop);
           });
@@ -2361,13 +3101,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var r = {};
           nodes = this.toArray(nodes);
           var $inst = this;
-          Str.typecheck(propKey, true);
-          Str.typecheck(propValue, true);
-          Arr.each(nodes, function (ele) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(propKey, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(propValue, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.each(nodes, function (ele) {
             var key = $inst.getProp(ele, propKey);
             var value = $inst.getProp(ele, propValue);
             r[key] = value;
           });
+
           return r;
         },
         // toArray
@@ -2377,7 +3121,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // envoie automatiquement dans le typecheck
         // les array vide passent le typecheck
         toArray: function toArray(value) {
-          if (this.is(value)) value = [value];else if (ArrLike.is(value)) value = ArrLike.toArray(value);else if (value == null) value = [];
+          if (this.is(value)) value = [value];else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(value)) value = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.toArray(value);else if (value == null) value = [];
           return this.typechecks.call(this, value);
         }
       };
@@ -2406,6 +3150,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2413,6 +3163,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // uri
       // script with a set of helper functions related to uri management
+      // import
+      // export
 
       /* harmony default export */
 
@@ -2423,8 +3175,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         isInternal: function isInternal(uri, compare) {
           var r = false;
 
-          if (Str.is(uri)) {
-            compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+            compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
             var parse = this.parse(uri);
             if (parse.protocol === compare.protocol && parse.host === compare.host) r = true;
           }
@@ -2446,9 +3198,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         hasFragment: function hasFragment(uri) {
           var r = false;
 
-          if (Str.is(uri)) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
             var parse = this.parse(uri);
-            if (Str.isNotEmpty(parse.hash)) r = true;
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(parse.hash)) r = true;
           }
 
           return r;
@@ -2456,7 +3208,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // isOnlyHash
         // retourne vrai si l'uri est seulement un hash
         isOnlyHash: function isOnlyHash(value) {
-          return Str.length(value) > 1 && Str.isStart('#', value);
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length(value) > 1 && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('#', value);
         },
         // isSamePathQuery
         // retourne vrai si l'uri est la même que la comparaison
@@ -2464,8 +3216,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         isSamePathQuery: function isSamePathQuery(uri, compare) {
           var r = false;
 
-          if (Str.is(uri)) {
-            compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+            compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
             var parse = this.parse(uri);
             if (parse.pathname === compare.pathname && parse.search === compare.search) r = true;
           }
@@ -2478,8 +3230,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         isSamePathQueryHash: function isSamePathQueryHash(uri, compare) {
           var r = false;
 
-          if (Str.is(uri)) {
-            compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+            compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
             var parse = this.parse(uri);
             if (parse.pathname === compare.pathname && parse.search === compare.search && parse.hash === compare.hash) r = true;
           }
@@ -2491,12 +3243,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         isHashChange: function isHashChange(uri, compare) {
           var r = false;
 
-          if (Str.is(uri)) {
-            compare = Str.is(compare) ? this.parse(compare) : Request.parse();
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(uri)) {
+            compare = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(compare) ? this.parse(compare) : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse();
             var parse = this.parse(uri);
 
             if (parse.protocol === compare.protocol && parse.host === compare.host && parse.pathname === compare.pathname && parse.search === compare.search) {
-              if ((Str.isNotEmpty(parse.hash) || Str.isNotEmpty(compare.hash)) && parse.hash !== compare.hash) r = true;
+              if ((_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(parse.hash) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(compare.hash)) && parse.hash !== compare.hash) r = true;
             }
           }
 
@@ -2537,7 +3289,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         basename: function basename(uri) {
           var r = null;
           var path = this.path(uri);
-          if (Str.is(path)) r = path.substr(path.lastIndexOf("/") + 1);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(path)) r = path.substr(path.lastIndexOf("/") + 1);
           return r;
         },
         // filename
@@ -2545,7 +3297,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         filename: function filename(uri) {
           var r = null;
           var basename = this.basename(uri);
-          if (Str.is(basename)) r = basename.replace(/\.[^.$]+$/, '');
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(basename)) r = basename.replace(/\.[^.$]+$/, '');
           return r;
         },
         // extension
@@ -2555,16 +3307,18 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var parse = this.parse(uri);
           var regex = /(?:\.([^.]+))?$/;
           var result = regex.exec(parse.pathname);
-          if (Arr.is(result) && result.length === 2) r = result[1];
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(result) && result.length === 2) r = result[1];
           return r;
         },
         // parse
         // retourne un objet avec les différentes parties d'une uri séparés
         // ne marche pas bien sur ie11
         parse: function parse(uri) {
-          Str.typecheck(uri);
-          var schemeHost = Request.schemeHost();
-          if (Str.isStart("#", uri)) uri = Request.relative() + uri;
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(uri);
+
+          var schemeHost = _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.schemeHost();
+
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart("#", uri)) uri = _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative() + uri;
           return new URL(uri, schemeHost);
         },
         // build
@@ -2573,12 +3327,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // possible d'inclure ou non le hash
         build: function build(parse, absolute, hash) {
           var r = '';
-          Obj.typecheck(parse);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.typecheck(parse);
 
           if (absolute === true) {
-            r += Str.is(parse.protocol) ? parse.protocol : Request.scheme(true);
+            r += _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(parse.protocol) ? parse.protocol : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme(true);
             r += "//";
-            r += Str.is(parse.host) ? parse.host : Request.host();
+            r += _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(parse.host) ? parse.host : _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.host();
           }
 
           r += parse.pathname;
@@ -2586,7 +3341,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           if (parse.search) {
             var searchParams = parse.search instanceof URLSearchParams ? parse.search : this.makeQuery(parse.search);
             var query = searchParams.toString();
-            if (Str.isNotEmpty(query)) r += "?" + query;
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(query)) r += "?" + query;
           }
 
           if (parse.hash && hash === true) r += this.makeHash(parse.hash, true);
@@ -2595,10 +3350,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // makeQuery
         // permet de retourner un objet urlSearchParams à partir d'une string ou un object
         makeQuery: function makeQuery(value) {
-          var r = Str.is(value) ? new URLSearchParams(value) : new URLSearchParams();
+          var r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(value) ? new URLSearchParams(value) : new URLSearchParams();
 
-          if (Pojo.is(value)) {
-            Pojo.each(value, function (value, key) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(value)) {
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(value, function (value, key) {
               value = value == null ? '' : value;
               r.append(key, value);
             });
@@ -2611,10 +3366,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         makeHash: function makeHash(value, symbol) {
           var r = '';
 
-          if (Str.isNotEmpty(value)) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(value)) {
             r = value;
-            var hasHash = Str.isStart('#', r);
-            if (symbol === true) r = !hasHash ? "#" + r : r;else if (hasHash) r = Str.sub(1, true, r);
+
+            var hasHash = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('#', r);
+
+            if (symbol === true) r = !hasHash ? "#" + r : r;else if (hasHash) r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.sub(1, true, r);
           } else if (symbol === true) r = '#';
 
           return r;
@@ -2623,11 +3380,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // permet d'obtenir un email à partir d'un mailto (comme dans un href)
         getMailto: function getMailto(value) {
           var r = null;
-          Str.typecheck(value);
 
-          if (Str.isNotEmpty(value)) {
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value);
+
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(value)) {
             var email = value.replace(/mailto:/, '');
-            if (Validate.isEmail(email)) r = email;
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Validate.isEmail(email)) r = email;
           }
 
           return r;
@@ -2658,6 +3416,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2665,6 +3429,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // win
       // object for window target
+      // import
+      // export
 
       /* harmony default export */
 
@@ -2683,7 +3449,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // isProxy
         // retourne vrai si la valeur est une window proxy
         isProxy: function isProxy(value) {
-          return Obj.is(value) && !(value instanceof Window) && value.window === value;
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(value) && !(value instanceof Window) && value.window === value;
         },
         // hasHistoryApi
         // retourne vrai si le navigateur courant supporte history API
@@ -2701,20 +3467,20 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         isScrollable: function isScrollable(axis) {
           var r = false;
           var scroll = this.getScroll();
-          if (Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['x', 'horizontal'])) r = scroll.scrollableX;else if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr["in"](axis, ['y', 'vertical'])) r = scroll.scrollableY;else r = scroll.scrollableX === true ? scroll.scrollableX : scroll.scrollableY;
           return r;
         },
         // getScroll
         // retourne le scroll de la window
         // retourne aussi les dimensions externes et internes, ainsi qu'un bool indiquant si une direction est scrollable
         getScroll: function getScroll() {
-          var r = Pojo.replace({
-            top: Num.round(window.pageYOffset),
-            left: Num.round(window.pageXOffset),
-            width: Num.round(document.documentElement.scrollWidth),
-            height: Num.round(document.documentElement.scrollHeight),
-            innerWidth: Num.round(window.innerWidth),
-            innerHeight: Num.round(window.innerHeight),
+          var r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replace({
+            top: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.pageYOffset),
+            left: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.pageXOffset),
+            width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollWidth),
+            height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(document.documentElement.scrollHeight),
+            innerWidth: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerWidth),
+            innerHeight: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerHeight),
             scrollableX: false,
             scrollableY: false
           });
@@ -2744,8 +3510,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne la dimension interne de la fênetre
         getDimension: function getDimension() {
           return {
-            width: Num.round(window.innerWidth),
-            height: Num.round(window.innerHeight)
+            width: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerWidth),
+            height: _index_js__WEBPACK_IMPORTED_MODULE_0__.Num.round(window.innerHeight)
           };
         }
       };
@@ -2774,6 +3540,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         /* harmony export */
 
       });
+      /* harmony import */
+
+
+      var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../index.js */
+      "./index.js");
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -2781,6 +3553,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
        */
       // xhr
       // script with some logic for ajax calls and xhr object
+      // import
+      // export
 
       /* harmony default export */
 
@@ -2791,7 +3565,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         // retourne vrai si le statut est un succès
 
         this.isStatusSuccess = function (value) {
-          return Integer.is(value) && value >= 200 && value < 400;
+          return _index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(value) && value >= 200 && value < 400;
         }; // isResponseJson
         // retourne vrai si la réponse du xhr a un content type de json
 
@@ -2801,7 +3575,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
           if (xhr instanceof XMLHttpRequest) {
             var contentType = xhr.getResponseHeader('Content-Type');
-            if (Str["in"]('/json', contentType)) r = true;
+            if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str["in"]('/json', contentType)) r = true;
           }
 
           return r;
@@ -2812,7 +3586,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
         this.trigger = function (config, extraEvents) {
           config = prepareConfig.call(this, config);
-          Str.typecheck(config.url, true);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(config.url, true);
+
           var xhr = new XMLHttpRequest();
           xhr.open(config.method, config.url, true);
           xhr.timeout = config.timeout;
@@ -2832,7 +3608,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
           if (xhr.upload != null) {
             xhr.upload.addEventListener("progress", function (event) {
-              if (Func.is(config.progress) && event.lengthComputable === true) {
+              if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(config.progress) && event.lengthComputable === true) {
                 var percent = parseInt(event.loaded / event.total * 100);
                 callEvent('progress', xhr, config, extraEvents, percent, event);
               }
@@ -2848,7 +3624,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.configFromString = function (value) {
-          Str.typecheck(value, true);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.typecheck(value, true);
+
           return {
             url: value
           };
@@ -2858,12 +3635,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         var callEvent = function callEvent(type, xhr, config, extraEvents) {
-          var configCallback = Pojo.get(type, config);
-          var extraCallback = Pojo.is(extraEvents) ? Pojo.get(type, extraEvents) : null;
-          var args = ArrLike.sliceStart(4, arguments);
+          var configCallback = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(type, config);
+
+          var extraCallback = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(extraEvents) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.get(type, extraEvents) : null;
+
+          var args = _index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.sliceStart(4, arguments);
+
           args.push(xhr);
-          if (Func.is(configCallback)) configCallback.apply(xhr, args);
-          if (Func.is(extraCallback)) extraCallback.apply(xhr, args);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(configCallback)) configCallback.apply(xhr, args);
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(extraCallback)) extraCallback.apply(xhr, args);
         }; // defaultConfig
         // retourne la configuration par défaut pour une requête ajax
 
@@ -2880,15 +3660,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         var prepareConfig = function prepareConfig(config) {
-          if (Pojo.is(config) && Str.is(config.uri)) config.url = config.uri;
-          config = Pojo.replace(defaultConfig(), config);
-          if (!Str.is(config.method)) config.method = 'get';
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(config) && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(config.uri)) config.url = config.uri;
+          config = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.replace(defaultConfig(), config);
+          if (!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(config.method)) config.method = 'get';
           config.method = config.method.toUpperCase();
 
-          if (Pojo.is(config.data)) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(config.data)) {
             if (config.method === 'POST') config.data = this.pojoToFormData(config.data);else {
-              var parse = Uri.parse(config.url);
-              var query = Uri.makeQuery(config.data).toString();
+              var parse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse(config.url);
+
+              var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery(config.data).toString();
+
               parse.search = query;
               config.url = parse.toString();
             }
@@ -2902,9 +3684,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.configFromNode = function (node, config, events) {
-          Ele.typecheck(node);
-          var r = Pojo.is(config) ? config : {};
-          var tagName = Ele.tag(node);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typecheck(node);
+
+          var r = _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(config) ? config : {};
+
+          var tagName = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(node);
+
           if (r.method == null) r = configNodeMethod(r, node, tagName);
           r = configNodeUrl(r, node, tagName);
           if (r.data == null) r = configNodeData(r, node, tagName);
@@ -2916,29 +3701,32 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.configNodeEvents = function (node, config) {
-          Ele.typecheck(node);
-          Pojo.typecheck(config);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typecheck(node);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(config);
 
           config.before = function (xhr) {
-            Target.triggerHandler(node, 'ajax:before', xhr);
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:before', xhr);
           };
 
           config.progress = function (percent, event, xhr) {
-            Target.triggerHandler(node, 'ajax:progress', percent, event, xhr);
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:progress', percent, event, xhr);
           };
 
           config.success = function (xhr) {
-            var responseText = Str.isNotEmpty(xhr.responseText) && Xhr.isResponseJson(xhr) ? Json.decode(xhr.responseText) : xhr.responseText;
-            Target.triggerHandler(node, 'ajax:success', responseText, xhr);
+            var responseText = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(xhr.responseText) && Xhr.isResponseJson(xhr) ? _index_js__WEBPACK_IMPORTED_MODULE_0__.Json.decode(xhr.responseText) : xhr.responseText;
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:success', responseText, xhr);
           };
 
           config.error = function (xhr) {
             var parsedError = $inst.parseError(xhr.responseText);
-            Target.triggerHandler(node, 'ajax:error', parsedError, xhr);
+
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:error', parsedError, xhr);
           };
 
           config.complete = function (xhr) {
-            Target.triggerHandler(node, 'ajax:complete', xhr);
+            _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:complete', xhr);
           };
 
           return config;
@@ -2947,11 +3735,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         this.pojoToFormData = function (value) {
-          Pojo.typecheck(value);
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.typecheck(value);
+
           var r = new FormData();
-          Pojo.each(value, function (val, key) {
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.each(value, function (val, key) {
             r.append(key, val);
           });
+
           return r;
         }; // parseError
         // cette méthode gère l'affichage pour un xhr en erreur
@@ -2960,21 +3751,24 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         this.parseError = function (responseText) {
           var r = '';
 
-          if (Str.isNotEmpty(responseText)) {
+          if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(responseText)) {
             r = responseText;
             var html;
-            var parse = Dom.parseOne(responseText);
+
+            var parse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.parseOne(responseText);
 
             if (parse != null) {
-              var ajaxParse = Nod.scopedQuery(parse, ".ajax-parse-error");
-              if (ajaxParse != null) html = Ele.getOuterHtml(ajaxParse);
+              var ajaxParse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.scopedQuery(parse, ".ajax-parse-error");
 
-              if (Vari.isEmpty(html)) {
-                var body = Nod.scopedQuery(parse, "body,[data-tag='body']");
-                if (body != null) html = Ele.getHtml(body);
+              if (ajaxParse != null) html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(ajaxParse);
+
+              if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Vari.isEmpty(html)) {
+                var body = _index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.scopedQuery(parse, "body,[data-tag='body']");
+
+                if (body != null) html = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(body);
               }
 
-              if (Str.isNotEmpty(html)) r = html;
+              if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(html)) r = html;
             }
           }
 
@@ -2985,16 +3779,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         var configNodeUrl = function configNodeUrl(r, node, tagName) {
-          if (r.url == null) r.url = Target.triggerHandler(node, 'ajax:getUrl');
-          if (r.url == null) r.url = Ele.getUri(node);
+          if (r.url == null) r.url = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:getUrl');
+          if (r.url == null) r.url = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getUri(node);
 
-          if (r.url != null && tagName === 'form' && Str.icompare(r.method, 'get')) {
-            var query = Ele.triggerHandler(node, 'form:serialize');
-            var parse = Uri.parse(r.url);
+          if (r.url != null && tagName === 'form' && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare(r.method, 'get')) {
+            var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(node, 'form:serialize');
+
+            var parse = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse(r.url);
 
             if (query != null && parse != null) {
               parse.search = query;
-              r.url = Uri.build(parse);
+              r.url = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(parse);
             }
           }
 
@@ -3004,10 +3799,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         var configNodeMethod = function configNodeMethod(r, node, tagName) {
-          r.method = Target.triggerHandler(node, 'ajax:getMethod');
+          r.method = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:getMethod');
 
           if (r.method == null) {
-            if (tagName === 'form') r.method = Ele.getAttr(node, "method") || 'get';else r.method = Ele.getAttr(node, 'data-method') || 'get';
+            if (tagName === 'form') r.method = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(node, "method") || 'get';else r.method = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(node, 'data-method') || 'get';
           }
 
           return r;
@@ -3017,17 +3812,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 
         var configNodeData = function configNodeData(r, node, tagName) {
-          r.data = Target.triggerHandler(node, 'ajax:getData');
+          r.data = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'ajax:getData');
 
-          if (r.data == null && tagName === 'form' && Str.icompare(r.method, 'post')) {
+          if (r.data == null && tagName === 'form' && _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.icompare(r.method, 'post')) {
             var formData = new FormData(node);
-            var clicked = Target.triggerHandler(node, 'form:getClickedSubmit');
+
+            var clicked = _index_js__WEBPACK_IMPORTED_MODULE_0__.Target.triggerHandler(node, 'form:getClickedSubmit');
 
             if (clicked != null) {
-              var clickedName = Ele.getAttr(clicked, 'name');
+              var clickedName = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(clicked, 'name');
 
-              if (Str.isNotEmpty(clickedName)) {
-                var clickedVal = Ele.getValue(clicked);
+              if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(clickedName)) {
+                var clickedVal = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getValue(clicked);
+
                 formData.append(clickedName, clickedVal);
               }
             }
@@ -3058,58 +3855,28 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       __webpack_require__.d(__webpack_exports__, {
         /* harmony export */
-        "Arr": function (_Arr) {
-          function Arr() {
-            return _Arr.apply(this, arguments);
-          }
-
-          Arr.toString = function () {
-            return _Arr.toString();
-          };
-
-          return Arr;
-        }(function () {
+        "Arr": function Arr() {
           return (
             /* binding */
-            Arr
+            _Arr
           );
-        }),
+        },
 
         /* harmony export */
-        "ArrLike": function (_ArrLike) {
-          function ArrLike() {
-            return _ArrLike.apply(this, arguments);
-          }
-
-          ArrLike.toString = function () {
-            return _ArrLike.toString();
-          };
-
-          return ArrLike;
-        }(function () {
+        "ArrLike": function ArrLike() {
           return (
             /* binding */
-            ArrLike
+            _ArrLike
           );
-        }),
+        },
 
         /* harmony export */
-        "Bool": function (_Bool) {
-          function Bool() {
-            return _Bool.apply(this, arguments);
-          }
-
-          Bool.toString = function () {
-            return _Bool.toString();
-          };
-
-          return Bool;
-        }(function () {
+        "Bool": function Bool() {
           return (
             /* binding */
-            Bool
+            _Bool
           );
-        }),
+        },
 
         /* harmony export */
         "Component": function Component() {
@@ -3178,22 +3945,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         },
 
         /* harmony export */
-        "Integer": function (_Integer) {
-          function Integer() {
-            return _Integer.apply(this, arguments);
-          }
-
-          Integer.toString = function () {
-            return _Integer.toString();
-          };
-
-          return Integer;
-        }(function () {
+        "Integer": function Integer() {
           return (
             /* binding */
-            Integer
+            _Integer
           );
-        }),
+        },
 
         /* harmony export */
         "Json": function Json() {
@@ -3212,76 +3969,36 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         },
 
         /* harmony export */
-        "Num": function (_Num) {
-          function Num() {
-            return _Num.apply(this, arguments);
-          }
-
-          Num.toString = function () {
-            return _Num.toString();
-          };
-
-          return Num;
-        }(function () {
+        "Num": function Num() {
           return (
             /* binding */
-            Num
+            _Num
           );
-        }),
+        },
 
         /* harmony export */
-        "Obj": function (_Obj) {
-          function Obj() {
-            return _Obj.apply(this, arguments);
-          }
-
-          Obj.toString = function () {
-            return _Obj.toString();
-          };
-
-          return Obj;
-        }(function () {
+        "Obj": function Obj() {
           return (
             /* binding */
-            Obj
+            _Obj
           );
-        }),
+        },
 
         /* harmony export */
-        "Pojo": function (_Pojo) {
-          function Pojo() {
-            return _Pojo.apply(this, arguments);
-          }
-
-          Pojo.toString = function () {
-            return _Pojo.toString();
-          };
-
-          return Pojo;
-        }(function () {
+        "Pojo": function Pojo() {
           return (
             /* binding */
-            Pojo
+            _Pojo
           );
-        }),
+        },
 
         /* harmony export */
-        "Scalar": function (_Scalar) {
-          function Scalar() {
-            return _Scalar.apply(this, arguments);
-          }
-
-          Scalar.toString = function () {
-            return _Scalar.toString();
-          };
-
-          return Scalar;
-        }(function () {
+        "Scalar": function Scalar() {
           return (
             /* binding */
-            Scalar
+            _Scalar
           );
-        }),
+        },
 
         /* harmony export */
         "Shortcut": function Shortcut() {
@@ -3292,22 +4009,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         },
 
         /* harmony export */
-        "Str": function (_Str) {
-          function Str() {
-            return _Str.apply(this, arguments);
-          }
-
-          Str.toString = function () {
-            return _Str.toString();
-          };
-
-          return Str;
-        }(function () {
+        "Str": function Str() {
           return (
             /* binding */
-            Str
+            _Str
           );
-        }),
+        },
 
         /* harmony export */
         "Test": function Test() {
@@ -3487,16 +4194,26 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       // build
 
 
-      var Arr = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
-      var ArrLike = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase, _src_arrLike_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
-      var Bool = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_bool_js__WEBPACK_IMPORTED_MODULE_12__["default"]);
+      var _Arr = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrWriteSelf, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
+
+      var _ArrLike = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrBase, _src_arrLike_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop);
+
+      var _Bool = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_bool_js__WEBPACK_IMPORTED_MODULE_12__["default"]);
+
       var Func = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_func_js__WEBPACK_IMPORTED_MODULE_13__["default"]);
-      var Integer = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_num_js__WEBPACK_IMPORTED_MODULE_15__.NumPrimitive, _src_integer_js__WEBPACK_IMPORTED_MODULE_14__["default"]);
-      var Num = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_num_js__WEBPACK_IMPORTED_MODULE_15__.NumPrimitive, _src_num_js__WEBPACK_IMPORTED_MODULE_15__.NumFormat);
-      var Obj = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjProto);
-      var Pojo = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_pojo_js__WEBPACK_IMPORTED_MODULE_17__["default"]);
-      var Scalar = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_scalar_js__WEBPACK_IMPORTED_MODULE_18__["default"]);
-      var Str = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_str_js__WEBPACK_IMPORTED_MODULE_19__["default"]);
+
+      var _Integer = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_num_js__WEBPACK_IMPORTED_MODULE_15__.NumPrimitive, _src_integer_js__WEBPACK_IMPORTED_MODULE_14__["default"]);
+
+      var _Num = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_num_js__WEBPACK_IMPORTED_MODULE_15__.NumPrimitive, _src_num_js__WEBPACK_IMPORTED_MODULE_15__.NumFormat);
+
+      var _Obj = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjProto);
+
+      var _Pojo = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjCopyFilterMap, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWrite, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjWriteSelf, _src_pojo_js__WEBPACK_IMPORTED_MODULE_17__["default"]);
+
+      var _Scalar = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_scalar_js__WEBPACK_IMPORTED_MODULE_18__["default"]);
+
+      var _Str = (0, _src_factory_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"], _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjBase, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjKeyValue, _src_obj_js__WEBPACK_IMPORTED_MODULE_16__.ObjEach, _src_str_js__WEBPACK_IMPORTED_MODULE_19__["default"]);
+
       var _Tool = {
         Type: _src_type_js__WEBPACK_IMPORTED_MODULE_20__["default"],
         ArrLoop: _src_arr_js__WEBPACK_IMPORTED_MODULE_10__.ArrLoop
@@ -6532,562 +7249,26 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
   /************************************************************************/
 
+  /******/
 
-  var __webpack_exports__ = {}; // This entry need to be wrapped in an IIFE because it need to be in strict mode.
+  /******/
+  // startup
 
-  (function () {
-    "use strict";
-    /*!******************!*\
-      !*** ./index.js ***!
-      \******************/
+  /******/
+  // Load entry module and return exports
 
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export */
+  /******/
+  // This entry module is referenced by other modules so it can't be inlined
 
+  /******/
 
-    __webpack_require__.d(__webpack_exports__, {
-      /* harmony export */
-      "Arr": function Arr() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Arr
-        );
-      },
 
-      /* harmony export */
-      "ArrLike": function ArrLike() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.ArrLike
-        );
-      },
+  var __webpack_exports__ = __webpack_require__("./index.js");
+  /******/
 
-      /* harmony export */
-      "Bool": function Bool() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Bool
-        );
-      },
-
-      /* harmony export */
-      "Browser": function Browser() {
-        return (
-          /* reexport safe */
-          _src_browser_js__WEBPACK_IMPORTED_MODULE_1__["default"]
-        );
-      },
-
-      /* harmony export */
-      "Component": function Component() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Component
-        );
-      },
-
-      /* harmony export */
-      "Datetime": function Datetime() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Datetime
-        );
-      },
-
-      /* harmony export */
-      "Debug": function Debug() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Debug
-        );
-      },
-
-      /* harmony export */
-      "Doc": function (_Doc) {
-        function Doc() {
-          return _Doc.apply(this, arguments);
-        }
-
-        Doc.toString = function () {
-          return _Doc.toString();
-        };
-
-        return Doc;
-      }(function () {
-        return (
-          /* binding */
-          Doc
-        );
-      }),
-
-      /* harmony export */
-      "Dom": function Dom() {
-        return (
-          /* reexport safe */
-          _src_dom_js__WEBPACK_IMPORTED_MODULE_2__["default"]
-        );
-      },
-
-      /* harmony export */
-      "Ele": function (_Ele) {
-        function Ele() {
-          return _Ele.apply(this, arguments);
-        }
-
-        Ele.toString = function () {
-          return _Ele.toString();
-        };
-
-        return Ele;
-      }(function () {
-        return (
-          /* binding */
-          Ele
-        );
-      }),
-
-      /* harmony export */
-      "Env": function Env() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Env
-        );
-      },
-
-      /* harmony export */
-      "Evt": function (_Evt) {
-        function Evt() {
-          return _Evt.apply(this, arguments);
-        }
-
-        Evt.toString = function () {
-          return _Evt.toString();
-        };
-
-        return Evt;
-      }(function () {
-        return (
-          /* binding */
-          Evt
-        );
-      }),
-
-      /* harmony export */
-      "Factory": function Factory() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory
-        );
-      },
-
-      /* harmony export */
-      "Func": function Func() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Func
-        );
-      },
-
-      /* harmony export */
-      "HistoryState": function HistoryState() {
-        return (
-          /* reexport safe */
-          _src_historyState_js__WEBPACK_IMPORTED_MODULE_3__["default"]
-        );
-      },
-
-      /* harmony export */
-      "Html": function Html() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Html
-        );
-      },
-
-      /* harmony export */
-      "Integer": function Integer() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Integer
-        );
-      },
-
-      /* harmony export */
-      "Json": function Json() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Json
-        );
-      },
-
-      /* harmony export */
-      "Nav": function Nav() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Nav
-        );
-      },
-
-      /* harmony export */
-      "Nod": function (_Nod) {
-        function Nod() {
-          return _Nod.apply(this, arguments);
-        }
-
-        Nod.toString = function () {
-          return _Nod.toString();
-        };
-
-        return Nod;
-      }(function () {
-        return (
-          /* binding */
-          Nod
-        );
-      }),
-
-      /* harmony export */
-      "Num": function Num() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Num
-        );
-      },
-
-      /* harmony export */
-      "Obj": function Obj() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Obj
-        );
-      },
-
-      /* harmony export */
-      "Pojo": function Pojo() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Pojo
-        );
-      },
-
-      /* harmony export */
-      "Request": function Request() {
-        return (
-          /* reexport safe */
-          _src_request_js__WEBPACK_IMPORTED_MODULE_4__["default"]
-        );
-      },
-
-      /* harmony export */
-      "Scalar": function Scalar() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Scalar
-        );
-      },
-
-      /* harmony export */
-      "Shortcut": function Shortcut() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut
-        );
-      },
-
-      /* harmony export */
-      "Str": function Str() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Str
-        );
-      },
-
-      /* harmony export */
-      "Target": function (_Target) {
-        function Target() {
-          return _Target.apply(this, arguments);
-        }
-
-        Target.toString = function () {
-          return _Target.toString();
-        };
-
-        return Target;
-      }(function () {
-        return (
-          /* binding */
-          Target
-        );
-      }),
-
-      /* harmony export */
-      "Test": function Test() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Test
-        );
-      },
-
-      /* harmony export */
-      "TestSuite": function TestSuite() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.TestSuite
-        );
-      },
-
-      /* harmony export */
-      "Tool": function Tool() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Tool
-        );
-      },
-
-      /* harmony export */
-      "Uri": function Uri() {
-        return (
-          /* reexport safe */
-          _src_uri_js__WEBPACK_IMPORTED_MODULE_5__["default"]
-        );
-      },
-
-      /* harmony export */
-      "Validate": function Validate() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Validate
-        );
-      },
-
-      /* harmony export */
-      "Vari": function Vari() {
-        return (
-          /* reexport safe */
-          quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Vari
-        );
-      },
-
-      /* harmony export */
-      "Win": function (_Win) {
-        function Win() {
-          return _Win.apply(this, arguments);
-        }
-
-        Win.toString = function () {
-          return _Win.toString();
-        };
-
-        return Win;
-      }(function () {
-        return (
-          /* binding */
-          Win
-        );
-      }),
-
-      /* harmony export */
-      "Xhr": function Xhr() {
-        return (
-          /* reexport safe */
-          _src_xhr_js__WEBPACK_IMPORTED_MODULE_6__["default"]
-        );
-      }
-      /* harmony export */
-
-    });
-    /* harmony import */
-
-
-    var quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! quidphp-node-temp */
-    "./node_modules/quidphp-node-temp/index.js");
-    /* harmony import */
-
-
-    var _src_browser_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ./src/browser.js */
-    "./src/browser.js");
-    /* harmony import */
-
-
-    var _src_dom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./src/dom.js */
-    "./src/dom.js");
-    /* harmony import */
-
-
-    var _src_historyState_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./src/historyState.js */
-    "./src/historyState.js");
-    /* harmony import */
-
-
-    var _src_request_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./src/request.js */
-    "./src/request.js");
-    /* harmony import */
-
-
-    var _src_uri_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! ./src/uri.js */
-    "./src/uri.js");
-    /* harmony import */
-
-
-    var _src_xhr_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! ./src/xhr.js */
-    "./src/xhr.js");
-    /* harmony import */
-
-
-    var _src_data_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-    /*! ./src/data.js */
-    "./src/data.js");
-    /* harmony import */
-
-
-    var _src_doc_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-    /*! ./src/doc.js */
-    "./src/doc.js");
-    /* harmony import */
-
-
-    var _src_ele_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
-    /*! ./src/ele.js */
-    "./src/ele.js");
-    /* harmony import */
-
-
-    var _src_evt_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
-    /*! ./src/evt.js */
-    "./src/evt.js");
-    /* harmony import */
-
-
-    var _src_handler_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
-    /*! ./src/handler.js */
-    "./src/handler.js");
-    /* harmony import */
-
-
-    var _src_listener_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
-    /*! ./src/listener.js */
-    "./src/listener.js");
-    /* harmony import */
-
-
-    var _src_nod_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
-    /*! ./src/nod.js */
-    "./src/nod.js");
-    /* harmony import */
-
-
-    var _src_selector_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
-    /*! ./src/selector.js */
-    "./src/selector.js");
-    /* harmony import */
-
-
-    var _src_target_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
-    /*! ./src/target.js */
-    "./src/target.js");
-    /* harmony import */
-
-
-    var _src_win_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
-    /*! ./src/win.js */
-    "./src/win.js");
-
-    function ownKeys(object, enumerableOnly) {
-      var keys = Object.keys(object);
-
-      if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        enumerableOnly && (symbols = symbols.filter(function (sym) {
-          return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-        })), keys.push.apply(keys, symbols);
-      }
-
-      return keys;
-    }
-
-    function _objectSpread(target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = null != arguments[i] ? arguments[i] : {};
-        i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
-          _defineProperty(target, key, source[key]);
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
-          Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-      }
-
-      return target;
-    }
-
-    function _defineProperty(obj, key, value) {
-      if (key in obj) {
-        Object.defineProperty(obj, key, {
-          value: value,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        });
-      } else {
-        obj[key] = value;
-      }
-
-      return obj;
-    }
-    /*
-     * This file is part of the QuidPHP package <https://quidphp.com>
-     * Author: Pierre-Philippe Emond <emondpph@gmail.com>
-     * License: https://github.com/quidphp/browser/blob/master/LICENSE
-     */
-    // import quidphp-node
-    // simple import
-    // type import
-    // build
-
-
-    var Evt = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Tool.Type, _src_evt_js__WEBPACK_IMPORTED_MODULE_10__["default"]);
-    var Win = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleWinTarget, _src_win_js__WEBPACK_IMPORTED_MODULE_16__["default"]);
-    var Doc = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_selector_js__WEBPACK_IMPORTED_MODULE_14__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.NodTarget, _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleDocTarget, _src_doc_js__WEBPACK_IMPORTED_MODULE_8__["default"]);
-    var Ele = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_selector_js__WEBPACK_IMPORTED_MODULE_14__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.NodTarget, _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleWinTarget, _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.EleDocTarget, _src_ele_js__WEBPACK_IMPORTED_MODULE_9__["default"], quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Tool.ArrLoop);
-    var Nod = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_selector_js__WEBPACK_IMPORTED_MODULE_14__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.NodTarget);
-    var Target = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"]); // shortcut
-
-    var NewShortcut = {};
-    NewShortcut.getAttr = Ele.getAttr.bind(Ele);
-    NewShortcut.setAttr = Ele.setAttr.bind(Ele);
-    NewShortcut.toggleAttr = Ele.toggleAttr.bind(Ele);
-    NewShortcut.setCss = Ele.setCss.bind(Ele);
-    NewShortcut.toggleClass = Ele.toggleClass.bind(Ele);
-    NewShortcut.getHtml = Ele.getHtml.bind(Ele);
-    NewShortcut.setHtml = Ele.setHtml.bind(Ele);
-    NewShortcut.qs = Nod.scopedQuery.bind(Nod);
-    NewShortcut.qsa = Nod.scopedQueryAll.bind(Nod);
-    NewShortcut.getProp = Target.getProp.bind(Target);
-    NewShortcut.setProp = Target.setProp.bind(Target);
-    NewShortcut.getData = Target.getData.bind(Target);
-    NewShortcut.setData = Target.setData.bind(Target);
-    NewShortcut.setHdlr = Target.setHandler.bind(Target);
-    NewShortcut.setHdlrs = Target.setsHandler.bind(Target);
-    NewShortcut.allHdlr = Target.allHandler.bind(Target);
-    NewShortcut.trigHdlr = Target.triggerHandler.bind(Target);
-    NewShortcut.trigHdlrs = Target.triggersHandler.bind(Target);
-    NewShortcut.ael = Target.addListener.bind(Target);
-    NewShortcut.aelDelegate = Target.addDelegatedListener.bind(Target);
-    NewShortcut.aelPassive = Target.addPassiveListener.bind(Target);
-    NewShortcut.aelOnce = Target.addListenerOnce.bind(Target);
-    NewShortcut.rel = Target.removeListener.bind(Target);
-    NewShortcut.trigEvt = Target.triggerNoBubble.bind(Target);
-    NewShortcut.trigBubble = Target.triggerBubble.bind(Target);
-    NewShortcut.trigSetup = Target.triggerSetup.bind(Target);
-    NewShortcut.trigTeardown = Target.triggerTeardown.bind(Target);
-    quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut = _objectSpread(_objectSpread({}, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut), NewShortcut); // export
-  })();
 
   window.Quid = __webpack_exports__;
+  /******/
+
   /******/
 })();

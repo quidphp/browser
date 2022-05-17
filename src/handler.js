@@ -8,7 +8,7 @@
 // script for handler management (functions stored in targets)
 
 // import
-import { Arr } from '../index.js';
+import { Arr, ArrLike, Func, Pojo, Str } from '../index.js';
 
 // export
 export default {    

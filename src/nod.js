@@ -8,7 +8,7 @@
 // object for element, text and document nodes
 
 // import
-import { Arr, Ele } from '../index.js';
+import { Arr, Doc, Dom, Ele, Json, Nod, Pojo, Str } from '../index.js';
 
 // nodTarget
 // méthodes pour un grand ensemble de nodes

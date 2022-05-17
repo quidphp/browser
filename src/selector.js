@@ -8,7 +8,7 @@
 // script with methods related to selecting and matching nodes
 
 // import
-import { Doc, Nod } from '../index.js';
+import { Arr, ArrLike, Doc, Ele, Nod, Str } from '../index.js';
 
 // export
 export default {

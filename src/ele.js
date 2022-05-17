@@ -8,7 +8,7 @@
 // script with many functions related to element nodes
 
 // import
-import { Arr, ArrLike, Browser, Dom, Func, Integer, Num, Scalar, Str, Uri } from '../index.js';
+import { Arr, ArrLike, Bool, Browser, Dom, Func, Integer, Json, Num, Obj, Pojo, Scalar, Str, Uri, Win } from '../index.js';
 
 // export
 export default {

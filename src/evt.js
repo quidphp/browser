@@ -8,7 +8,7 @@
 // script containing event management functions
 
 // import
-import { Arr, Integer } from '../index.js';
+import { Arr, Integer, Str } from '../index.js';
 
 // export
 export default {
