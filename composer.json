@@ -1,0 +1,16 @@
+{
+    "name": "quidphp/browser",
+    "type": "library",
+    "description": "JavaScript files with helpers for the browser",
+    "keywords": ["quidphp","quid","php-framework","js-framework","nodejs"],
+    "homepage": "https://quidphp.com",
+    "license": "MIT",
+    "authors": [{
+        "name": "Pierre-Philippe Emond",
+        "email": "emondpph@gmail.com",
+        "homepage": "https://emond.io",
+        "role": "Developer"
+    }],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
