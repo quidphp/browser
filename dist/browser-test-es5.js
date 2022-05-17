@@ -633,47 +633,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       var _src_win_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ./src/win.js */
       "./src/win.js");
-
-      function ownKeys(object, enumerableOnly) {
-        var keys = Object.keys(object);
-
-        if (Object.getOwnPropertySymbols) {
-          var symbols = Object.getOwnPropertySymbols(object);
-          enumerableOnly && (symbols = symbols.filter(function (sym) {
-            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-          })), keys.push.apply(keys, symbols);
-        }
-
-        return keys;
-      }
-
-      function _objectSpread(target) {
-        for (var i = 1; i < arguments.length; i++) {
-          var source = null != arguments[i] ? arguments[i] : {};
-          i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
-            _defineProperty(target, key, source[key]);
-          }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-          });
-        }
-
-        return target;
-      }
-
-      function _defineProperty(obj, key, value) {
-        if (key in obj) {
-          Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          });
-        } else {
-          obj[key] = value;
-        }
-
-        return obj;
-      }
       /*
        * This file is part of the QuidPHP package <https://quidphp.com>
        * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -700,35 +659,33 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       var _Target = (0, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"]); // shortcut
 
 
-      var NewShortcut = {};
-      NewShortcut.getAttr = _Ele.getAttr.bind(_Ele);
-      NewShortcut.setAttr = _Ele.setAttr.bind(_Ele);
-      NewShortcut.toggleAttr = _Ele.toggleAttr.bind(_Ele);
-      NewShortcut.setCss = _Ele.setCss.bind(_Ele);
-      NewShortcut.toggleClass = _Ele.toggleClass.bind(_Ele);
-      NewShortcut.getHtml = _Ele.getHtml.bind(_Ele);
-      NewShortcut.setHtml = _Ele.setHtml.bind(_Ele);
-      NewShortcut.qs = _Nod.scopedQuery.bind(_Nod);
-      NewShortcut.qsa = _Nod.scopedQueryAll.bind(_Nod);
-      NewShortcut.getProp = _Target.getProp.bind(_Target);
-      NewShortcut.setProp = _Target.setProp.bind(_Target);
-      NewShortcut.getData = _Target.getData.bind(_Target);
-      NewShortcut.setData = _Target.setData.bind(_Target);
-      NewShortcut.setHdlr = _Target.setHandler.bind(_Target);
-      NewShortcut.setHdlrs = _Target.setsHandler.bind(_Target);
-      NewShortcut.allHdlr = _Target.allHandler.bind(_Target);
-      NewShortcut.trigHdlr = _Target.triggerHandler.bind(_Target);
-      NewShortcut.trigHdlrs = _Target.triggersHandler.bind(_Target);
-      NewShortcut.ael = _Target.addListener.bind(_Target);
-      NewShortcut.aelDelegate = _Target.addDelegatedListener.bind(_Target);
-      NewShortcut.aelPassive = _Target.addPassiveListener.bind(_Target);
-      NewShortcut.aelOnce = _Target.addListenerOnce.bind(_Target);
-      NewShortcut.rel = _Target.removeListener.bind(_Target);
-      NewShortcut.trigEvt = _Target.triggerNoBubble.bind(_Target);
-      NewShortcut.trigBubble = _Target.triggerBubble.bind(_Target);
-      NewShortcut.trigSetup = _Target.triggerSetup.bind(_Target);
-      NewShortcut.trigTeardown = _Target.triggerTeardown.bind(_Target);
-      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut = _objectSpread(_objectSpread({}, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut), NewShortcut); // export
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getAttr = _Ele.getAttr.bind(_Ele);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setAttr = _Ele.setAttr.bind(_Ele);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.toggleAttr = _Ele.toggleAttr.bind(_Ele);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setCss = _Ele.setCss.bind(_Ele);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.toggleClass = _Ele.toggleClass.bind(_Ele);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getHtml = _Ele.getHtml.bind(_Ele);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setHtml = _Ele.setHtml.bind(_Ele);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.qs = _Nod.scopedQuery.bind(_Nod);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.qsa = _Nod.scopedQueryAll.bind(_Nod);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getProp = _Target.getProp.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setProp = _Target.setProp.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getData = _Target.getData.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setData = _Target.setData.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setHdlr = _Target.setHandler.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setHdlrs = _Target.setsHandler.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.allHdlr = _Target.allHandler.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigHdlr = _Target.triggerHandler.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigHdlrs = _Target.triggersHandler.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.ael = _Target.addListener.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.aelDelegate = _Target.addDelegatedListener.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.aelPassive = _Target.addPassiveListener.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.aelOnce = _Target.addListenerOnce.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.rel = _Target.removeListener.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigEvt = _Target.triggerNoBubble.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigBubble = _Target.triggerBubble.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigSetup = _Target.triggerSetup.bind(_Target);
+      quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigTeardown = _Target.triggerTeardown.bind(_Target); // export
 
       /***/
     },
@@ -8817,576 +8774,578 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       var r = true;
 
       try {
-        // prepare
-        var newHtml = _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('form', null, {
-          action: '/ok',
-          method: 'post'
-        });
-
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(2, {
-          type: 'text',
-          name: 'test-suite',
-          data: {
-            required: true,
-            pattern: '^[0-9\-]+$'
-          }
-        });
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
-          type: 'submit',
-          name: 'test-submit3'
-        });
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
-          type: 'submit',
-          name: 'test-submit2'
-        });
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
-          type: 'submit',
-          name: 'test-submit'
-        });
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div("test <span>what</span>", {
-          "class": "ok"
-        });
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.end("form");
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div(null, {
-          "class": 'content',
-          style: 'width: 25px; height: 25px; margin: 10px; padding: 5px; border: 5px solid green; box-sizing: content-box; border-image: none;'
-        });
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div(null, {
-          "class": 'border',
-          style: 'width: 25px; height: 25px; margin: 10px; padding: 5px; border: 5px solid green; box-sizing: border-box; border-image: none;'
-        });
-        newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('LOL', {
-          "class": 'hidden',
-          myattr: "L'article",
-          style: "display: none; padding: 3px;"
-        });
-
-        var htmlNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQuery(document, 'html');
-
-        var selectorOne = htmlNode.querySelector("body");
-        var selectorAll = htmlNode.querySelectorAll("body");
-
-        var htmlStr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(htmlNode);
-
-        var isEmpty = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty.bind(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str);
-
-        var bodyNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(htmlNode, 'body');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prepend(bodyNode, newHtml);
-
-        var formNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, "> form");
-
-        var formInput = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(formNode, _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.selectorInput());
-
-        var divNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(formNode, "> div");
-
-        var inputNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(formNode, "> input[type='text']");
-
-        var submitNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(formNode, "> input[name='test-submit']");
-
-        var textNode = divNode.firstChild;
-
-        var contentBox = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, "> div.content");
-
-        var borderBox = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, "> div.border");
-
-        var fragment = document.createDocumentFragment();
-        var template = document.createElement('template');
-
-        var hiddenNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, ".hidden");
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHtml(template, newHtml);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, newHtml);
-
-        var formTemplate = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(template.content, 'form'); // browser
-
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isOldIe()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isIe11()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isIe()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isUnsupported()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.allowsCookie())); // data
-        // doc
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(document));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(fragment));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isCurrent(document));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(window));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(htmlNode));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isFragment(document));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isFragment(fragment));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isFragment(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parent(formTemplate[0])));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isTemplate(template));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getDimension(document).width));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getDimension(document).height));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(document) === document);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(fragment) === fragment);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(template) === template.content);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getDimension(fragment), {
-          width: 0,
-          height: 0
-        }));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<html', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(document)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, '<div>ok</div>') === undefined);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment) === '<div>ok</div>');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, '<div>ok</div>') === undefined);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template) === '<div>ok</div>');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, newHtml);
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment) === '<div>ok</div>');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, fragment, true);
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template) === '<div>ok</div>');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, newHtml, true);
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment) === '<div>ok</div>');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, template, true);
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.typecheck(document) === document);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.are([document, fragment]));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(fragment, "input")) === 4);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(template, "input")) === 4);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(document, "input")) === 4);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('<span>OK</span>'));
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('<span>OK</span>'));
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(fragment, "div")) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(template, "span")) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(template)[0]) === 'div');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(fragment)[0]) === 'div');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(document)[0]) === 'html');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.parent(template) === null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.parent(fragment) === null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(template)));
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, newHtml); // dom
-
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlStr(2) === '2');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlStr(htmlNode) === _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlStr([htmlNode]));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.parse(htmlStr)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.parseOne(htmlStr)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.querySelector("div[data-success]", htmlStr) === _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span("JavaScript: </span><span>Idle"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.doc(htmlStr)) === 11);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.selectorInput() === "input,select,textarea,button[type='submit']");
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.selectorInput(true) === "input,select,textarea,button"); // ele
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typechecks([]), []));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(divNode, 'what') === false);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(divNode, 'what') === undefined);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.allData(divNode) === undefined);
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(textNode));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(window));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(document));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(window));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(document));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(htmlNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are([selectorOne]));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(selectorAll));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are([htmlNode, true]));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(htmlNode));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isEmpty(selectorOne));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isEmpty(window));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isNotEmpty(selectorOne));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isVisible(htmlNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isVisible(borderBox));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isHidden(htmlNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTag(htmlNode, 'html'));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isFocused(htmlNode));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isFocusable(htmlNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isFocusable(inputNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.some([htmlNode, divNode], 'html'));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.some([htmlNode, divNode], 'body'));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.every([htmlNode, divNode], 'html'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.every(htmlNode, 'html'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(htmlNode) === 'html');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(htmlNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getBoundingRect(htmlNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(htmlNode).width));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(htmlNode).height));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(contentBox).width > 40);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(borderBox).width === 25);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getScroll(htmlNode)) === 8);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(htmlNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(htmlNode, 'data-error'));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(htmlNode, 'data-errorz'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error') === 'none');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-errorz') == null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNan(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error', 'int')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error', 'bool') === null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attrStr(htmlNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.dataAttr(htmlNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error') === 'none');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(htmlNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(selectorOne)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'test <span>what</span>');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getText(divNode) === 'test what');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getProp(divNode, 'textContent') === 'test what');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getProp(divNode, 'textContent') === 'test what');
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffset(divNode)) === 3);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetParent(divNode).left === 8);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetDoc(divNode).left === 8);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetWin(divNode).left === 8);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetDoc(divNode)) === 2);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHandler(htmlNode, 'what', function (value) {
-          setData(this, 'OK', value);
-          return true;
-        });
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'OK') == null);
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(htmlNode, 'test'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setData(htmlNode, 'test', 2) === undefined);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(htmlNode, 'test'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'test') === 2);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.flashData(htmlNode, 'test') === 2);
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(htmlNode, 'test'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.flashData(htmlNode, 'test', 2) === undefined);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.allData(htmlNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHandler(htmlNode, 'what')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTriggerHandlerEqual([htmlNode], 'what', true, 'james'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTriggerHandlerEqual(htmlNode, 'what', true, 'james'));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTriggerHandlerEqual(htmlNode, 'what', false, 'james'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'OK') == 'james');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(htmlNode, 'what', 'no') === true);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(htmlNode, 'what', 'yes') === true);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'OK') === 'yes');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHandler(htmlNode, 'what', function () {
-          return false;
-        });
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(htmlNode, 'what') === false);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeHandler(htmlNode, 'what');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHandler(htmlNode, 'what') === undefined);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(htmlNode, "body")));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(htmlNode, "james") == null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(htmlNode, "body")));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(htmlNode, "james")));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.closest(bodyNode, 'html') === htmlNode);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.filter([htmlNode, bodyNode], "body"), [bodyNode]));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parent(bodyNode) === htmlNode);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parent(htmlNode) === document);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(htmlNode, 'body'), [bodyNode]));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(htmlNode, 'div')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.next(submitNode, 'div') === divNode);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prev(divNode) === submitNode);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prev(divNode, 'span') === null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.nexts(submitNode)) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.nexts(divNode)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode)) === 4);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode, "input[type='submit']")) === 3);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode, "input[type='text']")) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode, 'input', "input[type='text']")) === 3);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.replaceHtml(divNode, 'text ok bla <span>what</span>');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(divNode)) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(document)) === 1); // ie va avoir besoin d'un polyfill
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode)) === 4);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'body')) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'body', 'html')) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'html', 'body')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'html', 'html')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQuery(template.content, 'input')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(formTemplate) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.css(borderBox, 'position')) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.css(borderBox)) > 250);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height') === '25px');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height', 'int') === 25);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height', 'bool') === null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'margin-top') === '10px');
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'what'));
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setAttr(divNode, 'what', 'ok');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'what'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'what') === 'ok');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(divNode, 'what');
-
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'what'));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'toggle'));
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'toggle'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle') === '1');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 1);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 0);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle', false);
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 0);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(hiddenNode, 'myattr') === "L'article");
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle', true);
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 1);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHtml(divNode, 'what <span>ok</span>');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'what <span>ok</span>');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setText(divNode, 'what <span>ok</span>');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'what <span>ok</span>');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setValue(inputNode, [1, 2, 3]) === undefined);
-        assert(inputNode.value === _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getValue(inputNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getValue(inputNode) === '[1,2,3]');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test', true) === undefined);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test', false);
-
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test');
-
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(template) !== newHtml);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(template)) === 726); // ie11 ajoute border-image: none pour une raison
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(divNode, 'margin-top') === '0px');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setCss(divNode, 'margin-top', '10px');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(divNode, 'margin-top') === '10px');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(divNode, 'margin-top', 'int') === 10);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height') === '25px');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setDimension(borderBox, 20, 40);
-
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isScrollable(htmlNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(borderBox).height === 40);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height') === '40px');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setScroll(htmlNode, 0, 0) === undefined);
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHtml(divNode, 'OK');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'OK');
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.append(divNode, '<div>test</div>');
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'OK<div>test</div>');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getUri(formNode) === '/ok');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.propObj(formInput, 'name', 'value')) === 4);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.propStr(formInput, 'name') === 'test-suite-test-submit3-test-submit2-test-submit');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.propStr(formInput, 'name', '|') === 'test-suite|test-submit3|test-submit2|test-submit');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.serialize(formInput) === 'test-suite=%5B1%2C2%2C3%5D&test-submit3=&test-submit2=&test-submit=');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode).width === 0);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, true).width > 0);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, 'block'), _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, true)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, 'inline').width < _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, true).width);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode).width === 0);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.oddEven([hiddenNode], function (value) {
-          assert(value === hiddenNode);
-        })); // evt
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.nameFromType('ok') === 'event');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.nameFromType('ok:what') === 'customEvent');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.createFromType('ok') instanceof Event);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.createFromType('ok:what') instanceof CustomEvent); // handler
-        // historyState
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.is({
-          url: 'test',
-          timestamp: 1234
-        }));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.isChangeValid({
-          url: 'test',
-          timestamp: 1234
-        }, _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('what', 'bleh')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('what', 'bleh')) === 3);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("/#what", _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('#what', 'bleh').url));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('http://google.com/ok#', 'bleh').url === 'http://google.com/ok#');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('http://google.com/ok#', 'bleh', true).url === 'http://google.com/ok');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('/#', _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make("#").url));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('/#', _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make("#", null, true).url)); // listener
-        // nod
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(document));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(window));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(textNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.are([document, htmlNode]));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.are([document, window]));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.getText(textNode) === 'test '); // request
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative(true)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.absolute() !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative());
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme() !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme(true));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.fragment()) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.fragment() === null);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse().hostname));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.schemeHost())); // selector
-        // target
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(document));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(fragment));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(window));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(divNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.are([window, document]));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(textNode));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.typecheck(fragment) === fragment);
-        var arrFragment = [fragment];
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.typechecks(arrFragment) === arrFragment);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.toArray(selectorAll)) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.toArray(arrFragment) === arrFragment);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.toArray(htmlNode)) === 1);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.getProp(window, 'outerHeight'))); // uri
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal("http://google.com/test", "http://google.com/test2"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal("/test", "/test2"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal("http://google.com/test", "/test2"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isExternal("http://googlez.com/test", "http://google.com/test2"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isExternal("/test", "/test2"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasExtension("http://googlez.com/test"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasExtension("http://googlez.com/test.jpg"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasFragment("http://googlez.com/test.jpg"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasFragment("http://googlez.com/test.jpg#james"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasFragment("/test.jpg#james"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isOnlyHash('what'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isOnlyHash('#what'));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isOnlyHash('#'));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQuery("/test.jpg?v=2", "http://google.com/test.jpg?v=2#ok"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQuery("/test.jpg?v=2", "http://google.com/test.jpg?v=3#ok"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQueryHash("/test.jpg?v=2#ok", "http://google.com/test.jpg?v=2#ok"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQueryHash("/test.jpg?v=2#ok", "http://google.com/test.jpg?v=3#ok1"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2#ok", "/test.jpg?v=2#ok2"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2#ok", "/testz.jpg?v=2#ok2"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2#ok", "/test.jpg?v=2#ok"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2", "/test.jpg?v=2"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSameWithHash("http://goog.com/test.jpg?v=2#ok", "http://goog.com/test.jpg?v=2#ok"));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSameWithHash("/test.jpg?v=2", "/test.jpg?v=2"));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.relative("http://google.com/ok?v=2#what") === '/ok?v=2');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.relative("http://google.com/ok?v=2#what", true) === '/ok?v=2#what');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("#james", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("#james", true)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("/testok.php", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("testok.php")));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("#james", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("testok.php#james")));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("#james", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("testok.php#james", true)));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("http://google.com/testok.php") === "http://google.com/testok.php");
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.path("http://google.com/testok.php?ok=2#meh") === '/testok.php');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.query("http://google.com/testok.php?ok=2#meh") === 'ok=2');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.query("http://google.com/testok.php") === '');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.fragment("http://google.com/testok.php?ok=2#meh") === 'meh');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.fragment("http://google.com/testok.php") === '');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.extension("http://google.com/ok.jpg?v=2#what") === 'jpg');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.basename("http://ok.com/james.jpg") === 'james.jpg');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.basename("james.jpg") === 'james.jpg');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.basename("/james.jpg") === 'james.jpg');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.filename("http://ok.com/james.jpg") === 'james');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.filename("/james.jpg") === 'james');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("/test.ok?t=2#hash"), false, true) === '/test.ok?t=2#hash');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("hash"), false, true) === '/hash');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), true, true) === "https://google.com/ok?v=2#what");
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), true, false) === "https://google.com/ok?v=2");
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), false, false) === "/ok?v=2");
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), false, true) === "/ok?v=2#what");
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
-          pathname: "/testd",
-          search: {
-            james: "OKé",
-            test: 3
-          }
-        }) === '/testd?james=OK%C3%A9&test=3');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
-          pathname: "/testd",
-          search: "james=OKé&test=3"
-        }) === '/testd?james=OK%C3%A9&test=3');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
-          pathname: "/testd",
-          search: _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery({
-            james: "OKé",
-            test: 3
-          })
-        }) === '/testd?james=OK%C3%A9&test=3');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
-          pathname: "/meh",
-          hash: "OK"
-        }, true, true) !== '/meh#OK');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
-          pathname: "/meh",
-          hash: "OK"
-        }, false, true) === '/meh#OK');
-
-        var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery('?q=URLUtils.searchéParams&topic=api');
-
-        var query2 = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery({
-          q: 'oké',
-          what: 2
-        });
-
-        var query3 = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery({
-          q: "la vi+e est bèlle"
-        });
-
-        assert(query instanceof URLSearchParams);
-        assert(query.toString() === 'q=URLUtils.search%C3%A9Params&topic=api');
-        assert(query2.toString() === 'q=ok%C3%A9&what=2');
-        assert(query3.toString() === 'q=la+vi%2Be+est+b%C3%A8lle');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(undefined, true) === '#');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(undefined, false) === '');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("james", true) === '#james');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("#james", true) === '#james');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("james") === 'james');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("#james") === 'james');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.getMailto('mailto:test@test.com') === 'test@test.com');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.getMailto('test@test.com') === 'test@test.com');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.getMailto('mailto:testtest.com') === null); // win
-
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.hasHistoryApi());
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.is(window));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.is(document));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isCurrent(window));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isProxy(window));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isScrollable()));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isScrollable('x')));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll()) === 8);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getDimension().width > 0);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getDimension().height > 0);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.are([window, window])); // xhr
-
-        var formData = new FormData(formNode);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.isStatusSuccess(200));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.isStatusSuccess(404));
-        assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(formData));
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.configFromNode(htmlNode)) === 4);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.configFromNode(htmlNode, null, true)) === 9);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.pojoToFormData({
-          test: "ok",
-          hjames: 3
-        }) instanceof FormData);
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.parseError('<html><body><div>TEST</div></body></html>', 'error') === '<div>TEST</div>');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.parseError('<html><body><div class="ajax-parse-error"><div>TEST</div></div></body></html>', 'error') === '<div class="ajax-parse-error"><div>TEST</div></div>');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.parseError('') === '');
-        assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.configFromString("/test/ok")) === 1); // cleanup
-
-        _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.remove([formNode, contentBox, contentBox, borderBox]);
+        if (_index_js__WEBPACK_IMPORTED_MODULE_0__.Env.isBrowser()) {
+          // prepare
+          var newHtml = _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.start('form', null, {
+            action: '/ok',
+            method: 'post'
+          });
+
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(2, {
+            type: 'text',
+            name: 'test-suite',
+            data: {
+              required: true,
+              pattern: '^[0-9\-]+$'
+            }
+          });
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
+            type: 'submit',
+            name: 'test-submit3'
+          });
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
+            type: 'submit',
+            name: 'test-submit2'
+          });
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.input(null, {
+            type: 'submit',
+            name: 'test-submit'
+          });
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div("test <span>what</span>", {
+            "class": "ok"
+          });
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.end("form");
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div(null, {
+            "class": 'content',
+            style: 'width: 25px; height: 25px; margin: 10px; padding: 5px; border: 5px solid green; box-sizing: content-box; border-image: none;'
+          });
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div(null, {
+            "class": 'border',
+            style: 'width: 25px; height: 25px; margin: 10px; padding: 5px; border: 5px solid green; box-sizing: border-box; border-image: none;'
+          });
+          newHtml += _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('LOL', {
+            "class": 'hidden',
+            myattr: "L'article",
+            style: "display: none; padding: 3px;"
+          });
+
+          var htmlNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQuery(document, 'html');
+
+          var selectorOne = htmlNode.querySelector("body");
+          var selectorAll = htmlNode.querySelectorAll("body");
+
+          var htmlStr = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(htmlNode);
+
+          var isEmpty = _index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEmpty.bind(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str);
+
+          var bodyNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(htmlNode, 'body');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prepend(bodyNode, newHtml);
+
+          var formNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, "> form");
+
+          var formInput = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(formNode, _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.selectorInput());
+
+          var divNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(formNode, "> div");
+
+          var inputNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(formNode, "> input[type='text']");
+
+          var submitNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(formNode, "> input[name='test-submit']");
+
+          var textNode = divNode.firstChild;
+
+          var contentBox = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, "> div.content");
+
+          var borderBox = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, "> div.border");
+
+          var fragment = document.createDocumentFragment();
+          var template = document.createElement('template');
+
+          var hiddenNode = _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(bodyNode, ".hidden");
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHtml(template, newHtml);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, newHtml);
+
+          var formTemplate = _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(template.content, 'form'); // browser
+
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isOldIe()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isIe11()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isIe()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.isUnsupported()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Browser.allowsCookie())); // data
+          // doc
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(document));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(fragment));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isCurrent(document));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(window));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.is(htmlNode));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isFragment(document));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isFragment(fragment));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isFragment(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parent(formTemplate[0])));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.isTemplate(template));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getDimension(document).width));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getDimension(document).height));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(document) === document);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(fragment) === fragment);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.realNode(template) === template.content);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getDimension(fragment), {
+            width: 0,
+            height: 0
+          }));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<html', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(document)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, '<div>ok</div>') === undefined);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment) === '<div>ok</div>');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, '<div>ok</div>') === undefined);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template) === '<div>ok</div>');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, newHtml);
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment) === '<div>ok</div>');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, fragment, true);
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template) === '<div>ok</div>');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, newHtml, true);
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment) === '<div>ok</div>');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, template, true);
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(fragment)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isStart('<form', _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.getHtml(template)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.typecheck(document) === document);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.are([document, fragment]));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(fragment, "input")) === 4);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(template, "input")) === 4);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(document, "input")) === 4);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('<span>OK</span>'));
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(fragment, _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.div('<span>OK</span>'));
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(fragment, "div")) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQueryAll(template, "span")) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(template)[0]) === 'div');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(fragment)[0]) === 'div');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(document)[0]) === 'html');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.parent(template) === null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.parent(fragment) === null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(template)));
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.setHtml(template, newHtml); // dom
+
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlStr(2) === '2');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlStr(htmlNode) === _index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.htmlStr([htmlNode]));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.parse(htmlStr)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.parseOne(htmlStr)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.querySelector("div[data-success]", htmlStr) === _index_js__WEBPACK_IMPORTED_MODULE_0__.Html.span("JavaScript: </span><span>Idle"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.doc(htmlStr)) === 11);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.selectorInput() === "input,select,textarea,button[type='submit']");
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Dom.selectorInput(true) === "input,select,textarea,button"); // ele
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.typechecks([]), []));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(divNode, 'what') === false);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(divNode, 'what') === undefined);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.allData(divNode) === undefined);
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(textNode));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(window));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(document));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(window));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(document));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(htmlNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are([selectorOne]));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(selectorAll));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are([htmlNode, true]));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.are(htmlNode));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isEmpty(selectorOne));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isEmpty(window));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isNotEmpty(selectorOne));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isVisible(htmlNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isVisible(borderBox));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isHidden(htmlNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTag(htmlNode, 'html'));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isFocused(htmlNode));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isFocusable(htmlNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isFocusable(inputNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.some([htmlNode, divNode], 'html'));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.some([htmlNode, divNode], 'body'));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.every([htmlNode, divNode], 'html'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.every(htmlNode, 'html'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.tag(htmlNode) === 'html');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOuterHtml(htmlNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getBoundingRect(htmlNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(htmlNode).width));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(htmlNode).height));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(contentBox).width > 40);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(borderBox).width === 25);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getScroll(htmlNode)) === 8);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attr(htmlNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(htmlNode, 'data-error'));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(htmlNode, 'data-errorz'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error') === 'none');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-errorz') == null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Num.isNan(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error', 'int')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error', 'bool') === null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.attrStr(htmlNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.dataAttr(htmlNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(htmlNode, 'data-error') === 'none');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(htmlNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(selectorOne)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'test <span>what</span>');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getText(divNode) === 'test what');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getProp(divNode, 'textContent') === 'test what');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getProp(divNode, 'textContent') === 'test what');
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffset(divNode)) === 3);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetParent(divNode).left === 8);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetDoc(divNode).left === 8);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetWin(divNode).left === 8);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getOffsetDoc(divNode)) === 2);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHandler(htmlNode, 'what', function (value) {
+            setData(this, 'OK', value);
+            return true;
+          });
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'OK') == null);
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(htmlNode, 'test'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setData(htmlNode, 'test', 2) === undefined);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(htmlNode, 'test'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'test') === 2);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.flashData(htmlNode, 'test') === 2);
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasData(htmlNode, 'test'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.flashData(htmlNode, 'test', 2) === undefined);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.allData(htmlNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Func.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHandler(htmlNode, 'what')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTriggerHandlerEqual([htmlNode], 'what', true, 'james'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTriggerHandlerEqual(htmlNode, 'what', true, 'james'));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isTriggerHandlerEqual(htmlNode, 'what', false, 'james'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'OK') == 'james');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(htmlNode, 'what', 'no') === true);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(htmlNode, 'what', 'yes') === true);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getData(htmlNode, 'OK') === 'yes');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHandler(htmlNode, 'what', function () {
+            return false;
+          });
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.triggerHandler(htmlNode, 'what') === false);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeHandler(htmlNode, 'what');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHandler(htmlNode, 'what') === undefined);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(htmlNode, "body")));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQuery(htmlNode, "james") == null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(htmlNode, "body")));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.scopedQueryAll(htmlNode, "james")));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.closest(bodyNode, 'html') === htmlNode);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.filter([htmlNode, bodyNode], "body"), [bodyNode]));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parent(bodyNode) === htmlNode);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parent(htmlNode) === document);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(htmlNode, 'body'), [bodyNode]));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(htmlNode, 'div')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.next(submitNode, 'div') === divNode);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prev(divNode) === submitNode);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prev(divNode, 'span') === null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.nexts(submitNode)) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.nexts(divNode)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode)) === 4);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode, "input[type='submit']")) === 3);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode, "input[type='text']")) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.prevs(divNode, 'input', "input[type='text']")) === 3);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.replaceHtml(divNode, 'text ok bla <span>what</span>');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.children(divNode)) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.children(document)) === 1); // ie va avoir besoin d'un polyfill
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode)) === 4);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'body')) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'body', 'html')) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'html', 'body')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.isEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.parents(divNode, 'html', 'html')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Doc.scopedQuery(template.content, 'input')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(formTemplate) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.css(borderBox, 'position')) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.css(borderBox)) > 250);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height') === '25px');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height', 'int') === 25);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height', 'bool') === null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'margin-top') === '10px');
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'what'));
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setAttr(divNode, 'what', 'ok');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'what'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'what') === 'ok');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.removeAttr(divNode, 'what');
+
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'what'));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'toggle'));
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasAttr(divNode, 'toggle'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle') === '1');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 1);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 0);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle', false);
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 0);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(hiddenNode, 'myattr') === "L'article");
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleAttr(divNode, 'toggle', true);
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getAttr(divNode, 'toggle', 'int') === 1);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHtml(divNode, 'what <span>ok</span>');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'what <span>ok</span>');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setText(divNode, 'what <span>ok</span>');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'what <span>ok</span>');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setValue(inputNode, [1, 2, 3]) === undefined);
+          assert(inputNode.value === _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getValue(inputNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getValue(inputNode) === '[1,2,3]');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test', true) === undefined);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test', false);
+
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.toggleClass(divNode, 'test');
+
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.hasClass(divNode, 'test'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(template) !== newHtml);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(template)) === 726); // ie11 ajoute border-image: none pour une raison
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(divNode, 'margin-top') === '0px');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setCss(divNode, 'margin-top', '10px');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(divNode, 'margin-top') === '10px');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(divNode, 'margin-top', 'int') === 10);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height') === '25px');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setDimension(borderBox, 20, 40);
+
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.isScrollable(htmlNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(borderBox).height === 40);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getCss(borderBox, 'height') === '40px');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setScroll(htmlNode, 0, 0) === undefined);
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.setHtml(divNode, 'OK');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'OK');
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.append(divNode, '<div>test</div>');
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getHtml(divNode) === 'OK<div>test</div>');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getUri(formNode) === '/ok');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.propObj(formInput, 'name', 'value')) === 4);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.propStr(formInput, 'name') === 'test-suite-test-submit3-test-submit2-test-submit');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.propStr(formInput, 'name', '|') === 'test-suite|test-submit3|test-submit2|test-submit');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.serialize(formInput) === 'test-suite=%5B1%2C2%2C3%5D&test-submit3=&test-submit2=&test-submit=');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode).width === 0);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, true).width > 0);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.isEqual(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, 'block'), _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, true)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, 'inline').width < _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode, true).width);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.getDimension(hiddenNode).width === 0);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.oddEven([hiddenNode], function (value) {
+            assert(value === hiddenNode);
+          })); // evt
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.nameFromType('ok') === 'event');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.nameFromType('ok:what') === 'customEvent');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.createFromType('ok') instanceof Event);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Evt.createFromType('ok:what') instanceof CustomEvent); // handler
+          // historyState
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.is({
+            url: 'test',
+            timestamp: 1234
+          }));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.isChangeValid({
+            url: 'test',
+            timestamp: 1234
+          }, _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('what', 'bleh')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('what', 'bleh')) === 3);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("/#what", _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('#what', 'bleh').url));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('http://google.com/ok#', 'bleh').url === 'http://google.com/ok#');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make('http://google.com/ok#', 'bleh', true).url === 'http://google.com/ok');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('/#', _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make("#").url));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd('/#', _index_js__WEBPACK_IMPORTED_MODULE_0__.HistoryState.make("#", null, true).url)); // listener
+          // nod
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(document));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(window));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.is(textNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.are([document, htmlNode]));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.are([document, window]));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Nod.getText(textNode) === 'test '); // request
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative(true)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.absolute() !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.relative());
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme() !== _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.scheme(true));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.fragment()) || _index_js__WEBPACK_IMPORTED_MODULE_0__.Request.fragment() === null);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Obj.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.parse().hostname));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isNotEmpty(_index_js__WEBPACK_IMPORTED_MODULE_0__.Request.schemeHost())); // selector
+          // target
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(document));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(fragment));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(window));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(divNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.are([window, document]));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.is(textNode));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.typecheck(fragment) === fragment);
+          var arrFragment = [fragment];
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.typechecks(arrFragment) === arrFragment);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.toArray(selectorAll)) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.toArray(arrFragment) === arrFragment);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Arr.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.toArray(htmlNode)) === 1);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Integer.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Target.getProp(window, 'outerHeight'))); // uri
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal("http://google.com/test", "http://google.com/test2"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal("/test", "/test2"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isInternal("http://google.com/test", "/test2"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isExternal("http://googlez.com/test", "http://google.com/test2"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isExternal("/test", "/test2"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasExtension("http://googlez.com/test"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasExtension("http://googlez.com/test.jpg"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasFragment("http://googlez.com/test.jpg"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasFragment("http://googlez.com/test.jpg#james"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.hasFragment("/test.jpg#james"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isOnlyHash('what'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isOnlyHash('#what'));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isOnlyHash('#'));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQuery("/test.jpg?v=2", "http://google.com/test.jpg?v=2#ok"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQuery("/test.jpg?v=2", "http://google.com/test.jpg?v=3#ok"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQueryHash("/test.jpg?v=2#ok", "http://google.com/test.jpg?v=2#ok"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSamePathQueryHash("/test.jpg?v=2#ok", "http://google.com/test.jpg?v=3#ok1"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2#ok", "/test.jpg?v=2#ok2"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2#ok", "/testz.jpg?v=2#ok2"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2#ok", "/test.jpg?v=2#ok"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isHashChange("/test.jpg?v=2", "/test.jpg?v=2"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSameWithHash("http://goog.com/test.jpg?v=2#ok", "http://goog.com/test.jpg?v=2#ok"));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.isSameWithHash("/test.jpg?v=2", "/test.jpg?v=2"));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.relative("http://google.com/ok?v=2#what") === '/ok?v=2');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.relative("http://google.com/ok?v=2#what", true) === '/ok?v=2#what');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("#james", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("#james", true)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("/testok.php", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("testok.php")));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("#james", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("testok.php#james")));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Str.isEnd("#james", _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("testok.php#james", true)));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.absolute("http://google.com/testok.php") === "http://google.com/testok.php");
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.path("http://google.com/testok.php?ok=2#meh") === '/testok.php');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.query("http://google.com/testok.php?ok=2#meh") === 'ok=2');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.query("http://google.com/testok.php") === '');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.fragment("http://google.com/testok.php?ok=2#meh") === 'meh');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.fragment("http://google.com/testok.php") === '');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.extension("http://google.com/ok.jpg?v=2#what") === 'jpg');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.basename("http://ok.com/james.jpg") === 'james.jpg');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.basename("james.jpg") === 'james.jpg');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.basename("/james.jpg") === 'james.jpg');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.filename("http://ok.com/james.jpg") === 'james');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.filename("/james.jpg") === 'james');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("/test.ok?t=2#hash"), false, true) === '/test.ok?t=2#hash');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("hash"), false, true) === '/hash');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), true, true) === "https://google.com/ok?v=2#what");
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), true, false) === "https://google.com/ok?v=2");
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), false, false) === "/ok?v=2");
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.parse("https://google.com/ok?v=2#what"), false, true) === "/ok?v=2#what");
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
+            pathname: "/testd",
+            search: {
+              james: "OKé",
+              test: 3
+            }
+          }) === '/testd?james=OK%C3%A9&test=3');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
+            pathname: "/testd",
+            search: "james=OKé&test=3"
+          }) === '/testd?james=OK%C3%A9&test=3');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
+            pathname: "/testd",
+            search: _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery({
+              james: "OKé",
+              test: 3
+            })
+          }) === '/testd?james=OK%C3%A9&test=3');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
+            pathname: "/meh",
+            hash: "OK"
+          }, true, true) !== '/meh#OK');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.build({
+            pathname: "/meh",
+            hash: "OK"
+          }, false, true) === '/meh#OK');
+
+          var query = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery('?q=URLUtils.searchéParams&topic=api');
+
+          var query2 = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery({
+            q: 'oké',
+            what: 2
+          });
+
+          var query3 = _index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeQuery({
+            q: "la vi+e est bèlle"
+          });
+
+          assert(query instanceof URLSearchParams);
+          assert(query.toString() === 'q=URLUtils.search%C3%A9Params&topic=api');
+          assert(query2.toString() === 'q=ok%C3%A9&what=2');
+          assert(query3.toString() === 'q=la+vi%2Be+est+b%C3%A8lle');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(undefined, true) === '#');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash(undefined, false) === '');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("james", true) === '#james');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("#james", true) === '#james');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("james") === 'james');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.makeHash("#james") === 'james');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.getMailto('mailto:test@test.com') === 'test@test.com');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.getMailto('test@test.com') === 'test@test.com');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Uri.getMailto('mailto:testtest.com') === null); // win
+
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.hasHistoryApi());
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.is(window));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.is(document));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isCurrent(window));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isProxy(window));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isScrollable()));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Bool.is(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.isScrollable('x')));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getScroll()) === 8);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getDimension().width > 0);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.getDimension().height > 0);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Win.are([window, window])); // xhr
+
+          var formData = new FormData(formNode);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.isStatusSuccess(200));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.isStatusSuccess(404));
+          assert(!_index_js__WEBPACK_IMPORTED_MODULE_0__.ArrLike.is(formData));
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.configFromNode(htmlNode)) === 4);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.configFromNode(htmlNode, null, true)) === 9);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.pojoToFormData({
+            test: "ok",
+            hjames: 3
+          }) instanceof FormData);
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.parseError('<html><body><div>TEST</div></body></html>', 'error') === '<div>TEST</div>');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.parseError('<html><body><div class="ajax-parse-error"><div>TEST</div></div></body></html>', 'error') === '<div class="ajax-parse-error"><div>TEST</div></div>');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.parseError('') === '');
+          assert(_index_js__WEBPACK_IMPORTED_MODULE_0__.Pojo.length(_index_js__WEBPACK_IMPORTED_MODULE_0__.Xhr.configFromString("/test/ok")) === 1); // cleanup
+
+          _index_js__WEBPACK_IMPORTED_MODULE_0__.Ele.remove([formNode, contentBox, contentBox, borderBox]);
+        }
       } catch (e) {
         r = false;
         logError(e);

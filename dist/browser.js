@@ -258,12 +258,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_selector_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/selector.js */ "./src/selector.js");
 /* harmony import */ var _src_target_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/target.js */ "./src/target.js");
 /* harmony import */ var _src_win_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/win.js */ "./src/win.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
@@ -299,35 +293,33 @@ var Ele = (0,quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target
 var Nod = (0,quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"], _src_selector_js__WEBPACK_IMPORTED_MODULE_14__["default"], _src_nod_js__WEBPACK_IMPORTED_MODULE_13__.NodTarget);
 var Target = (0,quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Factory)(_src_target_js__WEBPACK_IMPORTED_MODULE_15__["default"], _src_data_js__WEBPACK_IMPORTED_MODULE_7__["default"], _src_handler_js__WEBPACK_IMPORTED_MODULE_11__["default"], _src_listener_js__WEBPACK_IMPORTED_MODULE_12__["default"]); // shortcut
 
-var NewShortcut = {};
-NewShortcut.getAttr = Ele.getAttr.bind(Ele);
-NewShortcut.setAttr = Ele.setAttr.bind(Ele);
-NewShortcut.toggleAttr = Ele.toggleAttr.bind(Ele);
-NewShortcut.setCss = Ele.setCss.bind(Ele);
-NewShortcut.toggleClass = Ele.toggleClass.bind(Ele);
-NewShortcut.getHtml = Ele.getHtml.bind(Ele);
-NewShortcut.setHtml = Ele.setHtml.bind(Ele);
-NewShortcut.qs = Nod.scopedQuery.bind(Nod);
-NewShortcut.qsa = Nod.scopedQueryAll.bind(Nod);
-NewShortcut.getProp = Target.getProp.bind(Target);
-NewShortcut.setProp = Target.setProp.bind(Target);
-NewShortcut.getData = Target.getData.bind(Target);
-NewShortcut.setData = Target.setData.bind(Target);
-NewShortcut.setHdlr = Target.setHandler.bind(Target);
-NewShortcut.setHdlrs = Target.setsHandler.bind(Target);
-NewShortcut.allHdlr = Target.allHandler.bind(Target);
-NewShortcut.trigHdlr = Target.triggerHandler.bind(Target);
-NewShortcut.trigHdlrs = Target.triggersHandler.bind(Target);
-NewShortcut.ael = Target.addListener.bind(Target);
-NewShortcut.aelDelegate = Target.addDelegatedListener.bind(Target);
-NewShortcut.aelPassive = Target.addPassiveListener.bind(Target);
-NewShortcut.aelOnce = Target.addListenerOnce.bind(Target);
-NewShortcut.rel = Target.removeListener.bind(Target);
-NewShortcut.trigEvt = Target.triggerNoBubble.bind(Target);
-NewShortcut.trigBubble = Target.triggerBubble.bind(Target);
-NewShortcut.trigSetup = Target.triggerSetup.bind(Target);
-NewShortcut.trigTeardown = Target.triggerTeardown.bind(Target);
-quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut = _objectSpread(_objectSpread({}, quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut), NewShortcut); // export
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getAttr = Ele.getAttr.bind(Ele);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setAttr = Ele.setAttr.bind(Ele);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.toggleAttr = Ele.toggleAttr.bind(Ele);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setCss = Ele.setCss.bind(Ele);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.toggleClass = Ele.toggleClass.bind(Ele);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getHtml = Ele.getHtml.bind(Ele);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setHtml = Ele.setHtml.bind(Ele);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.qs = Nod.scopedQuery.bind(Nod);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.qsa = Nod.scopedQueryAll.bind(Nod);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getProp = Target.getProp.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setProp = Target.setProp.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.getData = Target.getData.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setData = Target.setData.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setHdlr = Target.setHandler.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.setHdlrs = Target.setsHandler.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.allHdlr = Target.allHandler.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigHdlr = Target.triggerHandler.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigHdlrs = Target.triggersHandler.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.ael = Target.addListener.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.aelDelegate = Target.addDelegatedListener.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.aelPassive = Target.addPassiveListener.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.aelOnce = Target.addListenerOnce.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.rel = Target.removeListener.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigEvt = Target.triggerNoBubble.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigBubble = Target.triggerBubble.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigSetup = Target.triggerSetup.bind(Target);
+quidphp_node_temp__WEBPACK_IMPORTED_MODULE_0__.Shortcut.trigTeardown = Target.triggerTeardown.bind(Target); // export
 
 
 
