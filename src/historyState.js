@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // historyState
 // script with functions related to the history states
-const HistoryState = Quid.HistoryState = {
+export default {
     
     // is
     // retourne vrai si la valeur est un objet compatible pour un état d'historique

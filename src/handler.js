@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // handler
 // script for handler management (functions stored in targets)
-const HandlerTarget = {    
+export default {    
 
     // isTriggerHandlerEqual
     // retourne vrai si la handler de chaque node retourne la valeur donné en argument

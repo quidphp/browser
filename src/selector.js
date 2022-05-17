@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // selector
 // script with methods related to selecting and matching nodes
-const SelectorTarget = {
+export default {
     
     // scopedQuery
     // méthode utilisé pour faire une recherche et retourner le premier enfant d'une target qui match le selector

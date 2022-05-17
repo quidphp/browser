@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
 
 // dataTarget
 // script for storing datas within targets
-const DataTarget = {    
+export default {    
     
     // hasData
     // retourne vrai si la node a les données

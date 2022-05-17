@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/quidphp/browser#readme",
   "devDependencies": {
-      "laravel-mix": "^6.0.43"
+      "laravel-mix": "^6.0.43",
+      "quidphp-node-temp": "5.31.*"
   }
 }

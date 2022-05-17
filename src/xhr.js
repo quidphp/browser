@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
 
 // xhr
 // script with some logic for ajax calls and xhr object
-const Xhr = Quid.Xhr = new function()
+export default new function()
 {
     // inst
     const $inst = this;

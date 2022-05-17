@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
   
 // win
 // object for window target
-const WinTarget = {
+export default {
     
     // is
     // retourne vrai si la valeur est une window ou une window proxy
@@ -128,6 +128,3 @@ const WinTarget = {
         }
     }
 }
-
-// win
-const Win = Quid.Win = Factory(TargetRoot,DataTarget,HandlerTarget,ListenerTarget,EleWinTarget,WinTarget);

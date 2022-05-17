@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // uri
 // script with a set of helper functions related to uri management
-const Uri = Quid.Uri = {
+export default {
     
     // isInternal
     // retourne vrai si l'uri et la comparaison ont le même scheme et host

@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // listener
 // script containing event listeners functions for target elements
-const ListenerTarget = new function()
+export default new function()
 {   
     // addListener
     // méthode qui permet d'ajouter un nouveau listener d'événement

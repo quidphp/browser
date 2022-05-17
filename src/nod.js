@@ -1,7 +1,7 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // nod
@@ -226,3 +226,6 @@ const EleWinTarget = {
         node.blur();
     }
 }
+
+// export
+export { NodTarget, EleDocTarget, EleWinTarget };

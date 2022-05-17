@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // browser
 // script with a some functions related to browsers detection
-const Browser = Quid.Browser = {
+export default {
     
     // isOldIe
     // retourne vrai si le navigateur est une vieille version de IE (IE 10 ou moins)

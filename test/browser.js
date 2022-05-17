@@ -1,12 +1,19 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
 
-/*
+// import
+import { 
+    Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, TestSuite, Tool,
+    Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr
+} from '../index.js';
+import { Test } from 'quidphp-node-temp/test/node.js';
+const { d, assert, logError } = Shortcut;
+
 // browser
-// script to test the include files
+// script to test the browser files
 Test.Browser = function()
 {   
     let r = true;
@@ -458,4 +465,9 @@ Test.Browser = function()
     
     return r;
 }
-*/
+
+// export
+export { 
+    Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, Test, TestSuite, Tool,
+    Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr
+};

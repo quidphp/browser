@@ -1,12 +1,12 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
  
 // event
 // script containing event management functions
-const EvtPrimitive = {
+export default {
     
     // specialKeyCode
     // code de clavier spécial
@@ -138,6 +138,3 @@ const EvtPrimitive = {
         return r;
     }
 };
-
-// evt
-const Evt = Quid.Evt = Factory(Tool.Type,EvtPrimitive);

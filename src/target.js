@@ -1,7 +1,7 @@
 /*
  * This file is part of the QuidPHP package <https://quidphp.com>
  * Author: Pierre-Philippe Emond <emondpph@gmail.com>
- * License: https://github.com/quidphp/front/blob/master/LICENSE
+ * License: https://github.com/quidphp/browser/blob/master/LICENSE
  */
   
 // target
@@ -9,7 +9,7 @@
 
 // targetRoot
 // object for elements, documents and window
-const TargetRoot = {
+export default {
     
     // is
     // retourne vrai si la valeur est une node, un document, un fragment de document ou window
@@ -146,15 +146,3 @@ const TargetRoot = {
         return this.typechecks.call(this,value);
     }
 }
-
-// doc
-const Doc = Quid.Doc = Factory(TargetRoot,DataTarget,HandlerTarget,ListenerTarget,SelectorTarget,NodTarget,EleDocTarget,DocTarget);
-
-// ele
-const Ele = Quid.Ele = Factory(TargetRoot,DataTarget,HandlerTarget,ListenerTarget,SelectorTarget,NodTarget,EleWinTarget,EleDocTarget,EleTarget,Tool.ArrLoop);
-
-// nod
-const Nod = Quid.Nod = Factory(TargetRoot,DataTarget,HandlerTarget,ListenerTarget,SelectorTarget,NodTarget);
-
-// target
-const Target = Quid.Target = Factory(TargetRoot,DataTarget,HandlerTarget,ListenerTarget);
