@@ -201,6 +201,7 @@ export default new function()
     // fait la configuration des événements à envoyer à la node pour la requête ajax
     this.configNodeEvents = function(node,config)
     {
+        const $this = this;
         Ele.typecheck(node);
         Pojo.typecheck(config);
         
@@ -213,7 +214,7 @@ export default new function()
         };
         
         config.success = function(xhr) {
-            const responseText = (Str.isNotEmpty(xhr.responseText) && Xhr.isResponseJson(xhr))? Json.decode(xhr.responseText):xhr.responseText;
+            const responseText = (Str.isNotEmpty(xhr.responseText) && $this.isResponseJson(xhr))? Json.decode(xhr.responseText):xhr.responseText;
             Target.triggerHandler(node,'ajax:success',responseText,xhr);
         };
         

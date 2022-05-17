@@ -13,7 +13,7 @@ import {
     Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr
 } from '../index.js';
 import { Test } from 'quidphp-node-temp/test/node.js';
-const { d, assert, logError } = Shortcut;
+const { d, assert, logError, setData } = Shortcut;
 
 // browser
 Test.Browser = function()
