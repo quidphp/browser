@@ -1,34 +1,36 @@
 {
-  "name": "quidphp-browser-temp",
-  "version": "5.31.1",
-  "description": "JavaScript files with helpers for the browser",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "mix",
-    "prod": "mix --production",
-    "watch": "mix watch",
-    "test": "node test/run.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/quidphp/browser.git"
-  },
-  "keywords": [
-    "quidphp",
-    "quid",
-    "php-framework",
-    "js-framework",
-    "nodejs"
-  ],
-  "author": "Pierre-Philippe Emond",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/quidphp/browser/issues"
-  },
-  "homepage": "https://github.com/quidphp/browser#readme",
-  "devDependencies": {
-      "laravel-mix": "^6.0.43",
-      "quidphp-node-temp": "5.31.*"
-  }
+    "name": "quidphp-browser-temp",
+    "version": "5.31.1",
+    "description": "JavaScript files with helpers for the browser",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "mix",
+        "prod": "mix --production",
+        "watch": "mix watch",
+        "test": "node test/run.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/quidphp/browser.git"
+    },
+    "keywords": [
+        "quidphp",
+        "quid",
+        "php-framework",
+        "js-framework",
+        "nodejs"
+    ],
+    "author": "Pierre-Philippe Emond",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/quidphp/browser/issues"
+    },
+    "homepage": "https://github.com/quidphp/browser#readme",
+    "dependencies": {
+        "quidphp-node-temp": "5.31.*"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.43",
+    }
 }
