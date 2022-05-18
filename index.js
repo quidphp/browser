@@ -7,7 +7,7 @@
 // index
 // entry file for the module
 
-// import quidphp-node
+// import quidphp-javascript
 import * as Quid from 'quidphp-javascript';
 const { Factory, Shortcut, Tool } = Quid;
 
