@@ -8,7 +8,7 @@
 // entry file for the module
 
 // import quidphp-node
-import * as Quid from 'quidphp-node-temp';
+import * as Quid from 'quidphp-javascript';
 const { Factory, Shortcut, Tool } = Quid;
 
 // simple import
@@ -69,5 +69,5 @@ Shortcut.trigSetup = Target.triggerSetup.bind(Target);
 Shortcut.trigTeardown = Target.triggerTeardown.bind(Target);
 
 // export
-export * from 'quidphp-node-temp';
+export * from 'quidphp-javascript';
 export { Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr };
