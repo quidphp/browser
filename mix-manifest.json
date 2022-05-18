@@ -1,6 +1,6 @@
 {
+    "/dist/browser-es.js": "/dist/browser-es.js",
+    "/dist/browser-test-es.js": "/dist/browser-test-es.js",
     "/dist/browser.js": "/dist/browser.js",
-    "/dist/browser-test.js": "/dist/browser-test.js",
-    "/dist/browser-es5.js": "/dist/browser-es5.js",
-    "/dist/browser-test-es5.js": "/dist/browser-test-es5.js"
+    "/dist/browser-test.js": "/dist/browser-test.js"
 }
