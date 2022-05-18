@@ -8,7 +8,8 @@
 // entry file for the module
 
 // import quidphp-node
-import { Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, Test, TestSuite, Tool } from 'quidphp-node-temp';
+import * as Quid from 'quidphp-node-temp';
+const { Factory, Shortcut, Tool } = Quid;
 
 // simple import
 import Browser from './src/browser.js';
@@ -68,7 +69,5 @@ Shortcut.trigSetup = Target.triggerSetup.bind(Target);
 Shortcut.trigTeardown = Target.triggerTeardown.bind(Target);
 
 // export
-export { 
-    Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, Test, TestSuite, Tool,
-    Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr
-};
+export * from 'quidphp-node-temp';
+export { Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr };

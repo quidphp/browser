@@ -8,11 +8,9 @@
 // script to test the browser files
 
 // import
-import { 
-    Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, TestSuite, Tool,
-    Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr
-} from '../index.js';
+import * as Quid from '../index.js';
 import { Test } from 'quidphp-node-temp/test/node.js';
+const { Arr, ArrLike, Bool, Env, Func, Html, Integer, Num, Obj, Pojo, Shortcut, Str, Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr } = Quid;
 const { d, assert, logError, setData } = Shortcut;
 
 // browser
@@ -472,7 +470,4 @@ Test.Browser = function()
 }
 
 // export
-export { 
-    Arr, ArrLike, Bool, Component, Datetime, Debug, Env, Factory, Func, Html, Integer, Json, Nav, Num, Obj, Pojo, Scalar, Shortcut, Str, Validate, Vari, Test, TestSuite, Tool,
-    Browser, Doc, Dom, Ele, Evt, HistoryState, Nod, Request, Target, Uri, Win, Xhr
-};
+export * from '../index.js';
