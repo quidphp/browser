@@ -5,7 +5,7 @@
  */
 
 // browser
-// script to test the browser files
+// script to test the browser module
 
 // import
 import * as Quid from '../index.js';

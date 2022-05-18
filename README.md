@@ -4,12 +4,12 @@
 [![Code Size](https://img.shields.io/github/languages/code-size/quidphp/node)](https://github.com/quidphp/node)
 
 ## About
-**QuidPHP/Browser** contains javaScript files with helpers for the browser.
+**QuidPHP/Browser** contains a JavaScript module with helpers for the browser.
 
 ## License
 **QuidPHP/Browser** is available as an open-source package under the [MIT license](LICENSE).
 
 ## Installation
-**QuidPHP/Browser** can be easily installed with [Composer](https://getcomposer.org). It is available on [Packagist](https://packagist.org/packages/quidphp/site).
+**QuidPHP/Browser** can be easily installed with [Composer](https://getcomposer.org). It is available on [Packagist](https://packagist.org/packages/quidphp/browser).
 ``` bash
 $ composer require quidphp/browser
