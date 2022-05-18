@@ -1,7 +1,7 @@
 # QuidPHP/Browser
-[![Release](https://img.shields.io/github/v/release/quidphp/node)](https://packagist.org/packages/quidphp/node)
-[![License](https://img.shields.io/github/license/quidphp/node)](https://github.com/quidphp/node/blob/master/LICENSE)
-[![Code Size](https://img.shields.io/github/languages/code-size/quidphp/node)](https://github.com/quidphp/node)
+[![Release](https://img.shields.io/github/v/release/quidphp/browser)](https://packagist.org/packages/quidphp/browser)
+[![License](https://img.shields.io/github/license/quidphp/browser)](https://github.com/quidphp/browser/blob/master/LICENSE)
+[![Code Size](https://img.shields.io/github/languages/code-size/quidphp/browser)](https://github.com/quidphp/browser)
 
 ## About
 **QuidPHP/Browser** contains a JavaScript module with helpers for the browser.
