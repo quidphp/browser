@@ -1,6 +1,4 @@
 {
-    "/dist/browser-es.js": "/dist/browser-es.js",
-    "/dist/browser-test-es.js": "/dist/browser-test-es.js",
     "/dist/browser.js": "/dist/browser.js",
     "/dist/browser-test.js": "/dist/browser-test.js"
 }
