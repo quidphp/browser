@@ -3,7 +3,7 @@ require('laravel-mix-polyfill');
 
 mix.js('index.js', 'dist/browser.js');
 mix.js('test/browser.js', 'dist/browser-test.js');
-mix.polyfill({ enabled: true, useBuiltIns: false });
+mix.alias({ '@': __dirname });
 
 mix.webpackConfig({
     output: {
@@ -11,3 +11,8 @@ mix.webpackConfig({
         libraryTarget: "window"
     }
 });
+
+if(mix.inProduction())
+mix.polyfill({ enabled: true, useBuiltIns: false });
+else
+mix.sourceMaps();
