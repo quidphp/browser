@@ -1,6 +1,6 @@
 {
     "name": "quidphp-browser",
-    "version": "5.31.6",
+    "version": "5.31.7",
     "description": "JavaScript module with helpers for use within the browser",
     "main": "index.js",
     "type": "module",

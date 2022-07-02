@@ -32,6 +32,10 @@ All dependencies will be resolved by using the [NPM](https://www.npmjs.com) inst
 **QuidPHP/Browser** code is commented and all methods are explained (in French).
 
 ## Overview
+**QuidPHP/Browser** contains one entry file.
+- [index](index.js) - Entry file for the module
+
+### Source
 **QuidPHP/Browser** contains 16 JavaScript files. Here is an overview:
 - [browser](src/browser.js) - Script with a some functions related to browsers detection
 - [data](src/data.js) - Script for storing datas within targets
